@@ -162,6 +162,7 @@ let words = [
         winScreen.classList.remove("hide");
         winScreen.innerHTML = `
           <span>Total guesses: ${tryCount}</span>
+          <span>Answer: "${randomWord}"<span>
           <button onclick="startGame()">New Game</button>
           `;
       }, 1000);
@@ -173,7 +174,9 @@ let words = [
         //all attempts wrong
         tryCount = 0;
         winScreen.classList.remove("hide");
-        winScreen.innerHTML = ` <span>You lose</span>
+        winScreen.innerHTML = ` <span>You lose :(</span>
+        <span>Answer: "${randomWord}"<span>
+        <span>       <span>
           <button onclick="startGame()">New Game</button>`;
         return false;
       }
