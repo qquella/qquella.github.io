@@ -1,6 +1,6 @@
 # qquella.github.io
-Wordle-AP EURO/ European History version
-HAVE FUN!!!
+zufällige Kreationen aus einer zufälligen Sammlung von Dingen
+Viel Spaß!!!
 
 <html>
 <head>
@@ -9,7 +9,7 @@ HAVE FUN!!!
 		body {
 			background-color: rgb(252, 202, 209);
 			color: rgb(0, 0, 0);
-			font-family: Baskerville, sans-serif;
+			font-family: Baskerville, Baskerville;
 		}
 		h1 {
 			text-align: center;
@@ -40,7 +40,7 @@ HAVE FUN!!!
 <body>
 	<h1>Spiele</h1>
 	<ul>
-		<li><a href="WD_html.html">Wordle</a></li>
+		<li><a href="Spielen.html">Spiele</a></li>
 		<li><a href="#">Spiel 2</a></li>
 		<li><a href="#">Spiel 3</a></li>
 		<li><a href="#">Spiel 4</a></li>
