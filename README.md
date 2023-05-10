@@ -38,7 +38,7 @@ Viel Spaß!!!
 	</style>
 </head>
 <body>
-	<h1></h1>
+	<h1> </h1>
 	<ul>
 		<li><a href="Spielen.html">Spiele</a></li>
 		<li><a href="#">weitere</a></li>
