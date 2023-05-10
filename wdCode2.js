@@ -176,7 +176,6 @@ let words = [
         winScreen.classList.remove("hide");
         winScreen.innerHTML = ` <span>You lose :(</span>
         <span>Answer: "${randomWord}"<span>
-        <span>       <span>
           <button onclick="startGame()">New Game</button>`;
         return false;
       }
