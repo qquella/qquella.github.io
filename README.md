@@ -38,13 +38,13 @@ Viel Spaß!!!
 	</style>
 </head>
 <body>
-	<h1>Spiele</h1>
+	<h1></h1>
 	<ul>
 		<li><a href="Spielen.html">Spiele</a></li>
-		<li><a href="#">Spiel 2</a></li>
-		<li><a href="#">Spiel 3</a></li>
-		<li><a href="#">Spiel 4</a></li>
-		<li><a href="#">Spiel 5</a></li>
+		<li><a href="#">weitere</a></li>
+		<li><a href="#">weitere</a></li>
+		<li><a href="#">weitere</a></li>
+		<li><a href="#">weitere</a></li>
 	</ul>
 </body>
 </html>
