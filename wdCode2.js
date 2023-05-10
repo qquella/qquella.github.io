@@ -3,7 +3,7 @@ let words = [
     "Industrialization", "Liberalism", "Mercantilism", "Fascism", "Communism", "Catholicism", "Protestantism", "Secularism", "Machiavellianism", "Heliocentrism", "Geocentrism", "Scientificism", "Baroque", "Rococo", "Neoclassicism", "Encomienda", "Hacienda", "Mestizos", "Mulattoes", "Absolutism", "Constitutionalism", "Humanitarianism", "Utopianism", "Feudalism", "Guilds", "Salons", "Printing Press", "Empiricism", "Cartesianism", "Natural Law", "Divine Right", "Philosophes", "Laissez-faire", "Aristocracy", "Bourgeoisie", "Jacobins", "Tories", "Whigs", "Chartists", "Corn Laws", "Luddites", "Plebeians", "Serfs", "Tsarism", "Bismarckian", "Metternichian", "Papacy", "Jesuits", "Convents", "Enclosure", "Manorialism", "Capital", "Conservatism", "Radicalism", "Feminism", "Romanticism", "Realism", "Surrealism", "Existentialism", "Utilitarianism",
     "soverinty", "Humanism", "Renaissance", "Protestantism", "Catholicism", "Calvinism", "Lutheranism", "Absolutism", "Mercantilism", "Enlightenment", "Nationalism", "Liberalism", "Conservatism", "Socialism", "Marxism", "Feminism", "Existentialism", "Modernism", "Postmodernism", "Capitalism", "Communism", "Fascism", "Nazism"
   ];
-  let container = document.querySelector(".container");
+ let container = document.querySelector(".container");
   let winScreen = document.querySelector(".win-screen");
   let submitButton = document.querySelector(".submit");
   let inputCount, tryCount, inputRow;
