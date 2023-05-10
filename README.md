@@ -1,7 +1,7 @@
 # qquella.github.io
 Wordle-AP EURO/ European History version
 HAVE FUN!!!
-<!DOCTYPE html>
+
 <html>
 <head>
 	<title>Spiele</title>
