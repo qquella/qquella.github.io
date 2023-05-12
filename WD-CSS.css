@@ -12,7 +12,7 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
-  left: 50%;
+  left: 60%;
   display: flex;
   gap: 1em;
   background-color: #000000;
@@ -20,16 +20,19 @@ body {
   border-radius: 0.5em;
   box-shadow: 0 2.5em 3.75em rgba(255, 212, 241, 0.3);
 }
+
+
+
 .container,
 .rules {
-  width: 18.75em;
+  width: 28.75em;
   height: 22.5em;
   position: relative;
 }
 .input-group {
   display: grid;
   width: 100%;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
   column-gap: 0.2em;
   margin: 0.2em 0;
 }
