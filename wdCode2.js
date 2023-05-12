@@ -1,25 +1,48 @@
 let words = [
-    "Enlightenment", "Nationalism", "Humanism", "Reformation", "Renaissance", "Capitalism", "Socialism", "Imperialism", 
-    "Industrialization", "Liberalism", "Mercantilism", "Fascism", "Communism", "Catholicism", "Protestantism", "Secularism", "Machiavellianism", "Heliocentrism", "Geocentrism", "Scientificism", "Baroque", "Rococo", "Neoclassicism", "Encomienda", "Hacienda", "Mestizos", "Mulattoes", "Absolutism", "Constitutionalism", "Humanitarianism", "Utopianism", "Feudalism", "Guilds", "Salons", "Printing Press", "Empiricism", "Cartesianism", "Natural Law", "Divine Right", "Philosophes", "Laissez-faire", "Aristocracy", "Bourgeoisie", "Jacobins", "Tories", "Whigs", "Chartists", "Corn Laws", "Luddites", "Plebeians", "Serfs", "Tsarism", "Bismarckian", "Metternichian", "Papacy", "Jesuits", "Convents", "Enclosure", "Manorialism", "Capital", "Conservatism", "Radicalism", "Feminism", "Romanticism", "Realism", "Surrealism", "Existentialism", "Utilitarianism",
-    "soverinty", "Humanism", "Renaissance", "Protestantism", "Catholicism", "Calvinism", "Lutheranism", "Absolutism", "Mercantilism", "Enlightenment", "Nationalism", "Liberalism", "Conservatism", "Socialism", "Marxism", "Feminism", "Existentialism", "Modernism", "Postmodernism", "Capitalism", "Communism", "Fascism", "Nazism"
+    "Enlightenment",
+    "sovereignty",
+    "marx",
+    //unit 1
+    "Renaissance", "Secular", "Urban", "Rural", "Economics", "Florence", "Medici", "Papacy", "Castiglione", "Papal", "Machiavelli", "Humanism", "Petrarch", "Mirandola", "Guttenberg", "Giotto", "Masaccio", "DaVinci", "Raphael", "Michelangelo", "Ferdinand", "Isabella", "Hapsburg", "Wyclif", "Hus",
+    //unit 2
+    "More", "Indulgence", "Martin", "Sacraments", "Justification", "Pope", "Tetzel", "Theses", "Charles", "Lutheranism", "Peasants", "Priesthood", "Ecclesiastical", "Henry", "Act", "Edward", "Mary", "Tudor", "John", "Predestination", "Jesuits", "Bartholomew", "Edict", "Philip", "Elizabeth", "Armada",
+    //unit 3
+    "Geocentric", "Heliocentric", "Copernicus", "Brahe", "Kepler", "Galileo", "Newton", "Midwives", "Descartes", "Scientific", "Bacon", "Natural",
+    //unit 4
+    "Bohemian", "Ferdinand", "Danish", "Swedish", "Peace", "Absolutism", "LouisXIV", "Richelieu", "Fronde", "Versailles", "Colbert", "Succession", "Austrian", "Leopold", "Ivan", "Romanov", "Peter",
+    //unit 5
+    "Skepticism", "Natural", "Relativism", "Locke", "Newtonian", "Montesquieu", "Voltaire", "Deism", "Diderot", "Phisiocrats", "Laissez", "Smith", "Rousseau", "Woman", "Wollstonecraft", "Salons", "Rococo", "Neoclassicism", "Bach", "Handel", "Classical", "Mozart", "Popular", "Realschule", "Pogroms",
+    //unit 6
+    "Estates", "General", "Bourgeoisie", "Taille", "Oath", "Bastille", "Assembly", "Declaration", "Constitution", "Sans-cullottes", "Jacobins", "Convention", "Girondins", "Committee", "Robespierre", "Reign", "Thermidorean", "Napoleon", "Concordat", "Code", "Continental", "Nationalism",
+    //IR
+    "Agricultural", "Industrialization", "Capital", "Entrepreneurs", "Shuttle", "Jenny", "Water", "Mule", "Power", "Rocket", "Factory", "Exhibition", "Crystal", "Tariffs", "Stock", "Banks", "Continental", "Liability", "Labor", "Census", "Famine", "Emigrants", "Urbanization", "Tenements", "Commission", "Cholera", "Artisans", "Unions", "Combination", "Luddites",
+    //Period 3
+    "Quadruple", "Congress", "Metternich", "Legitimacy", "Balance", "Conservatism", "Burke", "Concert", "Intervention", "Tories", "Whigs", "Corn", "Peterloo", "Germanic", "Decembrists", "Liberalism", "Economic", "Political", "Nationalism", "Self-Determination", "Socialism", "July", "Philippe", "French", "Frankfurt", "Romanticism", "Gothic",
+    "Realpolitik", "Anarchism", "Emigration", "Kulturkampf","Louis", "Napoleon", "Ottoman", "Empire", "Crimean", "War", "Piedmont", "Garibaldi", "Count", "Cavour", "King", "William", "Bismarck", "Second", "German", "Empire", "Tsar", "Alexander", "Queen", "Victoria", "Gladstone", "Proletariat", "Karl", "Marx", "Engels", "International", "Working", "Association", "Darwin", "Realism",
+    //WWI
+    "Serbia", "Black", "Hand", "Blank", "Check","Ultimatum", "Mobilization", "Schlieffen", "Trench", "Warfare", "Western", "Front", "Eastern", "Hindenburg", "Ludendorff", "Central", "Powers", "Allied", "U-Boats", "Unrestricted", "Submarine", "Lusitania", "Zeppelins", "Nationalization", "Clemenceau", "David", "Lloyd", "George", "Provisional", "Government", "Soviets", "Mensheviks", "Bolsheviks", "Lenin", "April", "Theses", "Trotsky", "November", "Revolution", "Treaty", "Brest-Litovsk", "Russian", "Communism", "Terror", "Generation",
+    "Hyperinflation", "USSR", "Fascism", "Keynes", "Totalitarianism", "Propaganda", "Mussolini", "Fascio", "Hitler", "Hindenburg", "Weimar", "Nazi", "Mein", "SA", "Beer", "Lebensraum", "Chancellor", "Goring", "Reichstag", "Enabling", "Knight", "Nuremberg", "SS", "Himmler","Nuremberg", "Kristallnacht", "Stalin", "Trotsky", "General", "Politburo", "Agricultural", "Purges", "Spanish", "Goebbels",
+    //Cold War
+    "Diplomatic", "Appeasement", "Rhineland", "Chamberlain", "Sudetenland", "Munich", "Pact", "Blitzkrieg", "Marshall", "Churchill", "Luftwaffe", "Battle", "Mediterranean", "Grand", "Axis", "Stalingrad", "Coral", "Midway", "Eisenhower", "D-Day", "Roosevelt", "Truman", "Hiroshima", "Himmler", "Final", "Einsatzgruppen", "Death", "Great", "Red", "Mother", "Yalta", "United", "Potsdam", "Iron",
+    "Buffer", "Containment", "Marshall", "NATO", "Warsaw", "Korean", "Mao", "ICBM", "Sputnik", "Khrushchev", "Berlin", "Cuban", "Vietnam", "Domino", "Détente", "Israel", "Gandhi", "Chiang", "Destalinization", "Hungarian", "Prague", "Gaulle", "European", "Welfare", "Baby",
+    "Yeltsin", "Putin", "Czechoslovakia", "Berlin", "Solidarity", "Ethnic", "EU", "Euro", "Gulf", "Al-Qaeda", "Taliban", "Chernobyl", "Russian", "Radicalization", "Fundamentalism", "Digital", "Multinational", "Globalization", "Global", "Climate", "Developed"
+//done!
   ];
- let container = document.querySelector(".container");
+  let container = document.querySelector(".container");
   let winScreen = document.querySelector(".win-screen");
-  let submitButton = document.querySelector(".submit");
-  let inputCount, tryCount, inputRow;
-  let backSpaceCount = 0;
+  let inputCount, successCount, tryCount, inputRow;
   let randomWord, finalWord;
   
   //Detect touch device
   const isTouchDevice = () => {
     try {
-      //We try to create TouchEvent (it would fail for desktops and throw error)
       document.createEvent("TouchEvent");
       return true;
     } catch (e) {
       return false;
     }
   };
+  
   //Get random word
   const getRandom = () =>
     words[Math.floor(Math.random() * words.length)].toUpperCase();
@@ -46,12 +69,10 @@ let words = [
       await container.appendChild(inputGroup);
     }
     inputRow = document.querySelectorAll(".input-group");
-    inputBox = document.querySelectorAll(".input-box");
     updateDivConfig(inputRow[tryCount].firstChild, false);
     
     console.log(randomWord);
   };
-  
   
   //Update input to disabled status and set focus
   const updateDivConfig = (element, disabledStatus) => {
@@ -67,19 +88,42 @@ let words = [
     //disable current input box
     updateDivConfig(e.target, true);
     if (value.length == 1) {
-      //if the word is lesss than 5 length and the button isn't backspace
-      if (inputCount <= randomWord.length-1 && e.key != "Backspace") {
+      //if the word is less than or equal to the length of the random word and the button isn't backspace
+      if (inputCount < randomWord.length && e.key != "Backspace") {
         //Attach the letter to the final word
         finalWord += value;
-        if (inputCount < randomWord.length-1) {
+        if (inputCount < randomWord.length - 1) {
           //enable next
           updateDivConfig(e.target.nextSibling, false);
         }
+      } else if (e.key == "Backspace") {
+        //If the user presses backspace and there are letters to delete
+        if (finalWord.length > 0) {
+          finalWord = finalWord.substring(0, finalWord.length - 1);
+          //enable previous and decrement count
+          updateDivConfig(e.target.previousSibling, false);
+          inputCount--;
+        }
       }
-      inputCount += 1;
+      inputCount++;
+      
+      //if the word is too long
+      if (inputCount > randomWord.length) {
+        //delete the last letter and show a small window
+        finalWord = finalWord.substring(0, finalWord.length - 1);
+        inputCount--;
+        const tooLong = document.createElement("div");
+        tooLong.classList.add("too-long");
+        container.appendChild(tooLong);
+        setTimeout(() => {
+          tooLong.remove();
+        }, 1000);
+      }
     } else if (value.length == 0 && e.key == "Backspace") {
-      //Empty input box anduser press Backspace
-      finalWord = finalWord.substring(0, finalWord.length - 1);
+      //Empty input box and user presses Backspace
+      if (finalWord.length > 0) {
+        finalWord = finalWord.substring(0, finalWord.length - 1);
+      }
       if (inputCount == 0) {
         //For first inputbox
         updateDivConfig(e.target, false);
@@ -89,100 +133,111 @@ let words = [
       e.target.previousSibling.value = "";
       //enable previous and decrement count
       updateDivConfig(e.target.previousSibling, false);
-      inputCount = -1;
-    }
-  };
-  
-  //When user presses enter/backspace and all the inputs are filled
-  window.addEventListener("keyup", (e) => {
-    if (inputCount > randomWord.length-1) {
-      if (isTouchDevice()) {
-        submitButton.classList.remove("hide");
-      }
-      if (e.key == "Enter") {
-        validateWord();
-      } else if (e.key == "Backspace") {
-        inputRow[tryCount].lastChild.value = "";
-        finalWord = finalWord.substring(0, finalWord.length - 1);
-        updateDivConfig(inputRow[tryCount].lastChild, false);
-        inputCount -= 1;
-      }
-    }
-  });
-  
-  //Comparison Logic
-  const validateWord = async () => {
-    if (isTouchDevice()) {
-      submitButton.classList.add("hide");
-    }
-    let failed = false;
-    //Get all input boxes of current row
-    let currentInputs = inputRow[tryCount].querySelectorAll(".input-box");
-    //Check if it is a valid english word
-    /*await fetch(
-      `https://api.dictionaryapi.dev/api/v2/entries/en/${finalWord}`
-    ).then((response) => {
-      if (response.status == "404") {
-        console.clear();
-        alert("Please Enter Valid Word");
-        failed = true;
-      }
-    });
-  */
-    //If not then stop here
-    if (failed) {
+      inputCount--;
+    } else {
+      // if the value length is not equal to 1 (i.e. the user has entered something other than a letter) ignore it
       return false;
     }
-    //Initially set these
-    let successCount = 0;
-    let successLetters = "";
-    //Checks for both words
-    for (let i in randomWord) {
-      //if same then green
-      if (finalWord[i] == randomWord[i]) {
-        currentInputs[i].classList.add("correct");
-        successCount += 1;
-        successLetters += randomWord[i];
-      } else if (
-        randomWord.includes(finalWord[i]) &&
-        !successLetters.includes(finalWord[i])
-      ) {
-        //If the letter exist in the chosen word and is not present in the success array then yellow
-        currentInputs[i].classList.add("exists");
-      } else {
-        currentInputs[i].classList.add("incorrect");
-      }
+    // if all input boxes have been filled
+    if (inputCount == randomWord.length) {
+      // validate the word
+      validateWord();
     }
-    //Increment try count
-    tryCount += 1;
-    //If all letters are correct
-    if (successCount == randomWord.length) {
-      //Display the win banner after 1 second
-      setTimeout(() => {
-        winScreen.classList.remove("hide");
-        winScreen.innerHTML = `
-          <span>Total guesses: ${tryCount}</span>
-          <span>Answer: "${randomWord}"<span>
-          <button onclick="startGame()">New Game</button>
-          `;
-      }, 1000);
-    } else {
-      //unsuccessful so next attempt
-      inputCount = 0;
-      finalWord = "";
-      if (tryCount == 6) {
-        //all attempts wrong
-        tryCount = 0;
-        winScreen.classList.remove("hide");
-        winScreen.innerHTML = ` <span>You lose :(</span>
-        <span>Answer: "${randomWord}"<span>
-          <button onclick="startGame()">New Game</button>`;
-        return false;
-      }
-      //for next attempt move to first child of next row
-      updateDivConfig(inputRow[tryCount].firstChild, false);
-    }
-    inputCount = 0;
   };
   
-  window.onload = startGame();
+    
+    //When user presses enter/backspace and all the inputs are filled
+    window.addEventListener("keyup", (e) => {
+      if (inputCount > randomWord.length-1) {
+        if (isTouchDevice()) {
+          submitButton.classList.remove("hide");
+        }
+        if (e.key == "Enter") {
+          validateWord();
+        } else if (e.key == "Backspace") {
+          inputRow[tryCount].lastChild.value = "";
+          finalWord = finalWord.substring(0, finalWord.length - 1);
+          updateDivConfig(inputRow[tryCount].lastChild, false);
+          inputCount -= 1;
+        }
+      }
+    });
+    
+    //Comparison Logic
+    const validateWord = async () => {
+      if (isTouchDevice()) {
+        submitButton.classList.add("hide");
+      }
+      let failed = false;
+      //Get all input boxes of current row
+      let currentInputs = inputRow[tryCount].querySelectorAll(".input-box");
+      //Check if it is a valid english word
+      /*await fetch(
+        `https://api.dictionaryapi.dev/api/v2/entries/en/${finalWord}`
+      ).then((response) => {
+        if (response.status == "404") {
+          console.clear();
+          alert("Please Enter Valid Word");
+          failed = true;
+        }
+      });
+    */
+      //If not then stop here
+      if (failed) {
+        return false;
+      }
+      //Initially set these
+      let successCount = 0;
+      let successLetters = "";
+      //Checks for both words
+      for (let i in randomWord) {
+        //if same then green
+        if (finalWord[i] == randomWord[i]) {
+          currentInputs[i].classList.add("correct");
+          successCount += 1;
+          successLetters += randomWord[i];
+        } else if (
+          randomWord.includes(finalWord[i]) &&
+          !successLetters.includes(finalWord[i])
+        ) {
+          //If the letter exist in the chosen word and is not present in the success array then yellow
+          currentInputs[i].classList.add("exists");
+        } else {
+          currentInputs[i].classList.add("incorrect");
+        }
+      }
+      //Increment try count
+      tryCount += 1;
+      //If all letters are correct
+      if (successCount == randomWord.length) {
+        //Display the win banner after 1 second
+        setTimeout(() => {
+          winScreen.classList.remove("hide");
+          winScreen.innerHTML = `
+            <span>Total guesses: ${tryCount}</span>
+            <span>Answer: "${randomWord}"<span>
+            <button onclick="startGame()">New Game</button>
+            `;
+        }, 1000);
+      } else {
+        //unsuccessful so next attempt
+        inputCount = 0;
+        finalWord = "";
+        if (tryCount == 6) {
+          //all attempts wrong
+          tryCount = 0;
+          winScreen.classList.remove("hide");
+          winScreen.innerHTML = ` <span>You lose :(</span>
+          <span>Answer: "${randomWord}"<span>
+          <span>       <span>
+            <button onclick="startGame()">New Game</button>`;
+          return false;
+        }
+        //for next attempt move to first child of next row
+        updateDivConfig(inputRow[tryCount].firstChild, false);
+      }
+      inputCount = 0;
+    };
+    
+    window.onload = startGame();
+    
