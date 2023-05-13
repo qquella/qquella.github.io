@@ -138,7 +138,6 @@ let words = [
   "Needs",
   "Disabilities",
   "Section",
-  "504",
   "English",
   "Language",
   "Learners",
