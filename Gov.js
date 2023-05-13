@@ -157,6 +157,16 @@ let words = [
   let inputCount, successCount, tryCount, inputRow;
   let randomWord, finalWord;
   
+  window.addEventListener("beforeunload", (e) => {
+  // Check if the game is in progress
+  if (gameStarted) {
+    // Cancel the unload event
+    e.preventDefault();
+    // Prompt the user with a message
+    e.returnValue = "Are you sure you want to leave? Your progress will be lost.";
+  }
+});
+
   //Detect touch device
   const isTouchDevice = () => {
     try {
@@ -216,10 +226,10 @@ let words = [
     if (inputCount < randomWord.length && e.key != "Backspace" && e.key != "ArrowLeft") {
       //Attach the letter to the final word
       finalWord += value;
-      if (inputCount < randomWord.length - 1) {
+     // if (inputCount < randomWord.length - 1) {
         //enable next
         updateDivConfig(e.target.nextSibling, false);
-      }
+      //}
       inputCount++;
     } else if (e.key == "Backspace") {
       //If the user presses backspace and there are letters to delete
