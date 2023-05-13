@@ -64,7 +64,7 @@ let words = [
   //updateDivConfig(e.target, true);
   if (value.length <= 2) {
     //if the word is less than or equal to the length of the random word and the button isn't backspace
-    if (inputCount < randomWord.length && e.key != "Backspace") {
+    if (inputCount < randomWord.length && e.key != "Backspace" && e.key != "ArrowLeft") {
       //Attach the letter to the final word
       finalWord += value;
       if (inputCount < randomWord.length - 1) {
@@ -79,8 +79,23 @@ let words = [
         //enable previous and decrement count
         updateDivConfig(e.target.previousSibling, false);
         inputCount--;
-      }
+      } 
     }
+else if (e.key === "ArrowRight") {
+  // move to next input box
+  if (e.target.nextSibling) {
+    updateDivConfig(e.target.nextSibling, false);
+    e.target.nextSibling.focus();
+  }
+} else if (e.key === "ArrowLeft") {
+  // move to previous input box
+  if (e.target.previousSibling) {
+    updateDivConfig(e.target.previousSibling, false);
+    e.target.previousSibling.focus();
+  }
+}
+
+
     //if the word is too long
     if (inputCount > randomWord.length) {
       //delete the last letter and show a small window
