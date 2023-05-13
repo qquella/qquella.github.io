@@ -208,84 +208,68 @@ let words = [
   
   //Logic for writing in the inputs
   const checker = async (e) => {
-    let value = e.target.value.toUpperCase();
-    //disable current input box
-    updateDivConfig(e.target, true);
-    if (value.length == 1) {
-      //if the word is less than or equal to the length of the random word and the button isn't backspace
-      if (inputCount < randomWord.length && e.key != "Backspace") {
-        //Attach the letter to the final word
-        finalWord += value;
-        if (inputCount < randomWord.length - 1) {
-          //enable next
-          updateDivConfig(e.target.nextSibling, false);
-        }
-      } else if (e.key == "Backspace") {
-        //If the user presses backspace and there are letters to delete
-        if (finalWord.length > 0) {
-          finalWord = finalWord.substring(0, finalWord.length - 1);
-          //enable previous and decrement count
-          updateDivConfig(e.target.previousSibling, false);
-          inputCount--;
-        }
+  let value = e.target.value.toUpperCase();
+  //disable current input box
+  //updateDivConfig(e.target, true);
+  if (value.length <= 2) {
+    //if the word is less than or equal to the length of the random word and the button isn't backspace
+    if (inputCount < randomWord.length && e.key != "Backspace") {
+      //Attach the letter to the final word
+      finalWord += value;
+      if (inputCount < randomWord.length - 1) {
+        //enable next
+        updateDivConfig(e.target.nextSibling, false);
       }
       inputCount++;
-      
-      //if the word is too long
-      if (inputCount > randomWord.length) {
-        //delete the last letter and show a small window
+    } else if (e.key == "Backspace") {
+      //If the user presses backspace and there are letters to delete
+      if (finalWord.length >= 0) {
         finalWord = finalWord.substring(0, finalWord.length - 1);
+        //enable previous and decrement count
+        updateDivConfig(e.target.previousSibling, false);
         inputCount--;
-        const tooLong = document.createElement("div");
-        tooLong.classList.add("too-long");
-        container.appendChild(tooLong);
-        setTimeout(() => {
-          tooLong.remove();
-        }, 1000);
       }
-    } else if (value.length == 0 && e.key == "Backspace") {
-      //Empty input box and user presses Backspace
-      if (finalWord.length > 0) {
-        finalWord = finalWord.substring(0, finalWord.length - 1);
-      }
-      if (inputCount == 0) {
-        //For first inputbox
-        updateDivConfig(e.target, false);
-        return false;
-      }
-      updateDivConfig(e.target, true);
-      e.target.previousSibling.value = "";
-      //enable previous and decrement count
-      updateDivConfig(e.target.previousSibling, false);
+    }
+    //if the word is too long
+    if (inputCount > randomWord.length) {
+      //delete the last letter and show a small window
+      finalWord = finalWord.substring(0, finalWord.length - 1);
       inputCount--;
-    } else {
-      // if the value length is not equal to 1 (i.e. the user has entered something other than a letter) ignore it
+      const tooLong = document.createElement("div");
+      tooLong.classList.add("too-long");
+      container.appendChild(tooLong);
+      setTimeout(() => {
+        tooLong.remove();
+      }, 1000);
+    }
+  } else if (value.length == 0 && e.key == "Backspace") {
+    //Empty input box and user presses Backspace
+    if (finalWord.length > 0) {
+      finalWord = finalWord.substring(0, finalWord.length - 1);
+    }
+    if (inputCount == 0) {
+      //For first inputbox
+      updateDivConfig(e.target, false);
       return false;
     }
-    // if all input boxes have been filled
-    if (inputCount == randomWord.length) {
-      // validate the word
-      validateWord();
-    }
-  };
-  
-    
-    //When user presses enter/backspace and all the inputs are filled
-    window.addEventListener("keyup", (e) => {
-      if (inputCount > randomWord.length-1) {
-        if (isTouchDevice()) {
-          submitButton.classList.remove("hide");
-        }
-        if (e.key == "Enter") {
-          validateWord();
-        } else if (e.key == "Backspace") {
-          inputRow[tryCount].lastChild.value = "";
-          finalWord = finalWord.substring(0, finalWord.length - 1);
-          updateDivConfig(inputRow[tryCount].lastChild, false);
-          inputCount -= 1;
-        }
-      }
-    });
+    updateDivConfig(e.target, true);
+    e.target.previousSibling.value = "";
+    //enable previous and decrement count
+    updateDivConfig(e.target.previousSibling, false);
+    inputCount--;
+  } else {
+    // if the value length is not equal to 1 (i.e. the user has entered something other than a letter) ignore it
+    return false;
+  }
+};
+
+//When user presses enter/backspace and all the inputs are filled
+window.addEventListener("keyup", (e) => {
+  if (inputCount == randomWord.length && e.key == "Enter") {
+    validateWord();
+  }
+});
+;
     
     //Comparison Logic
     const validateWord = async () => {
