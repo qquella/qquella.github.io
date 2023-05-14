@@ -267,7 +267,7 @@ else if (e.key === "ArrowRight") {
         tooLong.remove();
       }, 1000);
     }
-  } else if (value.length == 0 && e.key == "Backspace") {
+  } else if (value.length == 0 || e.key == "Backspace") {
     //Empty input box and user presses Backspace
     if (finalWord.length > 0) {
       finalWord = finalWord.substring(0, finalWord.length - 1);
