@@ -93,13 +93,14 @@ let words = [
   };
   
   //Logic for writing in the inputs
+ //Logic for writing in the inputs
   const checker = async (e) => {
   let value = e.target.value.toUpperCase();
   //disable current input box
   //updateDivConfig(e.target, true);
   if (value.length <= 2) {
     //if the word is less than or equal to the length of the random word and the button isn't backspace
-    if (inputCount < randomWord.length && e.key != "Backspace" && e.key != "ArrowLeft") {
+    if (inputCount < randomWord.length && e.key != "Backspace" && e.key != "ArrowLeft" && e.key != "ArrowRight") {
       //Attach the letter to the final word
       finalWord += value;
      // if (inputCount < randomWord.length - 1) {
@@ -110,8 +111,12 @@ let words = [
     } else if (e.key == "Backspace") {
       //If the user presses backspace and there are letters to delete
       if (finalWord.length >= 0) {
-        finalWord = finalWord.substring(0, finalWord.length - 1);
+        // get the index of the input box with focus
+        const inputIndex = Array.from(inputRow[tryCount].querySelectorAll(".input-box")).indexOf(e.target);
+        // remove the character at that index from the finalWord string
+        finalWord = finalWord.slice(0, inputIndex) + finalWord.slice(inputIndex + 1);
         //enable previous and decrement count
+        if (!e.target.previousSibling.disabled)
         updateDivConfig(e.target.previousSibling, false);
         inputCount--;
       } 
@@ -122,13 +127,13 @@ else if (e.key === "ArrowRight") {
     updateDivConfig(e.target.nextSibling, false);
     e.target.nextSibling.focus();
   }
-} else if (e.key === "ArrowLeft") {
+} /*else if (e.key === "ArrowLeft") {
   // move to previous input box
   if (e.target.previousSibling) {
     updateDivConfig(e.target.previousSibling, false);
     e.target.previousSibling.focus();
   }
-}
+}*/
 
 
     //if the word is too long
@@ -143,7 +148,7 @@ else if (e.key === "ArrowRight") {
         tooLong.remove();
       }, 1000);
     }
-  } else if (value.length == 0 || e.key == "Backspace") {
+  } else if (value.length == 0 && e.key == "Backspace") {
     //Empty input box and user presses Backspace
     if (finalWord.length > 0) {
       finalWord = finalWord.substring(0, finalWord.length - 1);
@@ -166,7 +171,7 @@ else if (e.key === "ArrowRight") {
 
 //When user presses enter/backspace and all the inputs are filled
 window.addEventListener("keyup", (e) => {
-  if (inputCount == randomWord.length && e.key == "Enter") {
+  if (e.key == "Enter") {
     validateWord();
   }
 });
