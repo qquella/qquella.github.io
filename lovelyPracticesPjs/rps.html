@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <p>Let's play Rock Paper Scissors!!!</p>
+
+  <button id="rock-button">Rock</button>
+  <button id="paper-button">Paper</button>
+  <button id="scissors-button">Scissors</button>
+
+  <script>
+    function playGame(playerStep) {
+      const num = Math.floor(Math.random() * 3);
+      let computerStep = '';
+
+      if (num === 0) {
+        computerStep = 'rock';
+      } else if (num === 1) {
+        computerStep = 'paper';
+      } else {
+        computerStep = 'scissors';
+      }
+
+      console.log('Player: ' + playerStep);
+      console.log('Computer: ' + computerStep);
+
+      if (playerStep === computerStep) {
+        return 'Tie!';
+      } else if (
+        (playerStep === 'rock' && computerStep === 'scissors') ||
+        (playerStep === 'paper' && computerStep === 'rock') ||
+        (playerStep === 'scissors' && computerStep === 'paper')
+      ) {
+        return 'Congratulations! You win!';
+      } else {
+        return 'Oops! Computer wins!';
+      }
+    }
+
+    document.getElementById('rock-button').addEventListener('click', function() {
+      alert(playGame('rock'));
+    });
+
+    document.getElementById('paper-button').addEventListener('click', function() {
+      alert(playGame('paper'));
+    });
+
+    document.getElementById('scissors-button').addEventListener('click', function() {
+      alert(playGame('scissors'));
+    });
+  </script>
+</body>
+</html>
