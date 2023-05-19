@@ -29,6 +29,7 @@ p {
 
 blockquote {
     position: relative;
+    z-index: 1;
     background-color: #000000;
     color:#d2d1d1;
     border-style: groove;
@@ -38,6 +39,7 @@ blockquote {
 }
 
 img {
+    display: block;
     position: relative;
     z-index: 2;
     width: 200px;
