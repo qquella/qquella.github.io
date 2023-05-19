@@ -40,8 +40,8 @@ Viel Spaß!!!
 <body>
 	<h1> </h1>
 	<ul>
-		<li><a href="Spielen.html">Spiele</a></li>
-		<li><a href="#">weitere</a></li>
+		<li><a href="Spielen.html">Games</a></li>
+		<li><a href="#"></a>Unserious essays</li>
 		<li><a href="#">weitere</a></li>
 		<li><a href="#">weitere</a></li>
 		<li><a href="#">weitere</a></li>

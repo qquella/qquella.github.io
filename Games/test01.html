@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+   
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="WD-CSS.css" />
+  </head>
+  <body>
+    <h1>Wordle-AP EURO/ European History version 1.0</h1>
+    <div class="wrapper">
+      <div class="container"></div>
+      <div class="rules">
+        <img id="img" src="/Users/quellawq/Downloads/WD1.png" alt="Euro image" style="width: 350px; height: auto; margin-left: -850px; margin-top: 10px;">
+      </div>
+      <div class="win-screen hide"></div>
+    </div>
+    <button class="submit hide">Submit</button>
+
+    <!-- Pop-up overlay -->
+    <div class="overlay">
+      <div class="overlay-content">
+        <img src="/Users/quellawq/Downloads/WD1.png" alt="Euro image" style="width: 500px; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <button id="start-btn" style="font-size: 40px; padding: 10px 20px; margin-left: 700px; margin-top: 565px">OK</button>
+      </div>
+    </div>
+
+    <button id="toggle-btn">Show/Hide</button>
+    <button id="feedback-btn">Give Feedback</button>
+
+<!-- HTML code for the feedback form -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+</head>
+<body>
+	<h1>Contact Us</h1>
+	<form method="post" action="Test01.php">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<br><br>
+		<label for="message">Message:</label>
+		<textarea id="feedback" name="feedback" rows="5"></textarea>
+		<br><br>
+		<input type="submit" value="Send">
+	</form>
+</body>
+</html>
+
+
+
+    <!-- Script -->
+    <script src="Gov.js"></script>
+    <script>
+      // Show the pop-up when the page loads
+      window.onload = function() {
+        document.querySelector('.overlay').style.display = 'block';
+      }
+
+      // Hide the pop-up when the "OK" button is clicked
+      document.querySelector('#start-btn').addEventListener('click', function() {
+        document.querySelector('.overlay').style.display = 'none';
+      });
+
+      // Toggle the visibility of the image when the button is clicked
+      document.querySelector('#toggle-btn').addEventListener('click', function() {
+        var img = document.querySelector('#img');
+        if (img.style.display === 'none') {
+          img.style.display = 'block';
+        } else {
+          img.style.display = 'none';
+        }
+      });
+      
+      // Prevent the pop-up overlay from displaying when the Show/Hide button is clicked
+      document.querySelector('#toggle-btn').addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+    </script>
+  </body>
+</html>
