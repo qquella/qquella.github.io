@@ -39,8 +39,9 @@ blockquote {
 
 img {
     position: relative;
+    z-index: 2;
     width: 200px;
-    height: 200px;
+    height: relative;
     float: left;
     margin-right: 10px;
     border: 1px solid #ccc;
