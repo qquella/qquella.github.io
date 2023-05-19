@@ -41,7 +41,7 @@ Viel Spaß!!!
 	<h1> </h1>
 	<ul>
 		<li><a href="./Games/Spielen.html">Games</a></li>
-		<li><a href="#"></a>Unserious essays</li>
+		<li><a href="./Unserious essays/essays.html">Unserious essays</a></li>
 		<li><a href="#">weitere</a></li>
 		<li><a href="#">weitere</a></li>
 		<li><a href="#">weitere</a></li>
