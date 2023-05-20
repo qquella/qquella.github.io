@@ -36,6 +36,9 @@ Viel Spaß!!!
 			background-color: #666;
 		}
 	</style>
+
+<link rel="icon" type="image/x-icon" href="/images/favicon-q.png">
+
 </head>
 <body>
 	<h1> </h1>
