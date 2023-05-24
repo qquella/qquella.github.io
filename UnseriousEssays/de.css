@@ -146,6 +146,7 @@ video {
 .buttonSwitch:hover {
   background-color: #ffd700;
   color:#000000;
+  font-size: 1.4em ;
 }
 
 audio{
