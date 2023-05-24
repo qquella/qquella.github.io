@@ -23,6 +23,31 @@
         </p>
 
         <br>
+        <p>
+          <h1><button onclick="toggleText('expandedText14')">Feedback</button></h1>
+
+          <div id="expandedText14">
+
+            <form action="https://formspree.io/f/mknaablk" method="POST">
+
+              Your name: <br>
+              <input type="text" name="realname"><br>
+              <br>
+              
+              Your email: <br>
+              <input type="text" name="email"><br>
+              <br>
+              
+              Your comments: <br>
+              <textarea name="comments" rows="15" cols="50"></textarea><br><br>
+              
+              <button type="submit">Submit!</button>
+        
+              </form>
+
+          </div>
+        </p>
+        <br>
   <p>
     <button onclick="showContent(1)" class="buttonSwitch">die Hintergründe von Rechtsextre-mismus(Background)</button>
    
@@ -501,6 +526,18 @@
           expandedText.style.display = "block";
         } else {
           expandedText.style.display = "none";
+        }
+      }
+
+      function saveFeedback() {
+        var feedback = document.getElementById('feedback').value;
+        localStorage.setItem('userFeedback', feedback);
+      }
+
+      function displayFeedback() {
+        var savedFeedback = localStorage.getItem('userFeedback');
+        if (savedFeedback) {
+          document.getElementById('savedFeedback').textContent = savedFeedback;
         }
       }
 
