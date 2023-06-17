@@ -75,3 +75,11 @@
     transform: translate(-50%, -50%) scale(0);
   }
 }
+
+#aImg{
+  display: none;
+  max-width: 72%;
+  height: relative;
+  margin-left: 15%;
+  margin-right: auto;
+}

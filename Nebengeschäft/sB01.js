@@ -9,6 +9,7 @@
         clearInterval(countdownInterval);
         showGraffiti();
         showFireworks();
+        showImg();
       }
     }, 1000);
 
@@ -18,6 +19,11 @@
     function showGraffiti() {
       countdownElement.style.display = 'none';
       graffitiElement.style.display = 'block';
+    }
+    // Img
+    const imgElement = document.getElementById('aImg');
+    function showImg() {
+      imgElement.style.display = 'block';
     }
 
     // Fireworks functionality
