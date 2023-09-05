@@ -4,28 +4,53 @@ body {
   color: rgb(0, 0, 0);
   font-family: Baskerville, Baskerville;
 }
-h1 {
+header{
   text-align: center;
-  font-size: 50px;
 }
+h1 {
+  position: relative;
+  font-family: 'Cursive Font', cursive; /* Use a fancy cursive font */
+  color: #f6e5eb; /* Set a vibrant color */
+  text-shadow: 2px 2px 4px rgba(98, 66, 80, 0.5); /* Add a subtle text shadow */
+  letter-spacing: 3px; /* Increase letter spacing */
+  text-transform: uppercase; /* Transform text to uppercase */
+  padding: 15px; /* Add some padding for space */
+  background-color: #fa6b9a;; /* Add a light background color */
+  border-radius: 40px; /* Round the corners */
+  box-shadow: 0 4px 6px rgb(223 111 166 / 10%);
+  text-align: center; /* Center align the text */
+  display: inline-block;
+  border: 5px solid #fedbe9;
+}
+h2{
+  color: #ffffff;
+}
+a{
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 2px lightcoral;
+}
+
 nav ul {
   list-style-type: none;
-  max-width: 1200 px;
-  margin: 0, auto;
-  padding: 20;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
   text-align: center;
 }
-li {
+nav li {
   display: inline-block;
-  margin-right: 30px;
+  margin: 35px 28px;
+  font-size: 20px;
 }
-a {
+nav a {
   color: white;
   text-decoration: none;
   padding: 20px;
-  background-color: #484848;
-  border-radius: 5px;
+  background-color: #443a41;
+  text-shadow: 1px 2px lightcoral;
+  border-radius: 15px;
 }
 a:hover {
-  background-color: #666;
+  background-color: #6f3444;
 }
