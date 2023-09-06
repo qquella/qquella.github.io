@@ -24,6 +24,7 @@ h1 {
 }
 h2{
   color: #ffffff;
+  margin: 0;
 }
 a{
   color: white;
@@ -34,19 +35,19 @@ a{
 nav ul {
   list-style-type: none;
   max-width: 100%;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 10px auto;
+  padding: 12px;
   text-align: center;
 }
 nav li {
   display: inline-block;
-  margin: 35px 28px;
+  margin: 25px 10px;
   font-size: 20px;
 }
 nav a {
   color: white;
   text-decoration: none;
-  padding: 20px;
+  padding: 18px;
   background-color: #443a41;
   text-shadow: 1px 2px lightcoral;
   border-radius: 15px;
