@@ -9,9 +9,9 @@ header{
 }
 h1 {
   position: relative;
-  font-family: 'Cursive Font', cursive; /* Use a fancy cursive font */
+   /* Use a fancy cursive font */
   color: #f6e5eb; /* Set a vibrant color */
-  text-shadow: 2px 2px 4px rgba(98, 66, 80, 0.5); /* Add a subtle text shadow */
+  text-shadow: 4px 4px 4px rgba(98, 66, 80, 0.5); /* Add a subtle text shadow */
   letter-spacing: 3px; /* Increase letter spacing */
   text-transform: uppercase; /* Transform text to uppercase */
   padding: 15px; /* Add some padding for space */
