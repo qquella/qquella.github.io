@@ -48,8 +48,39 @@ a:hover {
   background-color: rgb(240, 128, 162);
 }
 
-@media screen and (max-width: 400px) {
+
+
+/* Media query for screens between 400px and 768px */
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  h1 {
+    font-size: 40px; /* Decrease font size for medium screens */
+  }
+
   nav li {
-    margin: 45px 10px;
+    margin:48px 10px; /* Adjust margin for medium screens */
+  }
+
+  li a {
+    padding: 14px; /* Adjust padding for medium screens */
   }
 }
+
+/* Media query for screens larger than 768px */
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 60px; /* Increase font size for large screens */
+  }
+
+  nav li {
+    margin: 65px 10px; /* Adjust margin for large screens */
+  }
+
+  li a {
+    padding: 24px; /* Adjust padding for large screens */
+  }
+}
+
+
+
+
+
