@@ -1,7 +1,7 @@
 //js 
 // Countdown 
     const countdownElement = document.getElementById('countdown');
-    let count = 5;
+    let count = 3;
     const countdownInterval = setInterval(() => {
       count--;
       countdownElement.textContent = count;
