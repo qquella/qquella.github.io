@@ -21,9 +21,11 @@
       graffitiElement.style.display = 'block';
     }
     // Img
-    const imgElement = document.getElementById('aImg');
+    const imgElements = document.querySelectorAll('.aImg');
     function showImg() {
-      imgElement.style.display = 'block';
+      imgElements.forEach(img => {
+        img.style.display = 'block';
+      })
     }
 
     // Fireworks functionality
