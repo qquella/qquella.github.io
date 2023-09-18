@@ -1,0 +1,95 @@
+
+body {
+  background-color: rgb(247, 187, 187);
+  color: rgb(0, 0, 0);
+  font-family: Baskerville, Baskerville;
+}
+header{
+  text-align: center;
+}
+h1 {
+  position: relative;
+   /* Use a fancy cursive font */
+  color: #a52a46; /* Set a vibrant color */
+  letter-spacing: 3px; /* Increase letter spacing */
+  text-transform: uppercase; /* Transform text to uppercase */
+  padding: 15px; /* Add some padding for space */
+  border-radius: 40px; /* Round the corners */
+  box-shadow: 0 4px 6px rgba(106, 54, 79, 0.1);
+  display: inline-block;
+  border: 5px solid #f3d2db;
+  background-color: #f2b3ba;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 4px 4px 4px rgba(247, 104, 147, 0.814); /* Add a subtle text shadow */
+  line-height: .8em;
+}
+h2{
+  color: #ffffff;
+  margin: 0;
+}
+a{
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 2px lightcoral;
+}
+
+nav ul {
+  list-style-type: none;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 12px;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  margin: 25px 10px;
+  font-size: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 18px;
+  background-color: #443a41;
+  text-shadow: 1px 2px lightcoral;
+  border-radius: 15px;
+}
+a:hover {
+  background-color: #6f3444;
+}
+
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px; /* Decrease font size for smaller screens */
+  }
+
+  nav li {
+    margin: 15px 10px; /* Adjust margin for smaller screens */
+  }
+
+  nav a {
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px; /* Further decrease font size for very small screens */
+  }
+
+  nav li {
+    margin: 15px 5px; /* Further adjust margin for very small screens */
+  }
+
+  nav a {
+    padding: 10px; /* Further adjust padding for very small screens */
+  }
+}
+
+
+
+
