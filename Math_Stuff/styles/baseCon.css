@@ -8,11 +8,22 @@ body {
   max-block-size: 100%;
 }
 
+h2{
+  margin: 15px;
+}
+a{
+  color: rgb(208, 208, 210);
+  text-decoration: none;
+  background-color: #484848;
+  border-radius: 5px;
+  text-shadow: 1px 2px rgb(148, 128, 240);
+}
+
 .container {
   display: block;
   width: 600px;
   max-width: 100%;
-  margin: 15% auto;
+  margin: 12% auto;
   padding: 20px;
   background-color: #000000;
   border: 8px solid #8269f49b;
