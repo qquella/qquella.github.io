@@ -49,11 +49,11 @@ label {
 }
 
 input[type="number"] {
-  width: 60px;
+  width: 90px;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  margin: 20px;
+  margin: 18px;
   font-size: 24px;
 }
 
@@ -96,10 +96,11 @@ button:hover {
   label {
     width: 40%;
     margin-right: 0px;
+    margin-top: 50px;
   }
 
   input[type="number"] {
-    width: 50px;
+    /* width: 70px; */
     margin: 10px;
     font-size: 20px;
   }
@@ -127,7 +128,7 @@ button:hover {
   }
 
   input[type="number"] {
-    width: 42px;
+    /* width: 60px; */
     margin: 10px;
     font-size: 17px;
   }

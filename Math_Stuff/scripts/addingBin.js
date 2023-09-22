@@ -20,6 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
+n2.addEventListener('input', (e) => {
+  const inputValue = e.target.value
+
+  // Remove non-binary chars
+  const binaryValue = inputValue.replace(/[^01]/g, '')
+  // Update input field 
+  e.target.value = binaryValue
+})
+
 const addingBinary = (a, b, c = 0, sum ='') => {
   if(a === 0 && b === 0 && c === 0) return sum
 
@@ -29,3 +38,5 @@ const addingBinary = (a, b, c = 0, sum ='') => {
 
   return addingBinary(Math.floor(a/10), Math.floor(b/10), c, sum)
 }
+
+

@@ -48,7 +48,7 @@ label {
   font-size: 1.2em;
 }
 
-input[type="number"] {
+input[type="text"] {
   width: 100px;
   padding: 5px;
   border: 1px solid #ccc;
@@ -56,7 +56,7 @@ input[type="number"] {
   font-size: 20px;
 }
 
-input[type="number"]:focus{
+input[type="text"]:focus{
   border: 3px solid #d16fef;
 }
 
@@ -95,6 +95,7 @@ button:hover {
   label {
     width: 40%;
     margin-right: 0px;
+    margin-top: 50px;
   }
 
   input[type="number"] {
