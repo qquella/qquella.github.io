@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adding Binary Numbers</title>
-    <link rel="stylesheet" href="../styles/baseCon.css">
-	  <link rel="icon" type="image/x-icon" href="../images/favicon-q.png">
+    <link rel="stylesheet" href="../styles/addingBin.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon-q.png">
 </head>
+
 <body>
+  <a href="https://qquella.github.io/"><h2>qquella.github.io</h2></a>
     <div class="container">
         <h1>Adding Binary Numbers</h1>
         <div class="input-section">
-            <label for="base">Base:</label>
-            <input type="number" id="base" min="2" max="36" value="10"> 
+            <label for="n1">First Binary Number:</label>
+            <input type="number" id="n1" min="0" max="1" value="0"> 
             <span>&nbsp&nbsp</span>
-            <label for="decimal">Decimal Number:</label>
-            <input type="number" id="decimal" value="0">
-            <br><br><br>
-            <button id="convert">Convert</button>
+            <label for="n2">Second Binary Number:</label>
+            <input type="number" id="n2" min="0" max="1" value="0">
+            <br><br><br><br>
+            <button id="add">Add!</button>
         </div>
         <br>
         <div class="output-section">
@@ -25,6 +27,6 @@
             <span id="result">0</span>
         </div>
     </div>
-    <script src="../scripts/baseCon.js"></script>
+    <script src="../scripts/addingBin.js"></script>
 </body>
 </html>
