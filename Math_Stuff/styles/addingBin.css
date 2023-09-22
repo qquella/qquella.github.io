@@ -47,6 +47,8 @@ label {
   margin-right: 2px;
   font-size: 1.2em;
   white-space: normal;
+  text-shadow: 4px 4px 4px rgba(220, 161, 233, 0.935);
+
 }
 
 input[type="text"] {
@@ -57,7 +59,7 @@ input[type="text"] {
   font-size: 20px;
 }
 
-input[type="text"]:focus{
+input:focus{
   border: 3px solid #d16fef;
 }
 
@@ -89,6 +91,7 @@ button:hover {
   margin-right: 10px;
   font-size: 1.2em;
 }
+
 
 @media screen and (min-width: 770px) {
 .input-display{
