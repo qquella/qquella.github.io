@@ -17,7 +17,7 @@ h1 {
   padding: 15px; /* Add some padding for space */
   background-color: #fa6b9a;; /* Add a light background color */
   border-radius: 40px; /* Round the corners */
-  box-shadow: 0 4px 6px rgb(223 111 166 / 10%);
+  box-shadow: 0 4px 6px rgba(179, 143, 241, 0.1);
   text-align: center; /* Center align the text */
   display: inline-block;
   border: 5px solid #fedbe9;
