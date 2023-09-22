@@ -13,20 +13,30 @@
     <div class="container">
         <h1>Binary Multiplication</h1>
         <div class="input-section">
+          <div class="input-display">
             <label for="n1">First Binary Number:</label>
             <input type="text" id="n1" value="0"> 
-            <span>&nbsp&nbsp</span>
+            <span>&nbsp</span>
+            <span id="n1D" class="result">0</span>
+            <span>&nbsp</span>
             <label for="n2">Second Binary Number:</label>
-            <!-- <input type="number" id="n2" value="0"> -->
             <input type="text" id="n2" value="0">
+            <span>&nbsp</span>
+            <span id="n2D" class="result">0</span>
 
             <br><br><br><br>
-            <button id="add">Multiply!</button>
+          </div> 
+            <button id="add">Add!</button>
         </div>
         <br>
+
+        <span class="space"><br></span>
         <div class="output-section">
-            <label for="result">Result:</label>
-            <span id="result">0</span>
+            <label for="resultB" class="result-label">Binary Result:</label>
+            <span id="resultB" class="result">0</span>
+            <span>&nbsp&nbsp</span>
+            <label for="resultD" class="result-label">Decimal Result:</label>
+            <span id="resultD" class="result">0</span>
         </div>
     </div>
     <script src="../scripts/binMuti.js"></script>
