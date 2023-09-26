@@ -9,6 +9,18 @@ body {
 }
 
 h2{
+  margin: 30px;
+  text-shadow: 2px 2px 2px rgba(231, 176, 243, 0.935);
+  color: #8269f4;
+  font-size: 1.6em;
+}
+
+h3{
+  color: #dd77e6;
+  font-size: 1.3em;
+}
+
+a h2{
   margin: 15px;
 }
 a{
@@ -126,6 +138,44 @@ button:hover {
   left: -6%;
   margin-top: 40px;
 }
+p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+  margin: 30px auto;
+  
+}
+
+main{
+  position: relative;
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+
+table.center {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+table.center th, table.center td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table.center th {
+  font-weight: bold;
+}
+
+.break {
+  clear: both;
+}
+
+
+
 
 
 @media screen and (min-width: 751px) {
@@ -173,6 +223,7 @@ button:hover {
   div.output-section label{
     margin-top: 30px;
   }
+
 }
 
 @media screen and (max-width: 617px) {
