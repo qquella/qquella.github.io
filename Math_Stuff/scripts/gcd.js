@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   numCountInput.addEventListener("input", () => {
       const numCount = parseInt(numCountInput.value);
 
-      if (!isNaN(numCount) && numCount >= 2) {
+      if (!isNaN(numCount) && numCount >= 1) {
           inputFields = [];
 
           // Clear existing input fields

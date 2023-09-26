@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal/Two’s Complement Converter</title>
+    <link rel="stylesheet" href="../styles/de2com.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon-q.png">
+</head>
+
+<body>
+  <a href="https://qquella.github.io/"><h2>qquella.github.io</h2></a>
+    <div class="container">
+        <h1>Decimal/Two’s Complement Converter</h1>
+        <div class="input-section">
+          <div class="input-display">
+
+          <div class="column">
+            <label for="n1">Decimal Integer: </label>
+            <input type="text" id="n1" value="" placeholder="e.g., -123"> 
+            <span>&nbsp</span>
+            <span id="n1D" class="result">0</span>
+            <span>&nbsp&nbsp&nbsp</span>
+            <br> 
+            <button id="convert1">Converts to two's complement binary integer!</button>
+            <br>
+            <div class="output1">
+            <label for="resultB" class="result-label">Binary Result:</label>
+            <span id="resultB" class="result">0</span>
+          </div>
+          </div>
+
+          <div class="column">
+            <label for="n2">Two's Complement Binary Integer:</label>
+            <input type="text" id="n2" value="" placeholder="e.g., 00010110">
+            <span>&nbsp</span>
+            <span id="n2D" class="result">0</span>
+            <br> <span>&nbsp&nbsp&nbsp&nbsp</span>
+            <button id="convert2" class="right">Converts to decimal integer!</button>
+            <br>
+
+          <div class="output2">
+            <label for="resultD" class="result-label">Decimal Result:</label>
+            <span id="resultD" class="result">0</span>
+          </div>
+          </div>
+            
+          </div> 
+        </div>
+    </div>
+    <script src="../scripts/de2com.js"></script>
+</body>
+</html>
