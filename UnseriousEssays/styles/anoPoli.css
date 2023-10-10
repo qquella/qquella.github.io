@@ -41,7 +41,7 @@ button {
   background-color: #008bdb; /* Vibrant red button background */
   color: #FFF; /* White button text */
   font-family: 'Raleway', sans-serif;
-  width: 32%;
+  width: 30%;
   font-size: 1.3em;
   border: none;
   padding: 10px 20px;
@@ -97,7 +97,7 @@ button:hover {
 .feedbackB {
   background-color: #008bdb; /* Blue button background */
   color: #FFF; /* White button text */
-  width: 30%;
+  width: 80%;
   font-size: 1em;
   border: none;
   padding: 10px 20px;
@@ -113,6 +113,8 @@ button:hover {
 input{
   width: 200px;
   height: 25px;
+  font-size: 1.2em;
+  font-family: 'Playfair Display', serif;
 }
 
 p {
@@ -143,6 +145,11 @@ video {
   height: auto;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+
+textarea{
+  font-size: 1.6em;
+  font-family: 'Playfair Display', serif;
 }
 
 /* Media Queries */
