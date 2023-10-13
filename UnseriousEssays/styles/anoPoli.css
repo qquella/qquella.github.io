@@ -149,8 +149,9 @@ video {
 }
 
 textarea{
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-family: 'Playfair Display', serif;
+  height: 6.2em;
 }
 
 figcaption{
