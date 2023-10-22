@@ -1,0 +1,151 @@
+
+body {
+  background-color: rgb(239, 215, 218);
+  color: rgb(0, 0, 0);
+  font-family: Baskerville, Baskerville;
+}
+header{
+  text-align: center;
+}
+
+nav{
+  color: #53323e;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  position: relative;
+   /* Use a fancy cursive font */
+  color: #53323e; /* Set a vibrant color */
+  text-shadow: 4px 4px 4px rgba(255, 227, 239, 0.6); /* Add a subtle text shadow */
+  letter-spacing: 3px; /* Increase letter spacing */
+  text-transform: uppercase; /* Transform text to uppercase */
+  text-align: center; /* Center align the text */
+  display: inline-block;
+}
+h2{
+  color: #ffffff;
+  margin: 0;
+}
+
+.icon{
+  max-width: 10%;
+  margin: 5px auto;
+  display: inline;
+
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 2px lightcoral;
+}
+a:hover {
+  background-color: #6f3444;
+}
+
+/* Left links style */
+.left-links, .right-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 12px;
+  text-align: center;
+}
+
+.left-links li, .right-links li {
+  margin-bottom: 10px;
+  margin: 25px 10px;
+  font-size: 20px;
+}
+
+.left-links a, .right-links a {
+  display: block; /* Display links as blocks */
+  color: #53323e;
+  text-decoration: underline;
+  text-shadow: 1px 2px lightcoral;
+}
+
+/* Contact button style */
+.contact-button {
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 90%;
+}
+
+.contact-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+}
+
+.contact-button:hover .contact-dropdown {
+  display: block;
+}
+
+/* Text blocks style */
+.text-blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+ 
+}
+
+.text-block {
+  flex: 1;
+  padding: 10px;
+}
+
+.text-left{
+  border-right: 1px solid #fff;
+}
+
+
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px; /* Decrease font size for smaller screens */
+  }
+
+  nav li {
+    margin: 15px 10px; /* Adjust margin for smaller screens */
+  }
+
+  nav a {
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px; /* Further decrease font size for very small screens */
+  }
+
+  nav li {
+    margin: 15px 5px; /* Further adjust margin for very small screens */
+  }
+
+  nav a {
+    padding: 10px; /* Further adjust padding for very small screens */
+  }
+}
+
+
+
+
