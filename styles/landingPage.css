@@ -14,6 +14,9 @@ a.webLink{
   color: white;
   text-decoration: none;
   text-shadow: 1px 2px lightcoral;
+  padding-top: 0;
+  line-height: .4em;
+  font-size: .8em;
 }
 .webLink:hover{
   font-size: inherit;
@@ -104,7 +107,7 @@ a:hover {
   padding: 5px 0;
   margin: 5px 0;
   text-shadow: 1px 2px lightcoral;
-  font-size: 1.23em;
+  font-size: 1.05em;
 }
 
 .contact-button {
@@ -155,6 +158,10 @@ a:hover {
   border-right: 1px solid #fff;
 }
 
+.inner-text{
+  margin: 5px 15px;
+  margin-right: 35px;
+}
 
 /* feedback */
 .feedback_Area{
@@ -222,7 +229,7 @@ footer {
   background-color: #53323e;
   color: #fff;
   text-align: center;
-  padding: 70px;
+  padding: 50px;
   margin: 5% -2%;
   margin-bottom: 0;
   position: relative;
@@ -271,18 +278,65 @@ footer {
 /* Media query for screens smaller than 480px */
 @media (max-width: 480px) {
   h1 {
-    font-size: 20px; /* Further decrease font size for very small screens */
+    font-size: 26px; 
+    margin: 1px;
   }
 
-  nav li {
+  li {
     margin: 15px 5px; /* Further adjust margin for very small screens */
   }
 
-  nav a {
+  a {
     padding: 10px; /* Further adjust padding for very small screens */
   }
+  .contact-button{
+    font-size: 1.1em;
+    margin-left: 80%;
+  }
+
+  .text-blocks{
+    padding-top: 0;
+    display: block;
+  }
+  .text-block{
+    padding-top: 0;
+  }
+
+  nav{
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .left-links li{
+    margin: 15px 5px;
+  }
+  ul.left-links, ul.right-links{
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .footer-links {
+    justify-content: center; /* Center the links on small screens */
+  }
+
+  .footer-link, .copyright {
+    margin: 0;
+    display: block; /* Display links and copyright in a column on small screens */
+  }
+
+  .copyright {
+    text-align: center; 
+    font-size: .8em;
+    margin-top: 7px;
 }
 
-
+a.footer-link{
+  padding-top: 1px;
+}
+}
 
 
