@@ -5,17 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/landingPage.css">
   <link rel="icon" type="image/x-icon" href="images/favicon-q.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <!-- Real Header lol -->
 <body>
-	<a href="https://qquella.com/"><h2>qquella.com</h2></a>
+	<a class="webLink" href="https://qquella.com/"><h2>qquella.com</h2></a>
   
   <div class="contact-button">
-    Contact
+    <span class="contact">Contact</span>
     <div class="contact-dropdown">
-        <a href="#">Email</a>
-        <a href="#">Feedback</a>
+        <a href="mailto: mikuquella@gmail.com">Email</a>
+        <a href="#feedback_Area">Feedback</a>
     </div>
 </div>
 
@@ -24,7 +27,6 @@
   <header>
 	  <h1>About</h1>
   </header>
-    <br>
    
     <!-- Navigation links -->
   <nav>
@@ -32,6 +34,7 @@
       <li><a href="./Games/Spielen.html">Games</a></li>
       <li><a href="./UnseriousEssays/essays.html">Unserious essays</a></li>
       <li><a href="./Math_Stuff/nav-math.html">Math Tools</a></li>
+      <li><a href="#">weitere</a></li>
     </ul>
 
     <img class="icon" src="images/favicon-q.png" alt="icon">
@@ -39,6 +42,7 @@
     <ul class="right-links">
       <li><a href="#">weitere</a></li>
       <li><a href="./Nebengeschäft/littleLove.html">Little Love</a></li>
+      <li><a href="#">weitere</a></li>
       <li><a href="#">weitere</a></li>
     </ul>
   </nav>
@@ -55,6 +59,45 @@
     </div>
 </div>
 
-</div>
+<br><br>
+<!-- comments section -->
+<a id="feedback_Area"></a>
+<div class="feedback_Area">
+  <h1><button onclick="toggleText('expandedText14')" class="feedbackB">Feedback</button></h1>
+
+    <form action="https://formspree.io/f/mknaablk" method="POST">
+
+      Your name: <br>
+      <input class="input-name" type="text" name="realname"><br>
+      <br>
+      
+      Your email: <br>
+      <input type="email" name="email"><br>
+      <br>
+      
+      Your comments: <br>
+      <textarea name="comments" rows="15" cols="50"></textarea><br>
+      
+      <button class="submit" type="submit">Submit!</button>
+
+      </form>
+
+  </div> 
+  <!-- end feedback -->
+
+
+  <footer>
+    <div class="footer-links">
+        <a class="footer-link" href="https://www.instagram.com/quinnuella_">Instagram</a>
+        <div style="border-right: 1px solid #fff; height: 20px; margin: 0 25px;"></div>
+        <a class="footer-link" href="mailto: mikuquella@gmail.com">Email</a> 
+      </div>
+        <div class="copyright">Power by: Quella W</div>
+   
+</footer>
+
+
+
 </body>
+
 </html>

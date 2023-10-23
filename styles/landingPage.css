@@ -3,9 +3,24 @@ body {
   background-color: rgb(239, 215, 218);
   color: rgb(0, 0, 0);
   font-family: Baskerville, Baskerville;
+  overflow-x: hidden;
+  margin-bottom: 0;
 }
 header{
   text-align: center;
+}
+
+a.webLink{
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 2px lightcoral;
+}
+.webLink:hover{
+  font-size: inherit;
+}
+a.webLink h2{
+  margin-left: 8px;
+  font-weight: 600;
 }
 
 nav{
@@ -18,33 +33,37 @@ nav{
 
 h1 {
   position: relative;
-   /* Use a fancy cursive font */
-  color: #53323e; /* Set a vibrant color */
-  text-shadow: 4px 4px 4px rgba(255, 227, 239, 0.6); /* Add a subtle text shadow */
-  letter-spacing: 3px; /* Increase letter spacing */
-  text-transform: uppercase; /* Transform text to uppercase */
-  text-align: center; /* Center align the text */
-  display: inline-block;
+  color: #53323e; 
+  text-shadow: 4px 4px 4px rgba(255, 227, 239, 0.6); 
+  letter-spacing: 5px; 
+  text-transform: uppercase; 
+  text-align: center;
+  font-family: 'Lora', serif;
+  text-shadow: 1px 2px rgb(247, 216, 216);
+  font-weight: 500;
 }
+h1:hover{
+
+  text-decoration: underline;
+  text-decoration-color: #f4c5c5;
+}
+
 h2{
   color: #ffffff;
   margin: 0;
 }
 
 .icon{
-  max-width: 10%;
+  max-width: 18%;
   margin: 5px auto;
   display: inline;
 
 }
 
-a{
+li a, .contact-dropdown a{
   color: white;
   text-decoration: none;
   text-shadow: 1px 2px lightcoral;
-}
-a:hover {
-  background-color: #6f3444;
 }
 
 /* Left links style */
@@ -62,22 +81,39 @@ a:hover {
 .left-links li, .right-links li {
   margin-bottom: 10px;
   margin: 25px 10px;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .left-links a, .right-links a {
   display: block; /* Display links as blocks */
-  color: #53323e;
+  color: #4b2b37;
   text-decoration: underline;
-  text-shadow: 1px 2px lightcoral;
+  text-decoration-color: #f4c5c5;
+  text-shadow: 1px .8px rgb(237, 163, 173);
+  font-size: 1.13em;
 }
 
+a:hover {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+
 /* Contact button style */
+.contact{
+  padding: 5px 0;
+  margin: 5px 0;
+  text-shadow: 1px 2px lightcoral;
+  font-size: 1.23em;
+}
+
 .contact-button {
   position: relative;
   cursor: pointer;
   color: #fff;
-  margin-left: 90%;
+  margin-left: 86%;
+  font-size: 1.3em;
+  display: inline-block;
 }
 
 .contact-dropdown {
@@ -85,10 +121,16 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #333;
+  background-color: #53323e;
   color: #fff;
   padding: 10px;
+  border-radius: 10px;
   text-align: right;
+  z-index: 1;
+}
+
+.contact-dropdown a{
+
 }
 
 .contact-button:hover .contact-dropdown {
@@ -101,7 +143,7 @@ a:hover {
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
- 
+ color: #53323e;
 }
 
 .text-block {
@@ -112,6 +154,101 @@ a:hover {
 .text-left{
   border-right: 1px solid #fff;
 }
+
+
+/* feedback */
+.feedback_Area{
+  text-align: center;
+  font-size: 1.3em;
+  border-top: 1px solid #fff;
+  border-top-style: dotted;
+}
+
+.feedbackB {
+  color: #FFF; 
+  background: none;
+  font-size: .8em;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lora', serif;
+  text-shadow: 2px 2px lightcoral;
+
+}
+
+.feedbackB:hover {
+  font-size: 1.1em;
+}
+
+input{
+  width: 200px;
+  height: 25px;
+  font-size: 1.2em;
+  font-family: Baskerville, Baskerville;
+  margin: 4px 0;
+}
+
+.input-name{
+  width: 100px;
+}
+
+textarea{
+  font-size: 1.3em;
+  font-family: Baskerville, Baskerville;
+  height: 6.2em;
+  width: 500px;
+  max-width: 60%;
+  margin: 5px 0;
+}
+
+.submit{
+  color: #FFF; 
+  background: none;
+  font-size: 1.35em;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lora', serif;
+  text-shadow: 2px 1px lightcoral;
+  text-decoration: underline;
+  text-decoration-color: #f4c5c5;
+  margin: 8px 0;
+}
+.submit:hover{
+  font-size: 1.6em;
+  
+}
+
+/* Footer style */
+footer {
+  background-color: #53323e;
+  color: #fff;
+  text-align: center;
+  padding: 70px;
+  margin: 5% -2%;
+  margin-bottom: 0;
+  position: relative;
+  max-width: 100%; /* Set the width to 100% */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.footer-link, .copyright {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 2px lightcoral;
+  margin: 0 0;
+}
+
+.copyright{
+  position:relative;
+  text-align: right;
+  bottom: -10%;
+  font-size: .95em;
+}
+
 
 
 
