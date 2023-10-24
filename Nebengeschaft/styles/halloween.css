@@ -1,0 +1,104 @@
+/*css file*/
+#countdown {
+  font-size: 188px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 200px;
+
+  animation-name: countdown;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes countdown {
+  0% {
+    color: rgba(226, 90, 5, 0.965);
+  }
+  20% {
+    color: rgba(176, 79, 27, 0.965);
+  }
+  40% {
+    color: rgba(225, 120, 51, 0.965);
+  }
+  60% {
+    color: rgba(214, 130, 78, 0.965);
+  }
+  80% {
+    color: rgba(241, 181, 125, 0.965);
+  }
+  100% {
+    color: rgba(245, 192, 151, 0.965);
+  }
+}
+
+#graffiti {
+  font-family: 'Graffiti', cursive;
+  font-size: 170px;
+  text-align: center;
+  margin-top: 100px;
+  display: none;
+  margin: 0px;
+}
+#fireworks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+.firework {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffcc00;
+  transform: translate(-50%, -50%);
+  animation: fireworks 2s infinite;
+}
+@keyframes fireworks {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.aImg{
+  display: none;
+  max-width: 72%;
+  height: relative;
+  margin: 5px auto;
+  padding: 1px auto;
+  width: 900px;
+  /* margin-left: 15%;
+  margin-right: auto; */
+}
+.banner{
+  color: #f5a388;
+}
+
+#hw1{
+  display: none;
+  max-width: 60%;
+  width: 400px;
+  margin: 5px auto;
+  padding: 1px auto;
+}
+
+div{
+  text-align: center;
+}
