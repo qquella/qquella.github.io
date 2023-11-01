@@ -67,7 +67,7 @@ h2{
   width: 500px;
   margin: 5px auto;
   display: inline;
-
+  object-fit: cover;
 }
 
 li a, .contact-dropdown a{
