@@ -231,6 +231,60 @@ a:hover {
   font-size: 1.31em;
 }
 
+/* pop up window */
+/* Style for the pop-up window */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 10000px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f6ede6;
+  width: 80%;
+  max-height: 80%; /* maximum height for scrolling */
+  overflow: auto; /* Add scrollbars when content exceeds the max height */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.popup p{
+  font-size: 1.1em;
+}
+.popup h2{
+  color: #DA291C;
+}
+.popup img{
+  max-width: 100%;
+  width:10000px;
+  margin: 4% auto;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: #DA291C;
+  color: white;
+}
+
+
+
 /* feedback */
 .feedback_Area{
   text-align: center;

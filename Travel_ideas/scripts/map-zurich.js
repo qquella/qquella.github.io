@@ -45,3 +45,19 @@
   document.getElementById("printButton").addEventListener("click", function() {
     window.print();
   });
+
+  //detail pop-up for attrations
+  // Show the pop-up when clicking on "Grossmünster"
+  document.getElementById('word-link').addEventListener('click', function() {
+    document.getElementById('word-popup').style.display = 'block';
+  });
+
+  document.addEventListener("click", e => {
+    if(e.target !== document.getElementById("word-link")){
+      document.getElementById('word-popup').style.display = 'none';
+    }
+  })
+  // // Close the pop-up when clicking the close button
+  // document.getElementById('close-popup').addEventListener('click', function() {
+  //   document.getElementById('word-popup').style.display = 'none';
+  // });
