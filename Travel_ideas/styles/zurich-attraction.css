@@ -4,22 +4,75 @@ body {
   color: rgb(0, 0, 0);
   font-family: Baskerville, Baskerville;
   overflow-x: hidden;
+  margin: 0 0;
   margin-bottom: 0;
 }
+
+.container{
+  margin: 1% 3.5%;
+}
+
+/* for the lovely header w/ pic */
 header{
   text-align: center;
 }
+
+.head-bg{
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container-head{
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4% 3%;
+  background-color: #ffffff;
+}
+
+.centered h1{
+  color: #DA291C;
+  font-weight: 900;
+}
+.centered p{
+  color: #fa8989;
+  font-weight: 900;
+}
+
 p{
   color: #53323e;
   margin: .8% auto;
-  font-size: 1.06em;
+  font-size: 1.4em;
   margin-bottom: .3%;
 }
 a.webLink{
   color: white;
   text-decoration: none;
   text-shadow: 1px 2px lightcoral;
-  padding-top: 0;
+ margin-top: 2%;
   line-height: .4em;
   font-size: .8em;
 }
@@ -28,6 +81,7 @@ a.webLink{
 }
 a.webLink h2{
   margin-left: 8px;
+  margin-top: 2%;
   font-weight: 600;
 }
 
@@ -60,66 +114,10 @@ h2{
   margin: 0;
 }
 
-.icon{
-  max-width: 40%;
-  margin: 5px auto;
-  display: inline;
-}
-
-/* for my map */
-.myMap{
-  max-width: 45%;
-  width: 50%;
-}
-
-/* link for world map */
-.sec-map li{
-  list-style: none;
-  padding: 1% 0;
-  margin: 1px auto;
-  display: block;
-  text-align: center;
-}
-.sec-map li a{
-  color: #f770a1;
-  text-decoration: underline;
-  text-decoration-color: #f0d6d6;
-  text-shadow: 1px .8px rgb(237, 163, 173);
-  padding: 1.3% 1%;
-  font-size: 1.1em;
-}
-
 li a, .contact-dropdown a{
   color: white;
   text-decoration: none;
   text-shadow: 1px 2px lightcoral;
-}
-
-/* Left links style */
-.left-links, .right-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  max-width: 100%;
-  margin: 10px auto;
-  padding: 12px;
-  text-align: center;
-}
-
-.left-links li, .right-links li {
-  margin-bottom: 10px;
-  margin: 25px 10px;
-  font-size: 23px;
-}
-
-.left-links a, .right-links a {
-  display: block; /* Display links as blocks */
-  color: #4b2b37;
-  text-decoration: underline;
-  text-decoration-color: #f4c5c5;
-  text-shadow: 1px .8px rgb(237, 163, 173);
-  font-size: 1.13em;
 }
 
 a:hover {
@@ -140,7 +138,6 @@ a:hover {
   position: relative;
   cursor: pointer;
   color: #fff;
-  margin-left: 86%;
   font-size: 1.3em;
   display: inline-block;
 }
@@ -166,28 +163,72 @@ a:hover {
   display: block;
 }
 
-/* Text blocks style */
-.text-blocks {
+/* container section */
+.container-items{
+  display: block;
+  padding: 3% 0;
+}
+
+.container-item{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  color: #53323e;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 5% 0;
+  border-bottom: #350400;
+}
+
+.container-media{
+  position: relative;
+  display: inline-block;
+}
+
+.container-img{
+  max-width: 100%;
+  width: 30000px;
+  margin: 3% 0;
+  margin-left: 4%;
+}
+
+.container-text{
+  font-family: Baskerville, Baskerville;
+}
+
+.container-text-p{
+  font-size: 1.2em;
+  margin: 4% 0;
+}
+
+.big_num{
+  display: flex;
+  font-size: 4em;
+  font-weight: 900;
+  text-align: left;
+  color: #350400;
+}
+
+.big_word{
+  font-size: 3em;
+  color: #DA291C;
+  text-decoration: underline;
+  text-decoration-color: #ffc7c3;
+  text-decoration-style: wavy;
+}
+
+.container-btn{
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-family: Baskerville, Baskerville;
+}
+.container-btn span{
   font-size: 1.3em;
+  color: #DA291C;
 }
-
-.text-block {
-  flex: 1;
-  padding: 10px;
-}
-
-.text-left{
-  border-right: 1px solid #fff;
-}
-
-.inner-text{
-  margin: 5px 15px;
-  margin-right: 35px;
+.container-btn span:hover{
+  text-decoration: underline;
+  text-decoration-color: #ffc7c3;
+  font-size: 1.31em;
 }
 
 /* feedback */
