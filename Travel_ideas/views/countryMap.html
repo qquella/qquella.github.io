@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About</title>
+	<title>Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../styles/countryMap.css">
   <link rel="icon" type="image/x-icon" href="../images/favicon-q.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <!-- Real Header lol -->
@@ -18,26 +19,48 @@
     <span class="contact">Contact</span>
     <div class="contact-dropdown">
         <a href="mailto: mikuquella@gmail.com">Email</a>
-        <a href="#feedback_Area">Feedback</a>
+        <a href="https://www.instagram.com/quinnuella_">Instagram</a>
     </div>
+</div>
+
+<header>
+  <h1>Places You Have Visited</h1>
+  <p>📍 Click on the continents to choose countries on the map ✨</p>
+</header>
+
+<!-- share button -->
+<div class="share-print">
+  <button class="fa fa-share-alt" id="shareButton"><span>Share</span></button>
+    <div id="shareOptions">
+      <a href="#" data-option="whatsapp">WhatsApp</a>
+      <a href="#" data-option="twitter">Twitter</a>
+      <a href="#" data-option="instagram">Instagram</a>
+      <a href="#" data-option="mail">Email</a>
+      <a href="#" data-option="snapchat">Snapchat</a>
+      <a href="#" data-option="pinterest">Pinterest</a>
+      <a href="#" data-option="clipboard">Copy to Clipboard</a>
+    </div>
+    <!-- print button -->
+  <button class="fa fa-print" id="printButton"><span>Print</span></button>
 </div>
 
 <!-- Interactive Country Map -->
 
 <div id="continent-buttons">
-  <button data-continent="Europe">Europe</button>
-  <button data-continent="North America">North America</button>
-  <button data-continent="South America">South America</button>
-  <button data-continent="Asia">Asia</button>
-  <button data-continent="Africa">Africa</button>
-  <button data-continent="Australia">Australia</button>
+  <button data-continent="Europe" class="continent-button">Europe</button>
+  <button data-continent="North America" class="continent-button">North America</button>
+  <button data-continent="South America" class="continent-button">South America</button>
+  <button data-continent="Asia" class="continent-button">Asia</button>
+  <button data-continent="Africa" class="continent-button">Africa</button>
+  <button data-continent="Oceania" class="continent-button">Oceania</button>
+  <button data-continent="Antarctica" class="continent-button">Antarctica</button>
 </div>
 
 <ul id="country-list">
   <!-- Country list will be populated dynamically -->
 </ul>
 
-<div id="countriesMap_div"></div>
+<div class="countryMap" id="countriesMap_div"></div>
 
 
 
@@ -58,7 +81,7 @@
 
 </html>
 
-
+<!-- 
 <div class="countryMap" id="countriesMap_div"></div>
     <ul id="country-list">
         <li data-country="Germany">Germany</li>
@@ -67,5 +90,10 @@
         <li data-country="CA">Canada</li>
         <li data-country="FR">France</li>
         <li data-country="RU">Russia</li>
-
     </ul>
+
+    <ul id="country-list">
+      <li data-country="Germany">Germany</li>
+      <li data-country="France">France</li>
+      <li data-country="Spain">Spain</li>
+    </ul> -->

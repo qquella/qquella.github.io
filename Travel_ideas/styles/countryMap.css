@@ -11,7 +11,8 @@ header{
 }
 p{
   color: #53323e;
-  margin-bottom: 0;
+  margin: 1% auto;
+  font-size: 1.1em;
 }
 a.webLink{
   color: white;
@@ -46,6 +47,7 @@ h1 {
   font-family: 'Lora', serif;
   text-shadow: 1px 2px rgb(247, 216, 216);
   font-weight: 500;
+  margin: .4em auto;
 }
 h1:hover{
 
@@ -60,9 +62,9 @@ h2{
 
 /* for my map */
 .myMap, .countryMap{
-  max-width: 88%;
-  width: 50%;
-  margin: 3% auto;
+  max-width: 92%;
+  width: 1000px;
+  margin: 2% auto;
 }
 
 .contact-dropdown a{
@@ -120,12 +122,64 @@ a:hover {
   text-decoration-color: #f4b7cd;
 }
 
+#continent-buttons{
+  padding: 5px 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+.continent-button{
+  padding: 6px 10px;
+  margin: 1px 8px;
+  color: #53323e;
+  font-family: Baskerville, Baskerville;
+  border-radius:10em;
+  border-color: #f4b7cd;
+  font-size: 1em;
+  background-color: rgb(252, 247, 250);
+}
+.continent-button:hover{
+  background-color: #f8d1d1;
+}
+
+#country-list{
+  margin: 1% auto;
+  text-align: center;
+}
+
 #country-list li:hover{
   font-size: 1.2em;
   color: #160e0e;
   text-shadow: 2px 3px rgb(225, 128, 240);
 }
 
+/* Share & Print button */
+.share-print{
+  margin: 1.5% auto;
+  text-align: center;
+  margin-top: 2%;
+}
+
+#shareOptions{
+  display: none;
+  padding: 2% 2%;
+}
+#shareOptions a{
+  text-decoration: none;
+  padding: 1.5% 1.5%;
+  color: #523013;
+}
+#shareButton, #printButton{
+  padding: 0 4%;
+  background: none;
+  border: 0;
+  font-weight: 1;
+  font-size: 1.5em;
+  color: #6e4457;
+}
+#shareButton span, #printButton span{
+  display: block;
+  font-size: .5em;
+}
 
 /* Footer style */
 footer {
