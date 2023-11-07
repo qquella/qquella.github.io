@@ -312,6 +312,19 @@ countryList.addEventListener('click', function (event) {
         pinterest: `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(urlToShare)}`,
         clipboard: urlToShare,
       };
+      if (shareUrls[selectedOption]) {
+        window.open(shareUrls[selectedOption], '_blank');
+      } else if (selectedOption === 'clipboard') {
+        const tempInput = document.createElement("input");
+        tempInput.value = shareUrls[selectedOption];
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        alert("Link copied to clipboard");
+      } else {
+        alert("Invalid selection");
+      }
     }
     shareOptions.style.display = "none";
   });
