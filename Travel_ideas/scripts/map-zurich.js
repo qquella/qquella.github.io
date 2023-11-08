@@ -47,17 +47,42 @@
   });
 
   //detail pop-up for attrations
-  // Show the pop-up when clicking on "Grossmünster"
-  document.getElementById('word-link').addEventListener('click', function() {
-    document.getElementById('word-popup').style.display = 'block';
+  // Reusable function to open and close pop-ups
+function togglePopup(popupId) {
+  var popup = document.getElementById(popupId);
+  if (popup.style.display === 'block') {
+    popup.style.display = 'none';
+  } else {
+    popup.style.display = 'block';
+  }
+}
+// Close the pop-up when clicking the background overlay
+function closePopupOnOverlayClick() {
+  var popups = document.querySelectorAll('.popup');
+  popups.forEach(function (popup) {
+    popup.addEventListener('click', function (e) {
+      if (e.target === this) {
+        this.style.display = 'none';
+      }
+    });
   });
+}
+// Attach the function to all elements with class 'popup-trigger'
+var popupTriggers = document.querySelectorAll('.popup-trigger');
+popupTriggers.forEach(function (trigger) {
+  trigger.addEventListener('click', function () {
+    var popupId = this.getAttribute('data-popup');
+    togglePopup(popupId);
+    closePopupOnOverlayClick()
+  });
+});
 
-  document.addEventListener("click", e => {
-    if(e.target !== document.getElementById("word-link")){
-      document.getElementById('word-popup').style.display = 'none';
-    }
-  })
-  // // Close the pop-up when clicking the close button
-  // document.getElementById('close-popup').addEventListener('click', function() {
-  //   document.getElementById('word-popup').style.display = 'none';
-  // });
+// Close the pop-up when clicking the close button
+var closeButtons = document.querySelectorAll('.close');
+closeButtons.forEach(function (closeButton) {
+  closeButton.addEventListener('click', function () {
+    var popupId = this.getAttribute('data-popup');
+    togglePopup(popupId);
+  });
+});
+  
