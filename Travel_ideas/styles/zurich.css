@@ -60,12 +60,6 @@ h2{
   margin: 0;
 }
 
-.icon{
-  max-width: 40%;
-  margin: 5px auto;
-  display: inline;
-}
-
 /* for my map */
 .myMap{
   max-width: 45%;
@@ -93,6 +87,40 @@ li a, .contact-dropdown a{
   color: white;
   text-decoration: none;
   text-shadow: 1px 2px lightcoral;
+}
+
+/* for the icon image */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+}
+
+.icon {
+  max-width: 70%;
+  margin: 5px auto;
+}
+
+.icon + span {
+  text-align: center; /* Center the text horizontally */
+  font-size: 1.13em;
+  color: #4b2b37;
+  text-decoration: underline;
+  text-decoration-color: #f4c5c5;
+  text-shadow: 1px .8px rgb(237, 163, 173);
+}
+
+.icon + span a {
+  color: inherit;
+}
+
+div.icon-container span{
+ font-size: 1em;
+}
+
+div.icon-container a{
+  text-decoration: none;
+  color: #b80310;
 }
 
 /* Left links style */
