@@ -298,13 +298,13 @@ a:hover {
 }
 
 .feedbackB {
-  color: #FFF; 
+  color: #DA291C; 
   background: none;
-  font-size: .8em;
+  font-size: 1em;
   border: none;
   cursor: pointer;
   font-family: 'Lora', serif;
-  text-shadow: 2px 2px lightcoral;
+  text-shadow: 1px 2px rgb(241, 177, 177);
 
 }
 
@@ -334,13 +334,13 @@ textarea{
 }
 
 .submit{
-  color: #FFF; 
+  color: #DA291C; 
   background: none;
   font-size: 1.35em;
   border: none;
   cursor: pointer;
   font-family: 'Lora', serif;
-  text-shadow: 2px 1px lightcoral;
+  text-shadow: 2px 1px rgb(243, 185, 185);
   text-decoration: underline;
   text-decoration-color: #f4c5c5;
   margin: 8px 0;
@@ -403,14 +403,14 @@ iframe{
 
 /* Footer style */
 footer {
-  background-color: #53323e;
-  color: #fff;
+  background-color: #523013;
+  color: #DA291C;
   text-align: center;
   padding: 50px;
   margin: 5% -2%;
   margin-bottom: 0;
   position: relative;
-  max-width: 100%; /* Set the width to 100% */
+  max-width: 100%; 
 }
 
 .footer-links {
@@ -422,7 +422,7 @@ footer {
 .footer-link, .copyright {
   text-decoration: none;
   color: #fff;
-  text-shadow: 1px 2px lightcoral;
+  text-shadow: 1px 2px #DA291C;
   margin: 0 0;
 }
 
