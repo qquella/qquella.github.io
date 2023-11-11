@@ -22,7 +22,7 @@ form div.wrapper input[type=text] {
 form .reset-button {
   background-color: transparent;
   border: 0;
-  color: rgb(252, 178, 213);
+  color: rgb(239 84 157);
 }
 
 form .reset-button:hover {
@@ -1025,13 +1025,13 @@ p{
 a.webLink{
   color: white;
   text-decoration: none;
-  text-shadow: 2px 7px lightcoral;
+  text-shadow: 2px 4px lightcoral;
   padding-top: 2%;
   line-height: .4em;
-  font-size: .8em;
+  font-size: .99em;
 }
 .webLink:hover{
-  font-size: inherit;
+  font-size: 1.1em;
 }
 a.webLink h2{
   margin-left: 8px;
@@ -1056,11 +1056,12 @@ h1 {
   text-shadow: 1px 2px rgb(247, 216, 216);
   font-weight: 500;
   padding: 2% 0;
+  font-size: 2.5em;
 }
 h1:hover{
 
   text-decoration: underline;
-  text-decoration-color: #f4c5c5;
+  text-decoration-color: #ffcde2;
 }
 
 h2{
