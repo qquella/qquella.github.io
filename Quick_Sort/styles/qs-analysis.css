@@ -75,7 +75,7 @@ a:hover {
 }
 
 /* my lovely table & chart*/
-#table-container{
+#table-container, #table-container-median3{
   max-width: 80%;
   width: 500000px;
   margin: 4% auto;
@@ -93,7 +93,7 @@ tr{
   line-height: 1.5em;
 }
 
-#myChart{
+#myChart, #myChartMedian3{
   max-width: 65%;
   height: 400px;
   margin: 0 auto;
@@ -106,12 +106,12 @@ tr{
   max-width: 30%;
   text-align: center;
 }
-#startAnalysis:hover{
+#startAnalysis:hover, #startAnalysisMedian3:hover{
   background-color: #ffffff;
   font-size: 1.35em;
 }
 
-#startAnalysis{
+#startAnalysis, #startAnalysisMedian3{
   font-size: 1.3em;
   color: #523013;
   font-family: Baskerville, Baskerville;

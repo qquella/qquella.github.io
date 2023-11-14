@@ -1,0 +1,100 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 30% 3%;
+  padding-top: 1%;
+  margin: 10% 3%;
+  margin-top: 2%;
+  text-align: center;
+  background-color: black;
+  max-height: 100%;
+  overflow-y: hidden;
+  color: #ffffff;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.slide{
+  position: relative;
+}
+
+.slide h1 {
+  text-align: left;
+}
+
+.slide h2 {
+  font-size: 8.5em;
+  letter-spacing: .1em;
+  margin-bottom: 1%;
+  margin-top: .6em;
+}
+
+#slide1 p {
+  text-align: right;
+  margin-right: 3%;
+  margin-bottom: 0;
+}
+
+.v1 {
+  width: 80%;
+  text-align: left;
+}
+
+#slide2 h2 {
+  font-size: 6.5em;
+  margin-top: .1em;
+}
+#slide2 h2 span{
+  text-align: left;
+  display: block;
+  margin-top: 4%;
+  font-size: 1.9em;
+}
+
+.rainbow-header {
+  background-image: linear-gradient(to left, #F94144, #F3722C, #F9C74F, #90BE6D, #57BED6, #9C71D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 8vw;
+}
+
+
+
+
+/* logisitic about slides */
+.slide {
+  display: none;
+}
+
+.active-slide {
+  display: block;
+}
+
+
+#arrow-left, #arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  cursor: pointer;
+  color: #ffffff;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#arrow-left {
+  left: 20px;
+}
+
+#arrow-right {
+  right: 20px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}

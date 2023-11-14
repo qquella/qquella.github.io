@@ -2,15 +2,29 @@
 'use strict'
 
 // quick sort
-function quickSort(arr, lowIndex = 0, highIndex = arr.length - 1) {
-  // base case
-  if (lowIndex < highIndex) {
-    // find pivot index
-    let pivotIndex = partition(arr, lowIndex, highIndex);
+// function quickSort(arr, lowIndex = 0, highIndex = arr.length - 1) {
+//   // base case
+//   if (lowIndex < highIndex) {
+//     // find pivot index
+//     let pivotIndex = partition(arr, lowIndex, highIndex);
 
-    // recursively sort the sub-arrays
-    quickSort(arr, lowIndex, pivotIndex - 1); // left
-    quickSort(arr, pivotIndex + 1, highIndex); // right
+//     // recursively sort the sub-arrays
+//     quickSort(arr, lowIndex, pivotIndex - 1); // left
+//     quickSort(arr, pivotIndex + 1, highIndex); // right
+//   }
+// }
+
+//using this alternative to increse stack lol
+function quickSort(arr) {
+  const stack = [{ low: 0, high: arr.length - 1 }];
+
+  while (stack.length) {
+    const { low, high } = stack.pop();
+    if (low < high) {
+      const pivotIndex = partition(arr, low, high);
+      stack.push({ low, high: pivotIndex - 1 });
+      stack.push({ low: pivotIndex + 1, high });
+    }
   }
 }
 
@@ -69,7 +83,7 @@ function generateDescendingArray(size) {
   return arr;
 }
 
-const arraySizes = [10, 100, 1000, 5000, 5400];
+const arraySizes = [10, 100, 1000, 5000, 10000];
 const iterations = 100;
 let currentIteration = 0;
 let executionTimes = {
@@ -77,7 +91,6 @@ let executionTimes = {
   random: [],
   descending: [],
 };
-
 const ctx = document.getElementById('myChart').getContext('2d');
 let myChart;
 
@@ -198,4 +211,3 @@ myChart = new Chart(ctx, {
 document.querySelector('#startAnalysis').addEventListener('click', () => {
   animateChart();
 });
-
