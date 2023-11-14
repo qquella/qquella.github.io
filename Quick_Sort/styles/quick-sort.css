@@ -226,3 +226,29 @@ button {
   margin: 10px;
   cursor: pointer;
 }
+
+/* responsive */
+/* Responsive design using media queries */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5%;
+    margin: 5%;
+  }
+
+  #slide2 h2 {
+    font-size: 5em;
+  }
+
+  #slide5 textarea {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #slide2 h2 {
+    font-size: 4em;
+  }
+
+  #slide5 textarea {
+    font-size: 1.2em;
+  }
