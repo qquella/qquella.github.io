@@ -17,34 +17,21 @@ function quickSortMedian3(arr) {
 // partition function with median 3 method
 function partitionMedian3(arr, lowIndex, highIndex) {
   const midIndex = Math.floor((lowIndex + highIndex) / 2);
-  const pivotIndex = getMedianIndex(arr, lowIndex, midIndex, highIndex);
-  swap(arr, pivotIndex, highIndex);
-  return partition(arr, lowIndex, highIndex);
-}
 
-// helper method to get the median index
-function getMedianIndex(arr, low, mid, high) {
-  if (arr[low] < arr[mid]) {
-    return arr[mid] < arr[high] ? mid : (arr[low] < arr[high] ? high : low);
-  } else {
-    return arr[mid] < arr[high] ? (arr[low] < arr[high] ? low : high) : mid;
+  // Sort low, mid, and high to determine the median
+  if (arr[lowIndex] > arr[midIndex]) {
+    swap(arr, lowIndex, midIndex);
   }
-}
-
-// partition function
-function partition(arr, lowIndex, highIndex) {
-  let pivot = arr[highIndex];
-  let i = lowIndex - 1;
-
-  for (let j = lowIndex; j < highIndex; j++) {
-    if (arr[j] <= pivot) {
-      i++;
-      swap(arr, i, j);
-    }
+  if (arr[midIndex] > arr[highIndex]) {
+    swap(arr, midIndex, highIndex);
+  }
+  if (arr[lowIndex] > arr[midIndex]) {
+    swap(arr, lowIndex, midIndex);
   }
 
-  swap(arr, i + 1, highIndex);
-  return i + 1;
+  // Move the pivot to highIndex - 1 and return its index
+  swap(arr, midIndex, highIndex - 1);
+  return highIndex - 1;
 }
 
 // helper method to SWAP elements

@@ -30,10 +30,6 @@ function quickSort(arr) {
 
 // partition function
 function partition(arr, lowIndex, highIndex) {
-  const pivotIndex = Math.floor(Math.random() * (highIndex - lowIndex + 1)) + lowIndex;
-  // Swap the pivot element to the end of the array
-  swap(arr, pivotIndex, highIndex);
-
   let pivot = arr[highIndex];
   let i = lowIndex - 1;
 
@@ -87,7 +83,7 @@ function generateDescendingArray(size) {
   return arr;
 }
 
-const arraySizes = [10, 100, 1000, 5000, 10000, 100000, 1000000];
+const arraySizes = [10, 100, 1000, 5000, 10000];
 const iterations = 100;
 let currentIteration = 0;
 let executionTimes = {

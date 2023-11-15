@@ -50,15 +50,8 @@
       </h1>
       <pre class="hidden-text" style="display:none;">
         <code>    'use strict'
-
-      // Function to perform quicksort on an array
-      function quicksort(array) {
-        // Call the helper function with the initial parameters
-        quicksortHelper(array, 0, array.length - 1);
-      }
-
-      // Helper function for quicksort algorithm
-      function quicksortHelper(array, lowIndex, highIndex) {
+          
+      function quickSort(arr, lowIndex = 0, highIndex = arr.length - 1) {
         // Base case: if the lowIndex is greater than or equal to the highIndex, the array is already sorted
         if (lowIndex >= highIndex) {
           return;
@@ -75,8 +68,8 @@
         const leftPointer = partition(array, lowIndex, highIndex, pivot);
 
         // Recursively sort the subarrays on the left and right of the pivot
-        quicksortHelper(array, lowIndex, leftPointer - 1);
-        quicksortHelper(array, leftPointer + 1, highIndex);
+        quickSort(array, lowIndex, leftPointer - 1);
+        quickSort(array, leftPointer + 1, highIndex);
       }
 
       // Function to partition the array around a pivot and return the pivot's final index
@@ -138,9 +131,97 @@
         <span class="rainbow-header">
           <a href="./views/qs-anaM3.html" target="_blank">With MEDIAN of 3 Random Elements</a></span>
       </h1>
+      <p class="hidden-text rainbow-header" style="display:none; font-size: 2.5em;">
+        <a href="./views/qs-RMPivot.html" target="_blank">Using Right Most Element for Pivot</a></span>
+      </p>
     </div>
 
+    <!-- a add slide lol -->
     <div class="slide" id="slide5">
+      <h1 class="hidden-text shrink" style="display: none;">
+        Code implementation for <span class="rainbow-header shrink" style="font-size: 2.5em;">STACK Method & MEDIAN of 3 </span> 
+      </h1>
+      <pre class="hidden-text" style="display: none;">
+        <code>    'use strict'
+
+                  // quick sort with median 3 method
+                  function quickSortMedian3(arr) {
+                    const stack = [{ low: 0, high: arr.length - 1 }];
+                  
+                    while (stack.length) {
+                      const { low, high } = stack.pop();
+                      if (low < high) {
+                        const pivotIndex = partitionMedian3(arr, low, high);
+                        stack.push({ low, high: pivotIndex - 1 });
+                        stack.push({ low: pivotIndex + 1, high });
+                      }
+                    }
+                  }
+                  
+                  // partition function with median 3 method
+                  function partitionMedian3(arr, lowIndex, highIndex) {
+                    const midIndex = Math.floor((lowIndex + highIndex) / 2);
+                  
+                    // Sort low, mid, and high to determine the median
+                    if (arr[lowIndex] > arr[midIndex]) {
+                      swap(arr, lowIndex, midIndex);
+                    }
+                    if (arr[midIndex] > arr[highIndex]) {
+                      swap(arr, midIndex, highIndex);
+                    }
+                    if (arr[lowIndex] > arr[midIndex]) {
+                      swap(arr, lowIndex, midIndex);
+                    }
+                  
+                    // Move the pivot to highIndex - 1 and return its index
+                    swap(arr, midIndex, highIndex - 1);
+                    return highIndex - 1;
+                  }
+                  
+                  // helper method to SWAP elements
+                  function swap(arr, i, j) {
+                    let temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                  }
+                  
+                  // Calculation toolbox
+                  function generateRandomArray(size) {
+                    const arr = [];
+                    for (let i = 0; i < size; i++) {
+                      arr.push(Math.random());
+                    }
+                    return arr;
+                  }
+                  
+                  function measureExecutionTime(func, arr) {
+                    const start = performance.now();
+                    func(arr);
+                    const end = performance.now();
+                    return end - start;
+                  }
+                  
+                  function generateAscendingArray(size) {
+                    const arr = [];
+                    for (let i = 0; i < size; i++) {
+                      arr.push(i);
+                    }
+                    return arr;
+                  }
+                  
+                  function generateDescendingArray(size) {
+                    const arr = [];
+                    for (let i = size - 1; i >= 0; i--) {
+                      arr.push(i);
+                    }
+                    return arr;
+                  }
+          
+        </code>
+      </pre>
+    </div>
+
+    <div class="slide" id="slide6">
       <h1 class="hidden-text" style="display:none;">
         On TIME COMPLEXITY
       </h1>
@@ -158,7 +239,7 @@
       </div>
     </div>
 
-    <div class="slide" id="slide6">
+    <div class="slide" id="slide7">
       <h1 class="hidden-text" style="display:none;">
        Worst-Case: 
       </h1>
@@ -174,7 +255,7 @@
       </h2>
     </div>
 
-    <div class="slide" id="slide7">
+    <div class="slide" id="slide8">
       <h1 class="hidden-text" style="display:none;">
         Best-Case: 
       </h1>
@@ -191,7 +272,7 @@
        </h2>
     </div>
 
-    <div class="slide" id="slide8">
+    <div class="slide" id="slide9">
       <h1 class="hidden-text" style="display:none;">
         Have Something to Say? <br>
         Leave a Comment at: 

@@ -48,6 +48,10 @@ span.rainbow-header a:hover {
   text-decoration-color: #ff9ac4;
 }
 
+code {
+  font-size: 1.5em;
+}
+
 .slide{
   position: relative;
 }
@@ -139,11 +143,11 @@ label {
   font-size: 1.5em;
 }
 
-#slide5 p{
+#slide6 p{
   font-size: 2em;
 }
 
-#slide5 p:not(:last-child) {
+#slide6 p:not(:last-child) {
   margin-right: 20px;
 }
 
@@ -159,16 +163,16 @@ textarea{
 }
 
 /* slide 6 start here */
-#slide6, #slide7 {
+#slide7, #slide8 {
   font-size: 1.4em;
   line-height: 1.5em;
 }
 
-#slide6 span, #slide7 span{
+#slide7 span, #slide8 span{
   color: #90BE6D;
 }
 
-#slide6 h2, #slide7 h2 {
+#slide7 h2, #slide8 h2 {
   font-size: 6.5em;
   margin-top: 2%;
   color:#ff9ac4;
@@ -178,14 +182,14 @@ mjx-container[jax="CHTML"][display="true"]{
   margin: .6em;
 }
 
-/* start slide 8 */
-#slide8 h2{
+/* start slide 9 */
+#slide9 h2{
   font-size: 8.45em;
   letter-spacing: .01em;
   margin: auto;
 }
 
-#slide8 p {
+#slide9 p {
   font-size: 2em;
 }
 
