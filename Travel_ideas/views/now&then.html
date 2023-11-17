@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thessaloniki Now and Then</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/now&then.css">
+  <link rel="icon" type="image/x-icon" href="../img/n-t/Flag-of-Macedonia-Greece.png">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <!-- share icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- Real Header lol -->
+<body>
+	<a class="webLink" href="https://qquella.com/"><h2>qquella.com</h2></a>
+  
+  <div class="contact-button">
+    <span class="contact">Contact</span>
+    <div class="contact-dropdown">
+        <a href="mailto: mikuquella@gmail.com">Email</a>
+        <a href="#feedback_Area">Feedback</a>
+    </div>
+  </div>
+
+
+<div class="real-container">
+
+  <header>
+	  <h1>Thessaloniki Now & Then</h1>
+  </header>
+
+  <!-- share button -->
+<div class="share-print">
+  <button class="fa fa-share-alt" id="shareButton"><span>Share</span></button>
+    <div id="shareOptions">
+      <a href="#" data-option="whatsapp">WhatsApp</a>
+      <a href="#" data-option="twitter">Twitter</a>
+      <a href="#" data-option="instagram">Instagram</a>
+      <a href="#" data-option="mail">Email</a>
+      <a href="#" data-option="snapchat">Snapchat</a>
+      <a href="#" data-option="pinterest">Pinterest</a>
+      <a href="#" data-option="clipboard">Copy to Clipboard</a>
+    </div>
+    <!-- print button -->
+  <button class="fa fa-print" id="printButton"><span>Print</span></button>
+</div>
+
+<!-- intro -->
+<p>
+  The Thessaloniki "Now and Then" documentary project aims to unveil the captivating transformation of the cityscape by juxtaposing historic photos or videos with their contemporary counterparts. Through a meticulous process of sourcing images from varied sites, we seek to create a visual narrative that not only highlights the architectural evolution of Thessaloniki but also resonates with the rich history embedded in its landmarks.
+</p>
+
+<div class="imgGalleryContainer">
+  <div class="imgGallery" id="image-container1">
+    <h1 class="title-img">Now</h1>
+    <img class="galleryImg" id="gallery-image1" src="../img/n-t/wt-n.jpeg" alt="Gallery Image">
+    <p id="description1">
+      Our journey begins with the iconic White Tower, a symbol synonymous with Thessaloniki. Originally constructed during the Ottoman period, the White Tower has stood as a silent witness to centuries of history. The juxtaposition of archival images capturing its original splendor and present-day photographs evokes a profound sense of time travel. As you delve into the images, you'll witness the subtle changes in the Tower's surroundings, from the bustling markets of the past to the modern cityscape that now envelops this historic monument.
+    </p>
+    <span class="arrow left-arrow" onclick="changeImage('gallery-image1', 'now', -1, 'description1')">&#9665;</span>
+    <span class="arrow right-arrow" onclick="changeImage('gallery-image1', 'now', 1, 'description1')">&#9655;</span>
+  </div>
+
+  <div class="imgGallery" id="image-container2">
+    <h1 class="title-img">Then</h1>
+    <img class="galleryImg" id="gallery-image2" src="../img/n-t/wt-p.jpeg" alt="Gallery Image">
+    <p id="description2">
+      Moving on to the Arch of Galerius, another architectural gem that has weathered the ages, we explore the juxtaposition of images capturing its grandeur in different eras. Originally built to commemorate the Roman Emperor Galerius' victory, the arch's majestic reliefs and intricate details come to life as we compare historical images with their contemporary counterparts. The Arch of Galerius serves as a living testament to the city's layered past, where ancient triumphs coexist with the vibrant pulse of the present.
+    </p>
+    <span class="arrow left-arrow" onclick="changeImage('gallery-image2', 'then', -1, 'description2')">&#9665;</span>
+    <span class="arrow right-arrow" onclick="changeImage('gallery-image2', 'then', 1, 'description2')">&#9655;</span>
+  </div>
+</div>
+<!-- map -->
+<div id="map-container">
+  <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38899.50433962517!2d22.934358204433845!3d40.63120571588311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838f41428e0ed%3A0x9bae715b8d574a9!2sThessaloniki%2C%20Greece!5e0!3m2!1sen!2sus!4v1700140791452!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<br><br>
+<!-- comments section -->
+<a id="feedback_Area"></a>
+<div class="feedback_Area">
+  <h1><button onclick="toggleText('expandedText14')" class="feedbackB">Feedback</button></h1>
+
+    <form action="https://formspree.io/f/mknaablk" method="POST">
+
+      Your name: <br>
+      <input class="input-name" type="text" name="realname"><br>
+      <br>
+      
+      Your email: <br>
+      <input type="email" name="email"><br>
+      <br>
+      
+      Your comments: <br>
+      <textarea name="comments" rows="15" cols="50"></textarea><br>
+      
+      <button class="submit" type="submit">Submit!</button>
+
+      </form>
+
+  </div> 
+  <!-- end feedback -->
+</div>
+<!-- end real container -->
+
+
+  <footer>
+    <div class="footer-links">
+        <a class="footer-link" href="https://www.instagram.com/quinnuella_" target="_blank">Instagram</a>
+        <div style="border-right: 1px solid #fff; height: 20px; margin: 0 25px;"></div>
+        <a class="footer-link" href="mailto: mikuquella@gmail.com">Email</a> 
+      </div>
+        <div class="copyright">Power by: Quella W</div>
+   
+  </footer>
+
+<script type="text/javascript" src="../scripts/now&then.js"></script>
+
+</body>
+</html>
