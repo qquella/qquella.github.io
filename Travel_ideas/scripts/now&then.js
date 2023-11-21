@@ -6,8 +6,8 @@ const images = {
 };
 
 const descriptions = {
-  'now': ['Description 1', 'Description 2', 'Description 3', 'Description 4', 'Description 5'],
-  'then': ['Description A', 'Description B', 'Description C', 'Description D']
+  'now': ['Our journey begins with the iconic White Tower, a symbol synonymous with Thessaloniki. Originally constructed during the Ottoman period, the White Tower has stood as a silent witness to centuries of history. The juxtaposition of archival images capturing its original splendor and present-day photographs evokes a profound sense of time travel. As you delve into the images, you will witness the subtle changes in the Tower\'s surroundings, from the bustling markets of the past to the modern cityscape that now envelops this historic monument.', 'White Tower', 'White Tower', 'White Tower', 'Arch of Galerius'],
+  'then': ['Moving on to the Arch of Galerius, another architectural gem that has weathered the ages, we explore the juxtaposition of images capturing its grandeur in different eras. Originally built to commemorate the Roman Emperor Galerius\' victory, the arch\'s majestic reliefs and intricate details come to life as we compare historical images with their contemporary counterparts. The Arch of Galerius serves as a living testament to the city\'s layered past, where ancient triumphs coexist with the vibrant pulse of the present.', 'White Tower', 'Arch of Galerius', 'Arch of Galerius']
 };
 
 function changeImage(imageId, album, direction, descriptionId) {

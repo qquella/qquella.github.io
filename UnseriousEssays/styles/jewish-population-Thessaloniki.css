@@ -338,12 +338,11 @@ textarea{
 #map-container {
   display: flex;
   justify-content: center;
-  height: 100vh; 
+  height: 80vh; 
 }
 
 #map {
   width: 80%;
-  height: 80%; 
 }
 
 /* Share & Print button */

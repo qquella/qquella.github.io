@@ -112,7 +112,6 @@ h2{
 /* for my map */
 .myMap{
   max-width: 45%;
-  width: 50%;
 }
 
 /* link for world map */
@@ -332,12 +331,11 @@ textarea{
 #map-container {
   display: flex;
   justify-content: center;
-  height: 100vh; 
+  height: 80vh; 
 }
 
 #map {
   width: 80%;
-  height: 80%; 
 }
 
 /* Share & Print button */
