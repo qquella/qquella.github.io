@@ -2,7 +2,7 @@
 
 const images = {
   'now': ['../img/n-t/wt-n.jpeg', '../img/n-t/wt-n2.jpeg', '../img/n-t/wt-n3.jpeg', '../img/n-t/wt-n4.jpeg', '../img/n-t/ga-n.jpeg', '../img/n-t/ga-n2.jpeg',
-  '../img/n-t/Agia-Sofia-Square/n1.jpeg', '../img/n-t/Agia-Sofia-Square/n2.jpeg', '../img/n-t/Agia-Sofia-Square/n3.jpeg', '../img/n-t/Aristotelous-n.png', '../img/n-t/Aristotelous-n2.png', '../img/n-t/Boardwalk-n.png', '../img/n-t/Boardwalk-n2.png', '../img/n-t/Yeni-Tzami-n.png', '../img/n-t/Jewish-Primary-School-n.jpeg'
+  '../img/n-t/Agia-Sofia-Square/n1.jpeg', '../img/n-t/Agia-Sofia-Square/n2.jpeg', '../img/n-t/Agia-Sofia-Square/n3.jpeg', '../img/n-t/Aristotelous-n.png', '../img/n-t/Aristotelous-n2.png', '../img/n-t/Boardwalk-n.png', '../img/n-t/Boardwalk-n2.png', '../img/n-t/Yeni-Tzami-n.png', '../img/n1-t/Jewish-Primary-School-n.jpeg', '../img/n-t/Jewish-Primary-School-n.jpeg'
 ],
   'then': ['../img/n-t/wt-p.jpeg', '../img/n-t/wt-p2.jpeg', '../img/n-t/ga-p.jpeg', '../img/n-t/ga-p2.jpeg',
   '../img/n-t/Agia-Sofia-Square/p.jpeg', '../img/n-t/Aristotelous-p.png', '../img/n-t/Boardwalk-p.png', '../img/n-t/Yeni-Tzami-p.png', '../img/n-t/Jewish-Primary-School-p.jpeg'
