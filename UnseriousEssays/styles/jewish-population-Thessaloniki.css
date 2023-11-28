@@ -273,6 +273,14 @@ a:hover {
   margin-right: 35px;
 }
 
+/* figure subtitle */
+.fg-sub {
+  font-size: .7em ;
+  margin: 2% 0%;
+  max-width: 5%;  
+  color: #6e4457;
+}
+
 /* feedback */
 .feedback_Area{
   text-align: center;
