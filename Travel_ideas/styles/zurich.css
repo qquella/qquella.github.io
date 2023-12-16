@@ -108,6 +108,7 @@ li a, .contact-dropdown a{
   text-decoration: underline;
   text-decoration-color: #f4c5c5;
   text-shadow: 1px .8px rgb(237, 163, 173);
+  margin: .3% auto;
 }
 
 .icon + span a {
