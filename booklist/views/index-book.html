@@ -9,8 +9,8 @@
   	<div id="wrapper">
 	    <header>
 	    	<div id="page-banner">
-	    		<h1 class="title">THE BOOLOGK</h1>
-          <p>Books to read</p>
+	    		<h1 class="title">Bookorama</h1>
+          <p>Books for Ninjas</p>
           <form id="search-books">
             <input type="text" placeholder="Search books..." />
           </form>
@@ -38,10 +38,25 @@
 	    	</ul>
 	    </div>
 	    <form id="add-book">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Hide all books</label>
 	    	<input type="text" placeholder="Add a book..." />
 	    	<button>Add</button>
 	    </form>
-
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>Content for about tab...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Content for contact tab...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+        </div>
+      </div>
     </div>
     <script src="../scripts/app.js"></script>
   </body>
