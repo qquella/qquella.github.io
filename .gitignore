@@ -1,0 +1,39 @@
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore HTML, CSS, JavaScript, and PHP temporary files
+*.html~
+*.css~
+*.js~
+*.php~
+*.swp
+
+# Ignore node_modules directory (if using Node.js)
+node_modules/
+
+# Ignore build and dist directories (if applicable)
+build/
+dist/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore any other common files/directories
+*.bak
+*.backup
+*.old
+
+# Ignore environment variable files (if applicable)
+.env
+.env.local
