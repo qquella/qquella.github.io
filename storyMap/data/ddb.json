@@ -1,0 +1,147 @@
+{
+  "storymap": {
+    "slides": [
+      {
+        "type": "overview",
+        "date": "2024",
+        "location": {
+          "name":"Deutschland",
+          "lat": 51.1657,
+          "lon": 10.4515,
+          "line": true,
+          "zoom": 116
+        },
+        "text": {
+          "headline": "Digitalisierung der Bildung<small>Digitalization of Education</small>",
+          "text": "<p>Die aktuelle Digitalisierung der Bildung hat in den letzten Jahren einen bedeutenden Einfluss auf das Bildungssystem gehabt. Durch den Einsatz der digitalen Technologien und Tools wird der Lernprozess nicht nur für Schülerinnen und Schüler, sonerden auch für Lehrkräfte immer effizienter und zugänglicher. Digitale Plattformen können Lerninhalte interaktiv gestalten und personalisierte Lernwege anbieten. Diese Entwicklung bietet zahlreiche Vorteile, darunter die Förderung von Selbstlernen, die Möglichkeit auf individuelle Lernbedürfnisse einzugehen, und den Unterricht, der nicht in der Nähe ist, zu nehmen.</p> <span class='vco-note'>Allerdings birgt die Digitalisierung der Bildung auch Herausforderungen, z.B. wie den Umgang mit Datenschutz und die Sicherstellung um gerechte Zugänglichkeit für alle Schülerinnen und Schüler, unabhängig von ihrer sozioökonomischen Situation. Dennoch es ist klar, dass die Digitalisierung ein wichtiger Teil der zukünftigen Bildungslandschaft wird. Es ist wichtig, dass wir sie verantwortungsvoll und mit Bedacht benutzen, um die bestmöglichen, Bildungschancen für alle zu gewährleisten.</span>"
+        },
+        "media": {
+          "url": "../img/ddb2.png",
+          "credit": "Der WDR",
+          "caption": "Schulen und Digitalisierung: Wunsch nach mehr Unterstützung"
+        }
+      },
+      {
+        "date": "2024",
+        "text": {
+          "headline": "Zugang zu Bildung",
+          "text": "<p>Die Digitalisierung der Bildung hat einen bedeutenden Einfluss auf das Lernen von Menschen jeden Alters. Einschließlich auf der Grundlage der Erfahrungen, die ein Student aus Lilienthal,  einer Stadt in der Nähe von Bremen stammen. Die ältere Menschen hatten sich entschlossen, einem Kurs zur Verbesserung ihrer Englischkenntnisse teilnehmen, der der Volkshochschule angeboten ist. In diesem Kurs habe alle Studenten verschiedene Themen behandelt, die sie selbst vorgeschlagen haben.</p> <span class='vco-note'>Beispielsweise haben viele Interesse Reden von Politikern anzuhören (z.B. Bidens Rede zur Lage der Nation) und die aktuellen Ereignisse, wie Trumps Wahlkampagne, zu diskutieren.</span>"
+        },
+        "location": {
+          "name": "Lilienthal, Deutschland",
+          "lat": 53.1491,
+          "lon": 8.9134,
+          "zoom": 30,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.dw.com/de/mehr-als-258-millionen-kinder-ohne-schule/a-53903426",
+          "credit": "Deutsche Welle",
+          "caption": "Nach Schätzungen der UNESCO haben 17 Prozent der Heranwachsenden weltweit keinen Zugang zu Bildung"
+        }
+      },
+      {
+        "date": "2024",
+        "text": {
+          "headline": "Interaktives Lernen",
+          "text": "<p>Der Kurs findet einmal wöchentlich an jeden Mittwochmorgen statt und bietet auch den Studenten Hausaufgaben. Zum Beispiel, haben sie diese Woche Bidens Rede zur Lage der Nation angeschaut und die Zusammenfassung von Reden. </p> <span class='vco-note'>Wegen der Digitalisierung können die Studenten Untertitel auf den Videos haben und die Rede jederzeit anhalten, um besser zuzuhören und zu verstehen. Dies erleichtert ihr Verständnis und fördert ihr Lernen. Darüber hinaus arbeiten sie auch in Kleingruppen, bei der die Schüler in Gruppen von maximal 3-4 Personen arbeiten können.</span>"
+        },
+        "location": {
+          "name": "Bremen, Deutschland",
+          "lat": 53.0793,
+          "lon": 8.8017,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://soundcloud.com/das-kundenfeedback/aud1?si=95189d25e9924f87862c1abf2383655f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+          "credit": "Narakeet",
+          "caption": "Hören Sie sich diesen Text hier an"
+        }
+      },
+      {
+        "date": "2024",
+        "text": {
+          "headline": "Probleme",
+          "text": "<p>Es gibt jedoch auch Herausforderungen bei der Digitalisierung der Bildung, insbesondere für ältere Menschen. Ältere Menschen haben über die Bedenken ihrer Altersgenossen hinsichtlich der Zugänglichkeit von Bildungsangeboten und der Nutzung digitaler Technologie geredet.</p> <span class='vco-note'>Ein weiteres Anliegen im Alter wäre die Gesundheitsversorgung und die Angst vor der Zukunft. Die Covid-19-Pandemie hat dieses Probleme noch verschärft.</span>"
+        },
+        "location": {
+          "name": "Münster, Deutschland",
+          "lat": 51.9607,
+          "lon": 7.6261,
+          "zoom": 20,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.uni-muenster.de/news/view.php?cmdid=13535",
+          "credit": "UNIVERSITÄT MÜNSTER",
+          "caption": "Die Digitalisierung löst nicht alle Probleme in der Bildung"
+        }
+      },
+      {
+        "date": "1820",
+        "text": {
+          "headline": "Gut oder Böse?",
+          "text": "<p>Ältere Menschen zeigen jedoch ein großes Engagement für den Englischkurs an der Volkshochschule. Sie beteiligen sich aktiv an WADE und teilen ihre Geschichten mit uns über Zoom. Diese Aktionen zeigen, dass die Digitalisierung der Bildung viele Menschen ansprechen kann, unabhängig von ihrem Alter oder ihrer Berufstätigkeit. Der Kurs bietet interaktive Lernerfahrungen, um den Studenten zu ermöglicht, ihre Sprachkenntnisse auf eine unterhaltsame und effektive Weise zu verbessern.</p> <span class='vco-note'>Die Ältere Menschen selbst sind lebendiges Beispiel dafür, dass Bildung durch digitale Innovationen zugänglicher und ansprechender wird.</span>"
+        },
+        "location": {
+          "name": "Hamburg, Deutschland",
+          "lat": 53.5488,
+          "lon": 9.9872,
+          "zoom": 20,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.wegeausdereinsamkeit.de/w-a-d-e-podcasts/bremer-stadtmusikanten/",
+          "credit": "Wege aus der Einsamkeit",
+          "caption": "1820 Census Record"
+        }
+      },
+      {
+        "date": "2024",
+        "text": {
+          "headline": "Volkshochschule Verbesserung",
+          "text": "Volkshochschule ist gut für die Öffentlichkeit. Billige Ausbildung macht klüger Menschen. Viele Freunde sagen, dass sie keine Zeit für eine Ausbildung haben. Ausbildung soll nicht viel Zeit in Anspruch nehmen. Ausbildung soll flexibel sein. Wenn Ausbildung bereits flexibel ist, dann die Volkshochschule dann muss das inserieren."
+        },
+        "location": {
+          "name": "Bonn, Deutschland",
+          "lat": 50.7374,
+          "lon": 7.0982,
+          "zoom": 20,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.youtube.com/watch?v=pNEvgltm4YQ",
+          "credit": "Deutscher Volkshochschul-Verband",
+          "caption": "Der Deutsche Volkshochschul-Verband bietet viele verschiedene Online- und Präsenzkurse für Lernende jeden Alters an"
+        }
+      },
+      {
+        "date": "2024",
+        "text": {
+          "headline": "Ausbildungverbesserung in den USA",
+          "text": "<p>In den USA ist die Universität sehr teuer. Viele Menschen nehmen Unterricht an einer Volkshochschule (\"community college\" auf Englisch). Amerikanische Volkshochschulen sind anders als deutsche Volkshochschulen. In Amerika, kann man ein Diplom machen. In Deutschland kann man das nicht machen. In Amerika, müssen die Lehrerinnen das Beglaubigungsschreiben haben.</p> <span class='vco-note'>In Deutschland, die Lehrerinnen in der Volkshochschule müssen das nicht haben. Um die Bildung in Amerika zu verbessern, müssen die Lernkosten gesenkt werden. Wenn Ausbildung billig ist, dann viele Menschen können lernen. Klügere Menschen sind besser für alle!</span><span><a href=\"https://www.usnews.com/education/best-colleges/paying-for-college/articles/paying-for-college-infographic\">See the Average College Tuition in the US 2023-2024</a></span>"
+        },
+        "location": {
+          "name": "Washington DC, USA",
+          "lat": 38.9072,
+          "lon": -77.0369,
+          "zoom": 20,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.youtube.com/watch?v=LtxRa9Xd4vw&pp=ygUbY29zdCBvZiBlZHVjYXRpb24gaW4gdGhlIHVz",
+          "credit": "The Wall Street Journal",
+          "caption": "How Public Universities Became So Expensive"
+        }
+      }
+    ],
+    "language": "de", 
+    "map_type": "osm:standard",
+    "call_to_action": true,
+    "call_to_action_text": "Los Gehts",
+    "map_as_image": false,
+    "map_subdomains": "",
+    "font_css": "Garamond"  
+  }
+}

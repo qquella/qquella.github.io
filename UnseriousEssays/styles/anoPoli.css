@@ -1,0 +1,178 @@
+/* styles.css */
+
+body {
+  background-color: #ffffff; /* Light gray background */
+  font-family: "Open Sans", Arial, sans-serif; /* Modern sans-serif font */
+  color: #333; /* Dark gray text color */
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+}
+
+.header{
+  display: block;
+  text-align: center;
+  margin: 0;
+  top: 0;
+  padding: 0px;
+  padding-bottom: 8px;
+  left: auto;
+  z-index: 1;
+  max-width: 100%;
+}
+
+#container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 0%;
+  background-color: #FFF; /* White container background */
+}
+
+h2 {
+  color: #0072B5; /* Blue heading color */
+  font-family: "Playfair Display", serif; /* Elegant serif font for headings */
+  font-size: 2.1em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #008bdb; /* Vibrant red button background */
+  color: #FFF; /* White button text */
+  font-family: 'Raleway', sans-serif;
+  width: 30%;
+  font-size: 1.3em;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF6B6B;
+  font-size: 1.6em;
+}
+
+.button2 {
+  background-color: #3BC3C3; /* Teal button background */
+  color: #FFF; /* White button text */
+  font-family: "Open Sans", Arial, sans-serif;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button2:hover {
+  background-color: #2B9E9E; /* Darker teal on hover */
+  font-size: 1.4em;
+}
+
+.button3 {
+  background-color: #FFD700; /* Gold button background */
+  color: #000; /* Black button text */
+  font-family: "Open Sans", Arial, sans-serif;
+  width: 75%;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button3:hover {
+  background-color: #FFB800; /* Darker gold on hover */
+  font-size: 1.4em;
+}
+
+.feedback_Area{
+  text-align: center;
+}
+
+.feedbackB {
+  background-color: #008bdb; /* Blue button background */
+  color: #FFF; /* White button text */
+  width: 80%;
+  font-size: 1em;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedbackB:hover {
+  background-color: #005580; /* Darker blue on hover */
+  font-size: 1.2em;
+}
+
+input{
+  width: 200px;
+  height: 25px;
+  font-size: 1.2em;
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  font-size: 1.15em;
+  line-height: 1.7;
+  margin: 5px;
+}
+
+blockquote {
+  background-color: #F5F5F5; /* Light gray background for quotes */
+  color: #333; /* Dark gray text for quotes */
+  border-left: 4px solid #FF6B6B; /* Red left border for quotes */
+  padding: 10px 20px; /* Padding inside quotes */
+  margin: 15px 0;
+}
+
+img {
+  position: relative;
+  max-width: 80%; /* Ensure images don't overflow their containers */
+  height: auto;
+  margin: 0 5%;
+  border-radius: 5px;
+  padding: 3%;
+  padding-bottom: 1%;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+textarea{
+  font-size: 1.4em;
+  font-family: 'Playfair Display', serif;
+  height: 6.2em;
+}
+
+figcaption{
+  font-size: .9em;
+  margin-bottom: 3%;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  #container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  video {
+    width: 100%;
+  }
+}

@@ -1,0 +1,66 @@
+.slides {
+  text-align: center;
+  margin: 5% auto;
+}
+
+.section {
+  margin: 3% auto;
+}
+
+p {
+  margin: 2% auto;
+}
+
+.toggle-btn {
+  padding: 0.7em;
+  background-color: #afc257;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8%;
+}
+
+div h2 {
+  text-shadow: 1px 1px #afc257;
+}
+
+h2:hover {
+  text-decoration: underline;
+  text-decoration-color: #afc257;
+  text-decoration-style:wavy;
+}
+
+h3 a, p a{
+  color: #afc257;
+  font-size: .9em;
+  text-decoration: dotted;
+}
+
+h3 a:hover, p a:hover {
+  color: #afc257;
+  font-size: 1em;
+  text-decoration: underline;
+  text-decoration-color: #e9c8d3;
+  text-decoration-style:wavy;
+  background-color: rgb(249, 158, 211);
+}
+
+iframe {
+  margin: 4% auto;
+  max-width: 75%;
+  text-align: center;
+  padding: auto;
+}
+
+div.center {
+  text-align: center;
+}
+
+.vid-srf {
+  width: 800px;
+  max-width: 75%;
+  margin: 1% auto;
+  margin-top: 0;
+  padding-top: 0;
+
+  height: 600px;
+}

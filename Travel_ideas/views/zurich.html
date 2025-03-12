@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zurich</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/zurich.css">
+  <link rel="icon" type="image/x-icon" href="../img/favicon-q.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- Real Header lol -->
+<body>
+	<a class="webLink" href="https://qquella.com/"><h2>qquella.com</h2></a>
+  
+  <div class="contact-button">
+    <span class="contact">Contact</span>
+    <div class="contact-dropdown">
+        <a href="mailto: mikuquella@gmail.com">Email</a>
+        <a href="#feedback_Area">Feedback</a>
+    </div>
+  </div>
+
+
+
+  <header>
+	  <h1>Zürich: Lieblingsstadt 🇨🇭</h1>
+  </header>
+
+  <!-- share button -->
+<div class="share-print">
+  <button class="fa fa-share-alt" id="shareButton"><span>Share</span></button>
+    <div id="shareOptions">
+      <a href="#" data-option="whatsapp">WhatsApp</a>
+      <a href="#" data-option="twitter">Twitter</a>
+      <a href="#" data-option="instagram">Instagram</a>
+      <a href="#" data-option="mail">Email</a>
+      <a href="#" data-option="snapchat">Snapchat</a>
+      <a href="#" data-option="pinterest">Pinterest</a>
+      <a href="#" data-option="clipboard">Copy to Clipboard</a>
+    </div>
+    <!-- print button -->
+  <button class="fa fa-print" id="printButton"><span>Print</span></button>
+</div>
+   
+   <!-- Navigation links -->
+  <nav>
+    <ul class="left-links">
+      <li><a href="./zurich-attraction.html">Attractions! 🏞️</a></li>
+      <li><a href="./wetter.html">Weather 🌈</a></li>
+    </ul>
+
+    <div class="icon-container">
+      <img style="max-width: 50%;" class="icon" src="../img/swiss/icon.jpeg" alt="icon">
+      <span>📍Taken near <a href="./zurich-attraction.html#lake-zurich" target="_blank">Lake Zürich</a></span>
+    </div>
+
+    <ul class="right-links">
+      <li><a href="#">Walking Tour 👣</a></li>
+      <li><a href="#">Food! 🧀</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- text blocks -->
+  <div class="text-blocks">
+    <div class="text-block text-left">
+        <p>Why I love Zürich:</p>
+        <p class="inner-text">
+          <ul>
+            <li>Everything is so pretty like pictures!!</li>
+            <li>Very walkable & Pedestrian-friendly</li>
+            <li>Public transport (tram, train, bus, ferry)</li>
+            <li>Water fountains (drinkable + city attraction)</li>
+            <li>Many open spaces</li>
+            <li>Something for everyone</li>
+            <li>Cheap tickets in Opera House</li>
+            <li>Well organized & Everything Works</li>
+            <li>Very walkable & Pedestrian-friendly</li>
+            <li>Grocery stores everywhere (w/ nice prices)</li>
+            <li>Multilingual & Multicultural</li>
+            <li>International</li>
+            <li>Fast internet everywhere</li>
+          </ul>
+        </p>
+    </div>
+    <div class="text-block">
+        <p style="margin: .7em auto;">Warum ich Zürich liebe:</p>
+        <ul>
+          <li>Alles ist so schön!! Wie Bilder</li>
+          <li>Sehr begehbar und fußgängerfreundlich</li>
+          <li>Öffentliche Verkehrsmittel (Straßenbahn, Zug, Bus, Fähre)</li>
+          <li>Wasserfontänen (trinkbar + Stadtattraktion)</li>
+          <li>Viele Freiflächen</li>
+          <li>Für jeden etwas: Sie werden Ihre eigene Nische finden</li>
+          <li>Tickets im Opernhaus sind nicht teuer</li>
+          <li>Gut organisiert & alles funktioniert</li>
+          <li>Lebensmittelläden überall (& günstig)</li>
+          <li>Mehrsprachig & Multikulturell</li>
+          <li>Reiche Geschichte und viele Geschichten/Erinnerungen</li>
+          <li>International</li>
+          <li>Schnelles Internet überall</li>
+        </ul>
+    </div>
+</div>
+
+<!-- zurich map -->
+<iframe class="zurich-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33635.15537688591!2d8.525336928761604!3d47.3751679325392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b9749bea219%3A0xe66e8df1e71fdc03!2sZ%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2sus!4v1699355324105!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<br><br>
+<!-- comments section -->
+<a id="feedback_Area"></a>
+<div class="feedback_Area">
+  <h1><button onclick="toggleText('expandedText14')" class="feedbackB">Feedback</button></h1>
+
+    <form action="https://formspree.io/f/mknaablk" method="POST">
+
+      Your name: <br>
+      <input class="input-name" type="text" name="realname"><br>
+      <br>
+      
+      Your email: <br>
+      <input type="email" name="email"><br>
+      <br>
+      
+      Your comments: <br>
+      <textarea name="comments" rows="15" cols="50"></textarea><br>
+      
+      <button class="submit" type="submit">Submit!</button>
+
+      </form>
+
+  </div> 
+  <!-- end feedback -->
+
+
+  <footer>
+    <div class="footer-links">
+        <a class="footer-link" href="https://www.instagram.com/quinnuella_" target="_blank">Instagram</a>
+        <div style="border-right: 1px solid #fff; height: 20px; margin: 0 25px;"></div>
+        <a class="footer-link" href="mailto: mikuquella@gmail.com">Email</a> 
+      </div>
+        <div class="copyright">Power by: Quella W</div>
+   
+  </footer>
+
+<script type="text/javascript" src="../scripts/map-zurich.js"></script>
+
+</body>
+
+</html>

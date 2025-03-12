@@ -1,0 +1,3974 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CS2510 Fundamentals of Computer Science II</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../scripts/share.js">
+  <link rel="icon" type="image/x-icon" href="../images/favicon-q.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" />
+  <link rel="stylesheet" href="../styles/basics.css">
+
+  <!-- share icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- u1 segement tools -->
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+</head>
+
+<!-- Real Header lol -->
+
+<body>
+  <a class="webLink" href="https://qquella.com/">
+    <h2 class="weblink">qquella.com</h2>
+  </a>
+  <br>
+  <a class="webLink" href="../plan-of-study.html">
+    <h2 class="weblink">See All Class Notes</h2>
+  </a>
+
+  <div class="contact-button">
+    <span class="contact">Contact</span>
+    <div class="contact-dropdown">
+      <a href="mailto: mikuquella@gmail.com">Email</a>
+      <a href="#feedback_Area">Feedback</a>
+    </div>
+  </div>
+
+
+
+  <header>
+    <h1>Fundamentals of Computer Science II</h1>
+  </header>
+
+  <!-- share button -->
+  <div class="share-print">
+    <button class="fa fa-share-alt" id="shareButton"><span>Share</span></button>
+    <div id="shareOptions">
+      <a href="#" data-option="whatsapp">WhatsApp</a>
+      <a href="#" data-option="twitter">Twitter</a>
+      <a href="#" data-option="instagram">Instagram</a>
+      <a href="#" data-option="mail">Email</a>
+      <a href="#" data-option="snapchat">Snapchat</a>
+      <a href="#" data-option="pinterest">Pinterest</a>
+      <a href="#" data-option="clipboard">Copy to Clipboard</a>
+    </div>
+    <!-- print button -->
+    <button class="fa fa-print" id="printButton"><span>Print</span></button>
+  </div>
+
+  <!-- new menu bar -->
+  <div class="topbar">
+    <div class="ui secondary pointing menu">
+      <a href="/" class=" item">Home</a>
+      <a href="../plan-of-study.html" class="active item">Notes</a>
+      <a href="/UnseriousEssays/essays.html" class=" item">Articles</a>
+      <a href="/Games/Spielen.html" class=" item">Games</a>
+      <a href="/Travel_ideas/nav-travel.html" class=" item">Travel</a>
+    </div>
+  </div>
+
+
+  <!-- contents start here -->
+  <div class="segment ui text container document">
+    <!-- <h1 id=""><span class="half-background">CS2510 Fundamentals of Computer Science 2</span></h1>
+  <hr> -->
+    <button class="ui inverted pink button" onClick="toggleDetails();" id="toggleButton">Open all sections</button>
+
+    <br><br>
+
+    <div class="cnote">
+
+      <h1 id="the-class">Class Overview</h1>
+
+      <p><a href="https://course.ccs.neu.edu/cs2510/">Fundies 2 Class Website</a></p>
+
+      <p>Review: Fundamentals of Computer Science 1: <a href="https://course.ccs.neu.edu/cs2500/">Class Website</a></p>
+
+      <p>Class-based Program Design</p>
+
+      <p>Read lecture notes before coming to class!</p>
+
+      <h2 class="fontM">Class Major Themes</h2>
+      <ul>
+        <li class="udlPink"><a href="#union-data">Respresenting Data Structures</a></li>
+        <ul>
+          <li>Union Data (Interface)</li>
+          <li>Compound Data (Classes)</li>
+          <li>Lists</li>
+          <li>Trees</li>
+          <li>Graphs</li>
+          <li>Maps</li>
+        </ul>
+        <li class="udlPink"><a href="#dy-dispatch">Dynamics Dispatch</a></li>
+        <ul>
+          <li>MtLoX vs ConsLoX (w/ common interface ILoX)</li>
+          <li>Double Dispatch (e.g. use in Abstraction)</li>
+          <li>Visitors! (where the fun starts)</li>
+        </ul>
+        <li class="udlPink"><a href="#aiasing">Mutation</a></li>
+        <ul>
+          <li>Aliasing</li>
+          <li>Extensional Equality vs Intensional Equality (see more in testing)</li>
+          <li>Mutable Data Structures</li>
+        </ul>
+        <li class="udlPink"><a href="#loops">ArrayLists</a></li>
+        <ul>
+          <li>Loops (forEach, counted for, while)</li>
+          <li>Sorting (Selection, Insertion, Quicksort, Mergesort, Priority Queues, Heapsort)</li>
+          <li>Deque</li>
+        </ul>
+        <li class="udlPink"><a href="#iter">Iterators</a></li>
+        <ul>
+          <li>Higher-order Iterators</li>
+        </ul>
+        <li class="udlPink"><a href="#big-o">Algorithms</a></li>
+        <ul>
+          <li>Big-O Analysis</li>
+          <li>Sorting (Selection, Insertion, Quicksort Mergesort, Priority Queues, Heapsort)</li>
+          <li>Searching (Binary, Breadth-first Search (BFS), Depth-first Search (DFS))</li>
+          <li>Dijkstra’s Algorithm</li>
+          <li>Minimum Spanning Trees</li>
+        </ul>
+
+
+      </ul>
+      <br>
+      <h1 id="introduction-to-java">Introduction to Java</h1>
+
+      <p>Java is a versatile and widely-used programming language known for its strong typing and object-oriented
+        features. In this introduction, we'll explore the basics of Java, including atomic data types, compound data,
+        and some essential programming concepts.</p>
+
+      <h2 class="fontM">Atomic Data in Java</h2>
+      <p>Java supports various primitive data types, which represent simple atomic data. Here are some examples:</p>
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+      <pre><code class="language-java">// Primitive Types
+      int distance = 10; // An integer representing distance
+      double coffeePrice = 4.25; // A double representing the price of a coffee
+      String greeting = "hello"; // A string representing a greeting
+      char initial = 'A'; // A character representing an initial
+      boolean isRaining = true; // A boolean representing a weather condition</code></pre>
+      <p>In Java, it's important to note the type of each variable. Unlike some dynamically-typed languages, Java checks
+        data types at compile time, reducing the risk of type errors during runtime.</p>
+
+      <h2 class="fontM">Compound Data in Java</h2>
+      <p>Compound data types are structures that can hold multiple values. In Java, we often use classes to define such
+        structures. Let's explore an example involving a <code class="hl">Book</code> and its <code class="hl">Author</code>.</p>
+      <pre><code>class Author {
+    String name;
+    int birthYear;
+    
+    Author(String name, int birthYear) {
+        this.name = name;
+        this.birthYear = birthYear;
+    }
+}
+
+class Book {
+    String title;
+    Author author;
+    double price;
+    
+    Book(String title, Author author, double price) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
+    }
+}
+
+class ExamplesBook {
+    Author jkRowling = new Author("J.K. Rowling", 1965);
+    Book harryPotter = new Book("Harry Potter and the Philosopher's Stone", jkRowling, 19.99);
+    
+    ExamplesBook() {}
+}</code></pre>
+      <p>In this example, <code class="hl">Author</code> is a class representing an author's name and birth year, while
+        <code class="hl">Book</code> is a class representing a book's title, its author, and its price. Instances of these classes
+        (<code>jkRowling</code> and <code class="hl">harryPotter</code>) are created using constructors, which initialize the
+        objects' attributes.
+      </p>
+
+      <h2 class="fontM">Java's Strong Typing</h2>
+      <p>Java is a strongly-typed language, meaning that the type of a variable is checked at compile time. This ensures
+        that type mismatches are caught early in the development process. For instance, you cannot add a string to a
+        number directly:</p>
+      <pre><code>int num = 5;
+String text = " apples";
+String result = num + text; // This will compile and concatenate the number and string.</code></pre>
+      <p>However, adding a number to a string results in string concatenation rather than arithmetic addition.</p>
+
+      <h2 class="fontM">Java's Infix Notation</h2>
+      <p>Java uses infix notation for operations, which means operators are placed between the operands. For example:
+      </p>
+      <pre><code>int sum = 3 + 4; // Addition
+int product = 5 * 6; // Multiplication
+boolean isEqual = (7 == 7); // Equality check </code></pre>
+
+      <h2 class="fontM">Working with Java Classes</h2>
+      <p>Java classes are the blueprint for creating objects. They encapsulate data (attributes) and behavior (methods).
+        Here’s an example with a <code class="hl">Person</code> class:</p>
+      <pre><code>class Person {
+    String name;
+    int age;
+    
+    // Constructor
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    // Method to display person's info
+    void displayInfo() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
+}
+
+class ExamplesPerson {
+    Person alice = new Person("Alice", 30);
+    Person bob = new Person("Bob", 25);
+    
+    ExamplesPerson() {
+        alice.displayInfo();
+        bob.displayInfo();
+    }
+}  </code></pre>
+      <p>In this example, the <code class="hl">Person</code> class has attributes for a person's name and age, a constructor to
+        initialize these attributes, and a method to display the person's information. Instances of the
+        <code class="hl">Person</code> class (<code class="hl">alice</code> and <code class="hl">bob</code>) are created and their information is
+        displayed.
+      </p>
+
+      <h2 class="fontM">Conclusion</h2>
+      <p>Java is a powerful language with a strong typing system that helps catch errors at compile time. Its
+        object-oriented nature allows for the creation of complex data structures through classes and objects. By
+        understanding the basics of atomic and compound data, infix notation, and class structures, you can start
+        building robust Java applications XDD</p>
+
+
+      <br>
+      <!-- Respresenting Data Structures -->
+
+      <h1 id="union-data">Union Data (Interface) -- Respresenting Data Structures</h1>
+
+      <p>In programming, unions allow for a variable to be one of several types. In Racket, union data types are defined
+        in comments, but in Java, we use interfaces to represent unions. Here are some examples to illustrate this
+        concept.</p>
+
+      <h2 class="fontM">Example - Spaceships and Invaders</h2>
+
+      <h3>Racket:</h3>
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>(define-struct invader (loc color bullets size))
+ ;; An Invader is a (make-invader Posn String PosInt PosInt)
+ 
+ (define invader1 (make-invader (make-posn 60 120) "green" 30 3))
+ 
+ #;(define (invader-temp1 inv)
+     (posn-temp1 (invader-loc inv))
+     (invader-color inv)
+     (invader-bullets inv)
+     (invader-size inv))
+ 
+ (define-struct ship (loc color speed))
+ ;; A Spaceship is a (make-ship Posn String PosInt)
+ ;; interp.: loc is a position on the Cartesian plane
+ ;; speed is measured in miles/hour
+ 
+ ;; A GamePiece is one of:
+ ;; - Spaceship
+ ;; - Invader
+ 
+ ;; NOTE: The Union data type is only in comments in DrRacket. In Java, however, this is not in comments.</code></pre>
+
+      <h3>Java:</h3>
+      <pre><code>interface IGamePiece {}
+ 
+ // Represents an Invader in the game
+ class Spaceship implements IGamePiece {
+     Location loc;
+     String color;
+     int speed;
+     
+     Spaceship(Location loc, String color, int speed){
+         this.loc = loc;
+         this.color = color;
+         this.speed = speed;
+     }
+ }
+ 
+ // Represents an Invader in the game
+ class Invader implements IGamePiece {
+     Location loc;
+     String color;
+     int bullets;
+     int size;
+     
+     Invader(Location loc, String color, int bullets, int size){
+         this.loc = loc;
+         this.color = color;
+         this.bullets = bullets;
+         this.size = size;
+     }
+ }
+ 
+ // A class to represent a location on the Cartesian plane
+ class Location {
+     int x;
+     int y;
+     
+     Location(int x, int y){
+         this.x = x;
+         this.y = y;
+     }
+ }
+ 
+ class Examples {
+     // You can't do the line below because it doesn't know what loc1 is yet
+     // Spaceship ship = new Spaceship(this.loc1, "blue", 55);
+     
+     Location loc1 = new Location(30, 40);
+     Location loc2 = new Location(60, 80);
+     
+     // Represents two IGamePieces: Spaceships and Invaders
+     IGamePiece ship = new Spaceship(this.loc1, "blue", 55);
+     IGamePiece invader1 = new Invader(this.loc2, "pink", 30, 3);
+     
+     // You can still do this, but it's bad practice
+     // Spaceship ship = new Spaceship(new Location(30, 40), "blue", 55);
+ }</code></pre>
+
+      <p><code <code class="hl"></code>>IGamePiece</code> is the type at compile time, while <code class="hl">Spaceship</code> and <code class="hl">Invader</code> are
+        the types at runtime. Use the <code class="hl">this</code> keyword to remove ambiguity. In Java, unions are represented by
+        interfaces, which allows for more general operations.</p>
+
+      <h2 class="fontM">Example - Ancestor Tree</h2>
+
+      <h3>Racket:</h3>
+      <pre><code>;; A Person is a (make-person String Person Person)
+ (define-struct person (name mom dad))
+ 
+ (define alice (make-person "Alice" 
+                 (make-person "Sally"
+                     (make-person "Abby"
+                         ...))))
+ ; this issue with this definition is that you cannot stop--you need a base case
+ ; for referential data
+ 
+ ;; An;; An AT is one of:
+ ;; - #false
+ ;; - (make-person String AT AT)</code></pre>
+
+      <h3>Java:</h3>
+      <pre><code>interface IAT{}
+
+// Class to represent an unknown in an ancestor tree
+class Unknown implements IAT {
+ Unknown() {}
+}
+
+// Class to represent a person in an ancestor tree
+class Person implements IAT {
+ String name;
+ int yob;
+ IAT mom;
+ IAT dad;
+ 
+ Person(String name, int yob, IAT mom, IAT dad) {
+     this.name = name;
+     this.yob = yob;
+     this.mom = mom;
+     this.dad = dad;
+ }
+}</code></pre>
+
+      <p>In this example, <code class="hl">IAT</code> is an interface representing a node in an ancestor tree. The
+        <code class="hl">Unknown</code> class represents an unknown person, while the <code class="hl">Person</code> class represents a person
+        with a name, year of birth (yob), and references to their mother (<code>mom</code>) and father
+        (<code>dad</code>), both of which are also of type <code class="hl">IAT</code>.
+      </p>
+
+      <h2 class="fontM">Conclusion</h2>
+      <p>Understanding unions in Java involves using interfaces to allow a variable to represent one of several types.
+        This concept is powerful for creating flexible and extensible data structures, such as game pieces in a video
+        game or nodes in an ancestor tree. By using interfaces, Java allows for the implementation of union types that
+        can lead to more generalized and maintainable code.</p>
+
+
+
+      <br>
+      <h1 id="com-data">Compound Data (Classes) -- Respresenting Data Structures</h1>
+
+      <p>In Java, compound data types are used to represent more complex structures that can contain multiple pieces of
+        data. These are typically implemented using classes. Classes can be either concrete or abstract. Let's explore
+        these concepts in detail.</p>
+
+      <h2 class="fontM">Concrete Classes</h2>
+      <p>A concrete class is a class that can be instantiated, meaning you can create objects from it. Concrete classes
+        define attributes and methods that represent the state and behavior of the objects.</p>
+
+      <p>Here is an example representing Books</p>
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>
+    import tester.*;
+
+    class Book {
+        String name;
+        String author;
+        double price;
+        int year;
+        Book(String name, String author, double price, int year) {
+            this.name = name;
+            this.author = author;
+            this.price = price;
+            this.year = year;
+        }
+        double getPrice() {
+            return this.price;
+        }
+        // to return the discounted price of this book given the discount rate 
+        double discount(double rate) {
+            return this.price - (rate * this.price);
+        }
+        // to return a new book with the same author and name as this book,
+        // but with price discounted at the given rate
+        Book discountedBook(double rate) {
+            return new Book(this.name, this.author, this.discount(rate), this.year);
+        }
+    }
+
+
+
+    /*
+    * Represent a bunch of books, and computing
+    * - their total price
+    * - how many books we have
+    * - all the books published before the given year
+    * - a sorted list of books
+    */
+
+    /*
+    * A list of books is one of
+    * empty
+    * (cons book list-of-books)
+    */
+
+    // DYNAMIC DISPATCH: deciding which method definition to invoke (in which class)
+    // based on the information available at runtime of the object that's invoking
+    // the method
+
+    interface ILoBook {
+        // to compute the total price of all books in this list of books
+        double totalPrice();
+        // to count how many books are in this list of books
+        int count();
+        // to return a list of all the books in this list of books 
+        // published before the given year
+        ILoBook allBooksBefore(int year);
+        // to construct a list of books that contains the same books as
+        // this list of books, but sorted increasing by price
+        ILoBook sortByPrice();
+        ILoBook insert(Book b);
+    }
+    class MtLoBook implements ILoBook {
+        MtLoBook() {
+            // nothing to do!
+        }
+        public double totalPrice() {
+            return 0;
+        }
+        public int count() {
+            return 0;
+        }
+        public ILoBook allBooksBefore(int year) {
+            return this;
+            // return new MtLoBook();
+        }
+        public ILoBook sortByPrice() {
+            return this;
+            // return new MtLoBook();
+        }
+        public ILoBook insert(Book b) {
+            return new ConsLoBook(b, this);
+        }
+    }
+    class ConsLoBook implements ILoBook {
+        Book first;
+        ILoBook rest;
+        ConsLoBook(Book first, ILoBook rest) {
+            this.first = first;
+            this.rest = rest;
+        }
+        public double totalPrice() {
+            /* Template:
+            * FIELDS:
+            * this.first -- Book
+            * this.rest -- ILoBook
+            * METHODS:
+            * this.totalPrice() -- double
+            * this.count() -- int
+            * this.allBooksBefore(int) -- ILoBook
+            * this.sortByPrice() -- ILoBook
+            * METHODS OF FIELDS:
+            * this.first.getPrice() -- double ****
+            * this.first.discount(double) -- double
+            * this.first.discountedBook(double) -- Book
+            * this.rest.totalPrice() -- double  *****
+            * this.rest.count() -- int
+            * this.rest.allBooksBefore(int) -- ILoBook
+            * this.rest.sortByPrice() -- ILoBook
+            */
+            return this.first.getPrice() + this.rest.totalPrice();
+        }
+        public int count() {
+            return 1 + this.rest.count();
+        }
+        public ILoBook allBooksBefore(int year) {
+            if (this.first.year < year) {
+                return new ConsLoBook(
+                    this.first,
+                    this.rest.allBooksBefore(year));
+            } else {
+                return this.rest.allBooksBefore(year);
+            }
+        }
+        public ILoBook sortByPrice() {
+            /*
+            * Assuming we have:
+            * ILoBook insert(Book) -- on cons? on ilobook?
+            * boolean isCheaper(Book) -- on Book
+            */
+
+            return this.rest.sortByPrice().insert(this.first);
+        }
+        // to insert the given book into this sorted list of books 
+        public ILoBook insert(Book b) {
+            if (b.getPrice() < this.first.getPrice()) {
+                return new ConsLoBook(b, this);
+            } else {
+                return new ConsLoBook(this.first, this.rest.insert(b));
+            }
+        }
+    }
+
+
+
+
+    class ExamplesBooks {
+        Book htdp = new Book("HtDP", "MF", 0.0, 2014);
+        Book hp = new Book("HP & the search for more money", "JKR", 9000.00, 2015);
+        Book gatsby = new Book("The Great Gatsby", "FSF", 15.99, 1930);
+        ILoBook mtList = new MtLoBook();
+        ILoBook twoBooks = new ConsLoBook(this.htdp, 
+                              new ConsLoBook(this.hp, 
+                                  this.mtList));
+        ILoBook threeBooks = new ConsLoBook(this.gatsby, this.twoBooks);
+    }</code></pre>
+
+      <h2 class="fontM">Abstract Classes</h2>
+      <p>An abstract class is a class that cannot be instantiated on its own and is meant to be subclassed. Abstract
+        classes can contain abstract methods, which are methods without a body that must be implemented by subclasses.
+        Abstract classes provide a template for other classes to extend.</p>
+      <p>Here is a great example of complex data struture in java - with a combinations of interfaces, abstract classes,
+        inheritance, etc.</p>
+      <h3>Example - Shape</h3>
+      <pre><code>
+          /*
+                                +-----------------------------------------+
+                                |  +------------------------------------+ |
+                                |  |                                    | |
+                                v  v                                    | |
+                    +----------------------------+                      | |          
+                    | IShape                     |                      | |           
+                    +----------------------------+                      | |         
+                    | double area()              |                      | |         
+                    | boolean distTo0()          |                      | |         
+                    | IShape grow(int)           |                      | |         
+                    | boolean biggerThan(IShape) |                      | |            
+                    | boolean contains(CartPt)   |                      | |         
+                    +----------------------------+                      | |               
+                                   |                                    | |               
+                                  / \                                   | |               
+                                  ---                                   | |               
+                                   |                                    | |
+               ---------------------------------------------            | |
+               |                                           |            | |
+   +-----------------------------------+ +----------------------------+ | |
+   | abstract AShape                   | | Combo                      | | |
+   +-----------------------------------+ +----------------------------+ | |
++--| CartPt loc                        | | IShape top                 |-+ |
+|  | String color                      | | IShape bot                 |---+
+|  +-----------------------------------+ +----------------------------+ 
+|  | abstract double area()            | | double area()              | 
+|  | boolean distTo0()                 | | boolean distTo0()          | 
+|  | abstract IShape grow(int)         | | IShape grow(int)           | 
+|  | boolean biggerThan(IShape)        | | boolean biggerThan(IShape) | 
+|  | abstract boolean contains(CartPt) | | boolean contains(CartPt)   |       
+|  +-----------------------------------+ +----------------------------+ 
+|                                  |                                    
+|                                 / \                                   
+|                                 ---                                   
+|                                  |                                    
+|                --------------------------------
+|                |                              |            
+| +--------------------------+  +--------------------------+  
+| | Circle                   |  | Rect                     |  
+| +--------------------------+  +--------------------------+  
+| | int radius               |  | int width                |  
+| +--------------------------+  | int height               |  
+| | double area()            |  +--------------------------+  
+| | boolean distTo0()        |  | double area()            |   
+| | IShape grow(int)         |  | IShape grow(int)         |  
+| | boolean contains(CartPt) |  | boolean contains(CartPt) |  
+| +--------------------------+  +--------------------------+  
+|                                            / \
+|                                            ---             
+|                                             |
+|                               +-----------------------------+ 
+|                               | Square                      | 
+|                               +-----------------------------+
+|                               +-----------------------------+
+|                               | IShape grow(int)            |  
+|                               +-----------------------------+       
+| 
++-------+
+        |
+        v                               
+  +-----------------------+
+  | CartPt                |
+  +-----------------------+
+  | int x                 |
+  | int y                 |
+  +-----------------------+
+  | double distTo0()      |
+  | double distTo(CartPt) |
+  +-----------------------+
+*/
+
+
+    interface IShape {
+        
+        // to compute the area of this shape
+        public double area();
+        
+        // to compute the distance form this shape to the origin
+        public double distTo0();
+        
+        // to increase the size of this shape by the given increment
+        public IShape grow(int inc);
+        
+        // is the area of this shape is bigger than the area of the given shape?
+        public boolean biggerThan(IShape that);
+        
+        // does this shape (including the boundary) contain the given point?
+        public boolean contains(CartPt pt);
+    }
+
+    // to represent a geometric shape
+    abstract class AShape implements IShape {
+        CartPt loc;
+        String color;
+        
+        AShape(CartPt loc, String color) {
+            this.loc = loc;
+            this.color = color;
+        }
+        
+        // to compute the area of this shape
+        public abstract double area();
+        
+        // to compute the distance form this shape to the origin
+        public double distTo0(){
+            return this.loc.distTo0();
+        }
+        
+        // to increase the size of this shape by the given increment
+        public abstract IShape grow(int inc);
+        
+        // is the area of this shape is bigger than the area of the given shape?
+        public boolean biggerThan(IShape that){
+            return this.area() >= that.area();
+        }
+        
+        // does this shape (including the boundary) contain the given point?
+        public abstract boolean contains(CartPt pt);
+    }
+
+    // to represent a circle
+    class Circle extends AShape {
+        int radius;
+        
+        Circle(CartPt center, int radius, String color) {
+            super(center, color);
+            this.radius = radius;
+        }
+        
+        /*  TEMPLATE 
+        Fields:
+        ... this.loc ...             -- CartPt
+        ... this.rad ...             -- int
+        ... this.color ...           -- String
+        Methods:
+        ... this.area() ...                  -- double 
+        ... this.distTo0() ...               -- double
+        ... this.grow(int) ...               -- IShape
+        ... this.biggerThan(IShape) ...      -- boolean
+        ... this.contains(CartPt) ...        -- boolean 
+        Methods for fields:
+        ... this.loc.distTo0() ...           -- double 
+        ... this.loc.distTo(CartPt) ...      -- double 
+        */
+        
+        // to compute the area of this shape
+        public double area(){
+            return Math.PI * this.radius * this.radius;
+        }
+        
+        // to compute the distance form this shape to the origin
+        public double distTo0(){
+            return this.loc.distTo0() - this.radius;
+        }
+        
+        // to increase the size of this shape by the given increment
+        public IShape grow(int inc){
+            return new Circle(this.loc, this.radius + inc, this.color);
+        }
+        
+        // does this shape (including the boundary) contain the given point?
+        public boolean contains(CartPt pt){
+            return this.loc.distTo(pt) <= this.radius;
+        }
+        
+    }
+
+
+    // to represent a rectangle
+    class Rect extends AShape {
+        int width;
+        int height;
+        
+        Rect(CartPt nw, int width, int height, String color) {
+            super(nw, color);
+            this.width = width;
+            this.height = height;
+        }
+        
+        /* TEMPLATE
+        FIELDS
+        ... this.loc ...             -- CartPt
+        ... this.width ...           -- int
+        ... this.height ...          -- int
+        ... this.color ...           -- String
+        METHODS
+        ... this.area() ...                  -- double 
+        ... this.distTo0() ...               -- double 
+        ... this.grow(int) ...               -- IShape
+        ... this.biggerThan(IShape) ...      -- boolean
+        ... this.contains(CartPt) ...        -- boolean 
+        METHODS FOR FIELDS:
+        ... this.loc.distTo0() ...           -- double 
+        ... this.loc.distTo(CartPt) ...      -- double 
+        */
+        
+        // to compute the area of this shape
+        public double area(){
+            return this.width * this.height;
+        }
+        
+        // to increase the size of this shape by the given increment
+        public IShape grow(int inc){
+            return new Rect(this.loc, this.width + inc, this.height + inc, 
+                            this.color);
+        }
+        
+        // does this shape (including the boundary) contain the given point?
+        public boolean contains(CartPt pt){
+            return (this.loc.x <= pt.x) && (pt.x <= this.loc.x + this.width) &&
+            (this.loc.y <= pt.y) && (pt.y <= this.loc.y + this.height);            
+        }
+    }
+
+
+    //to represent a square
+    class Square extends Rect {
+        
+        Square(CartPt nw, int size, String color) {
+            super(nw, size, size, color);
+        }
+        
+        /* TEMPLATE
+        FIELDS
+        ... this.loc ...             -- CartPt
+        ... this.width ...           -- int
+        ... this.height ...          -- int
+        ... this.color ...           -- String
+        METHODS
+        ... this.area() ...                  -- double 
+        ... this.distTo0() ...               -- double 
+        ... this.grow(int) ...               -- IShape
+        ... this.biggerThan(IShape) ...      -- boolean
+        ... this.contains(CartPt) ...        -- boolean
+        METHODS FOR FIELDS:
+        ... this.loc.distTo0() ...           -- double 
+        ... this.loc.distTo(CartPt) ...      -- double 
+        */
+        
+        // to increase the size of this shape by the given increment
+        public IShape grow(int inc){
+            return new Square(this.loc, this.width + inc, this.color);
+        }
+    }
+
+    // to represent a shape that combines two existing shapes
+    class Combo implements IShape {
+        IShape top;
+        IShape bot;
+        
+        Combo(IShape top, IShape bot) {
+            this.top = top;
+            this.bot = bot;
+        }
+        
+        /* TEMPLATE
+        FIELDS
+        ... this.top ...           -- IShape
+        ... this.bot ...           -- IShape
+        METHODS
+        ... this.area() ...                  -- double 
+        ... this.distTo0() ...               -- double 
+        ... this.grow(int) ...               -- IShape
+        ... this.biggerThan(IShape) ...      -- boolean
+        ... this.contains(CartPt) ...        -- boolean
+        METHODS FOR FIELDS:
+        ... this.top.area() ...                  -- double 
+        ... this.top.distTo0() ...               -- double 
+        ... this.top.grow(int) ...               -- IShape
+        ... this.top.biggerThan(IShape) ...      -- boolean
+        ... this.top.contains(CartPt) ...        -- boolean
+        
+        ... this.bot.area() ...                  -- double 
+        ... this.bot.distTo0() ...               -- double 
+        ... this.bot.grow(int) ...               -- IShape
+        ... this.bot.biggerThan(IShape) ...      -- boolean
+        ... this.bot.contains(CartPt) ...        -- boolean
+        */  
+        // to compute the area of this shape
+        public double area() {
+            return this.top.area() + this.bot.area();
+        }
+        
+        // to compute the distance form this shape to the origin
+        public double distTo0(){
+            return Math.min(this.top.distTo0(), this.bot.distTo0());
+        }
+        
+        // to increase the size of this shape by the given increment
+        public IShape grow(int inc) {
+            return new Combo(this.top.grow(inc), this.bot.grow(inc));
+        }
+        
+        // is the area of this shape is bigger than the area of the given shape?
+        public boolean biggerThan(IShape that){
+            return this.area() >= that.area();
+        }
+        
+        // does this shape (including the boundary) contain the given point?
+        public boolean contains(CartPt pt) {
+            return this.top.contains(pt) || this.bot.contains(pt);
+        }
+    }
+
+
+    // to represent a Cartesian point
+    class CartPt {
+        int x;
+        int y;
+        
+        CartPt(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+        
+        /* TEMPLATE
+        FIELDS
+        ... this.x ...          -- int
+        ... this.y ...          -- int
+        METHODS
+        ... this.distTo0() ...        -- double
+        ... this.distTo(CartPt) ...   -- double
+        */
+        
+        // to compute the distance form this point to the origin
+        public double distTo0(){
+            return Math.sqrt(this.x * this.x + this.y * this.y);
+        }
+        
+        // to compute the distance form this point to the given point
+        public double distTo(CartPt pt){
+            return Math.sqrt((this.x - pt.x) * (this.x - pt.x) + 
+                            (this.y - pt.y) * (this.y - pt.y));
+        }
+    }
+
+    class ExamplesShapes {
+        ExamplesShapes() {}
+        
+        CartPt pt1 = new CartPt(0, 0);
+        CartPt pt2 = new CartPt(3, 4);
+        CartPt pt3 = new CartPt(7, 1);
+        
+        IShape c1 = new Circle(new CartPt(50, 50), 10, "red");
+        IShape c2 = new Circle(new CartPt(50, 50), 30, "red");
+        IShape c3 = new Circle(new CartPt(30, 100), 30, "blue");
+        
+        IShape s1 = new Square(new CartPt(50, 50), 30, "red");
+        IShape s2 = new Square(new CartPt(50, 50), 50, "red");
+        IShape s3 = new Square(new CartPt(20, 40), 10, "green");
+        
+        IShape r1 = new Rect(new CartPt(50, 50), 30, 20, "red");
+        IShape r2 = new Rect(new CartPt(50, 50), 50, 40, "red");
+        IShape r3 = new Rect(new CartPt(20, 40), 10, 20, "green");
+        
+        IShape cb1 = new Combo(this.r1, this.c1);
+        IShape cb2 = new Combo(this.r2, this.r3);
+        IShape cb3 = new Combo(this.cb1, this.cb2);
+        
+        // test the method distTo0 in the class CartPt
+        boolean testDistTo0(Tester t) { 
+            return
+            t.checkInexact(this.pt1.distTo0(), 0.0, 0.001) &&
+            t.checkInexact(this.pt2.distTo0(), 5.0, 0.001);
+        }
+        
+        // test the method distTo in the class CartPt
+        boolean testDistTo(Tester t) { 
+            return
+            t.checkInexact(this.pt1.distTo(this.pt2), 5.0, 0.001) &&
+            t.checkInexact(this.pt2.distTo(this.pt3), 5.0, 0.001);
+        }
+        
+        // test the method area in the shape classes
+        boolean testShapeArea(Tester t) { 
+            return
+            t.checkInexact(this.c1.area(), 314.15, 0.01) &&
+            t.checkInexact(this.s1.area(), 900.0, 0.01) &&
+            t.checkInexact(this.r1.area(), 600.0, 0.01) &&
+            t.checkInexact(this.cb1.area(), 914.15926, 0.01) &&
+            t.checkInexact(this.cb2.area(), 2200.0, 0.01) &&
+            t.checkInexact(this.cb3.area(), 3114.15926, 0.01);
+        }
+        
+        // test the method distTo0 in the shape classes
+        boolean testShapeDistTo0(Tester t) { 
+            return
+            t.checkInexact(this.c1.distTo0(), 60.71, 0.01) &&
+            t.checkInexact(this.c3.distTo0(), 74.40, 0.01) &&
+            t.checkInexact(this.s1.distTo0(), 70.71, 0.01) &&
+            t.checkInexact(this.s3.distTo0(), 44.72, 0.01) &&
+            t.checkInexact(this.r1.distTo0(), 70.71, 0.01) &&
+            t.checkInexact(this.r3.distTo0(), 44.72, 0.01) &&
+            t.checkInexact(this.cb1.distTo0(), 60.71, 0.01) &&
+            t.checkInexact(this.cb2.distTo0(), 44.72, 0.01) &&
+            t.checkInexact(this.cb3.distTo0(), 44.72, 0.01);
+        }
+        
+        // test the method grow in the shape classes
+        boolean testShapeGrow(Tester t) { 
+            return
+            t.checkExpect(this.c1.grow(20), this.c2) &&
+            t.checkExpect(this.s1.grow(20), this.s2) &&
+            t.checkExpect(this.r1.grow(20), this.r2) &&
+            t.checkExpect(this.cb1.grow(20), new Combo(this.r2, this.c2));
+        }
+        
+        // test the method biggerThan in the shape classes
+        boolean testShapeBiggerThan(Tester t) { 
+            return
+            t.checkExpect(this.c1.biggerThan(this.c2), false) && 
+            t.checkExpect(this.c2.biggerThan(this.c1), true) && 
+            t.checkExpect(this.c1.biggerThan(this.s1), false) && 
+            t.checkExpect(this.c1.biggerThan(this.s3), true) && 
+            t.checkExpect(this.c1.biggerThan(this.cb1), false) &&
+            
+            t.checkExpect(this.s1.biggerThan(this.s2), false) && 
+            t.checkExpect(this.s2.biggerThan(this.s1), true) && 
+            t.checkExpect(this.s1.biggerThan(this.c1), true) && 
+            t.checkExpect(this.s3.biggerThan(this.c1), false) && 
+            t.checkExpect(this.s2.biggerThan(this.cb1), true) &&
+            
+            t.checkExpect(this.r1.biggerThan(this.r2), false) && 
+            t.checkExpect(this.r2.biggerThan(this.r1), true) && 
+            t.checkExpect(this.r1.biggerThan(this.c1), true) && 
+            t.checkExpect(this.r3.biggerThan(this.s1), false) && 
+            t.checkExpect(this.r2.biggerThan(this.cb1), true) && 
+            t.checkExpect(this.r3.biggerThan(this.cb1), false) && 
+            
+            t.checkExpect(this.cb2.biggerThan(this.r1), true) &&
+            t.checkExpect(this.cb1.biggerThan(this.r2), false) &&  
+            t.checkExpect(this.cb1.biggerThan(this.c1), true) && 
+            t.checkExpect(this.cb1.biggerThan(this.c3), false) && 
+            t.checkExpect(this.cb1.biggerThan(this.s2), false) && 
+            t.checkExpect(this.cb2.biggerThan(this.s1), true) && 
+            t.checkExpect(this.cb1.biggerThan(this.cb3), false) && 
+            t.checkExpect(this.cb2.biggerThan(this.cb1), true);
+        }
+        
+        // test the method contains in the shape classes
+        boolean testShapeContains(Tester t) { 
+            return
+            t.checkExpect(this.c1.contains(new CartPt(100, 100)), false) && 
+            t.checkExpect(this.c2.contains(new CartPt(40, 60)), true) &&
+            t.checkExpect(this.s1.contains(new CartPt(100, 100)), false) && 
+            t.checkExpect(this.s2.contains(new CartPt(55, 60)), true) &&
+            t.checkExpect(this.r1.contains(new CartPt(100, 100)), false) && 
+            t.checkExpect(this.r2.contains(new CartPt(55, 60)), true) &&
+            t.checkExpect(this.cb1.contains(new CartPt(100, 100)), false) && 
+            t.checkExpect(this.cb2.contains(new CartPt(55, 60)), true);
+        }
+    }</code></pre>
+
+      <p>In this way, the abstract class <code class="hl">Shape</code> provides a template, ensuring that all shapes
+        have a color and can calculate their area, while each specific shape can implement the details of how its area
+        is calculated.</p>
+      <br>
+      <h2 class="fontM">Understanding Abstract Classes and Interfaces in Java</h2>
+      <br>
+      <p>
+        The <code class="hl">extends</code> keyword means that a class inherits everything from another class. For
+        example, if <code class="hl">Circle</code>, <code class="hl">Square</code>, and <code
+          class="hl">Rectangle</code> extend <code class="hl">AShape</code>, they inherit all its properties and
+        methods. Because <code class="hl">AShape</code> implements the <code class="hl">IShape</code> interface, these
+        subclasses also implement <code class="hl">IShape</code> "is-a relationship!!".
+      </p>
+      <p>
+        You cannot create objects directly from an abstract class like <code class="hl">AShape</code>. Abstract classes
+        are templates meant to be extended by other classes. When you create a subclass, you use the <code
+          class="hl">super</code> command to send parameters to the constructor of the abstract class.
+      </p>
+      <p>
+        Abstract classes provide a structure that subclasses must follow. You can also extend non-abstract classes, but
+        extending abstract classes ensures that certain methods and properties are included in all subclasses.
+      </p>
+      <p>
+        Subclasses can override methods from their abstract superclass to provide specific behavior. The program always
+        uses the method defined in the most specific (or local) class.
+      </p>
+      <p>
+        Using abstract classes and interfaces makes your code more flexible and easier to manage. It allows you to add
+        new types without changing existing code, which is very helpful in large projects.
+      </p>
+      <p>
+        Should a combination shape be an instance of <code class="hl">AShape</code>?
+        <br>No, because a combination shape might not have specific attributes like location or color, which <code
+          class="hl">AShape</code> requires. Instead, it should implement relevant interfaces or extend other classes
+        that suit its unique properties.
+      </p>
+
+      <br>
+      <h1 id="dy-dispatch">Double Dispatch -- Dynamics Dispatch</h1>
+
+      <h2 class="fontM">Dot Product Example</h2>
+      <p>
+        The dot product is an operation that takes two equal-length sequences of numbers (usually coordinate vectors)
+        and returns a single number. For example, given two lists, <code class="hl">(1, 2, 3)</code> and <code
+          class="hl">(5, 6)</code>, the dot product calculation should return <code
+          class="hl">5*1 + 6*2 + 0*3 = 5 + 12 + 0 = 17</code>. The concept of double dynamic dispatch allows us to
+        determine the type of the list (whether it is a <code class="hl">ConsLoInt</code> or <code
+          class="hl">MtLoInt</code>) and call the appropriate method.
+      </p>
+
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>interface ILoInt {
+    int dotProduct(ILoInt that);
+    // Helper for dot product
+    int dotProductHelp(int firstOfOriginalList, ILoInt restOfOriginalList); 
+}
+
+class ConsLoInt implements ILoInt {
+    int first;
+    ILoInt rest;
+    
+    ConsLoInt(int f, ILoInt r) {
+        this.first = f;
+        this.rest = r;
+    }
+    
+    public int dotProduct(ILoInt that) {
+        return that.dotProductHelp(this.first, this.rest);
+    }
+    
+    public int dotProductHelp(int firstOfOriginalList, ILoInt restOfOriginalList) {
+        return this.first * firstOfOriginalList + this.rest.dotProduct(restOfOriginalList);
+    }
+}
+
+class MtLoInt implements ILoInt {
+    public int dotProduct(ILoInt that) {
+        return 0;
+    }
+    
+    public int dotProductHelp(int firstOfOriginalList, ILoInt restOfOriginalList) {
+        return 0;
+    }
+}
+
+class Examples {
+    ILoInt mt = new MtLoInt();
+    
+    ILoInt list1 = new ConsLoInt(4, new ConsLoInt(5, this.mt));
+    ILoInt list2 = new ConsLoInt(1, new ConsLoInt(2, new ConsLoInt(3, this.mt)));
+    
+    boolean testDot(Tester t) {
+        return t.checkExpect(list1.dotProduct(list1), 16 + 25)
+            && t.checkExpect(this.list1.dotProduct(this.list2), 4 + 10);
+    }
+}
+    </code></pre>
+
+      <h2 class="fontM">List Abstractions</h2>
+      <p>
+        List abstractions provide ways to operate on lists using functions. Here are some common list abstractions:
+      </p>
+      <ul>
+        <li><strong>Filter:</strong> <code class="hl">[X -&gt; Boolean] [List-of X] -&gt; [List-of X]</code></li>
+        <li><strong>Map:</strong> <code class="hl">[X -&gt; Y] [List-of X] -&gt; [List-of Y]</code></li>
+        <li><strong>Foldr:</strong> <code class="hl">[X Y -&gt; Y] Y [List-of X] -&gt; Y</code></li>
+        <li><strong>Andmap:</strong> <code class="hl">[X -&gt; Boolean] [List-of X] -&gt; Boolean</code></li>
+        <li><strong>Ormap:</strong> <code class="hl">[X -&gt; Boolean] [List-of X] -&gt; Boolean</code></li>
+      </ul>
+
+      <p>Currently, we can't implement <code class="hl">Foldr</code> or <code class="hl">Map</code> as they require
+        knowing the return type <code class="hl">Y</code>.</p>
+
+      <h3>Filter - Painting Example</h3>
+      <p>Using the <code class="hl">filter</code> abstraction, we can create function objects to override methods and
+        filter a list of paintings based on certain criteria.</p>
+
+      <pre><code>// In ConsLoPainting
+public ILoPainting filter(IPaintingPredicate pred) {
+    if(pred.apply(this.first)) {
+        return new ConsLoPainting(this.first, this.rest.filter(pred));
+    } else {
+        return this.rest.filter(pred);
+    }
+}
+
+// In IPaintingPredicate
+class BySomeArtist implements IPaintingPredicate {
+    String artistName;
+    
+    BySomeArtist(String artistName) {
+        this.artistName = artistName;
+    }
+    
+    // Is the given painting painted by this.artistName?
+    public boolean apply(Painting p) {
+        return p.checkArtistName(this.artistName);
+    }
+}
+
+class BeforeSomeYear implements IPaintingPredicate {
+    int year;
+    
+    BeforeSomeYear(int year) {
+        this.year = year;
+    }
+    
+    public boolean apply(Painting p) {
+        return p.year < this.year;
+    }
+}
+
+// Example usage
+this.list3.filter(new BySomeArtist("Monet")); // returns a filtered list
+    </code></pre>
+
+      <h3>Ormap</h3>
+      <pre><code>// In ILoPainting
+boolean ormap(IPaintingPredicate pred);
+
+// In MtLoPainting
+boolean ormap(IPaintingPredicate pred) {
+    return false;
+}
+
+// In ConsLoPainting
+boolean ormap(IPaintingPredicate pred) {
+    return pred.apply(this.first) || this.rest.ormap(pred);
+}
+    </code></pre>
+
+      <h3>Andmap</h3>
+      <pre><code>// In ILoPainting
+boolean andmap(IPaintingPredicate pred);
+
+// In MtLoPainting
+boolean andmap(IPaintingPredicate pred) {
+    return true;
+}
+
+// In ConsLoPainting
+boolean andmap(IPaintingPredicate pred) {
+    return pred.apply(this.first) && this.rest.andmap(pred);
+}
+    </code></pre>
+
+      <h3>Higher Order Predicates</h3>
+      <p>A higher-order predicate is a predicate that takes another predicate as an argument. This allows for more
+        complex filtering and sorting operations.</p>
+
+      <pre><code>// In IPaintingPredicate
+class AndPredicate implements IPaintingPredicate {
+    IPaintingPredicate left;
+    IPaintingPredicate right;
+    
+    AndPredicate(IPaintingPredicate left, IPaintingPredicate right) {
+        this.left = left;
+        this.right = right;
+    }
+    
+    /*
+     * FIELDS:
+     * this.left ... IPaintingPredicate
+     * this.right ... IPaintingPredicate
+     * METHODS:
+     * this.apply(Painting) ... Boolean
+     * METHODS FOR FIELDS: 
+     * this.left.apply(Painting) ... Boolean
+     * this.right.apply(Painting) ... Boolean
+     */
+    
+    // Does the painting pass both predicates?
+    public boolean apply(Painting p) {
+        return this.left.apply(p) && this.right.apply(p);
+    }
+}
+
+// Example usage
+this.list3.filter(new AndPredicate(new BySomeArtist("Monet"), new BeforeSomeYear(1900)));
+    </code></pre>
+
+      <p>
+        These predicates can be nested and used for complex filtering and sorting operations, making your code more
+        flexible and powerful.
+      </p>
+
+
+      <br>
+      <h1 id="visitors">Visitors -- Dynamics Dispatch</h1>
+
+      <p>There are genral two visitor approches</p>
+      <ul>
+        <li><a href="#ilist-visitor">Direct method implementation (inside of <code class="hl">IList</code>)</a></li>
+        <li><a href="#ilist-visitor2">IListVisitor (inside of <code class="hl">IListVisitor</code>)</a></li>
+      </ul>
+
+      <p><i>"The main difference is where the functionality is implemented: either in IList or in IListVisitor. The
+          choice of one over the other will often depend on whether you can modify IList to add more functionality or
+          you cannot modify it but still want to add more functionality."</i> -- Professor Razzaq</p>
+
+      <h2 class="fontM" id="ilist-visitor">Direct method implementation Approch</h2>
+
+      <p>A quick reminder/ note on the following higher-order functions:</p>
+      <ul>
+        <li>Filter <code class="hl">IList&lt;T&gt; -> IList&lt;T&gt;</code>: Takes a <code
+            class="hl">Predicate&lt;T&gt;</code> object.</li>
+
+        <li>Map <code class="hl">IList&lt;T&gt; -> IList&lt;U&gt;</code>: Takes a <code
+            class="hl">Function&lt;T,U&gt;</code> object.</li>
+
+        <li>Fold <code class="hl">IList&lt;T&gt; -> U</code>: Takes an initial U value, and a <code
+            class="hl">BiFunction&lt;T,U,U&gt;</code> object.</li>
+      </ul>
+      <p>Example of <code class="hl">IList</code> with the direct approch</p>
+
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>
+
+    import java.util.function.*;
+
+    import tester.Tester;
+
+    //represents a generic list
+    interface IList&lt;T&gt; {
+      //filter this list using the given predicate
+      IList&lt;T&gt; filter(Predicate&lt;T&gt; pred);
+
+      //map a given function onto every member of this list and return a list of the results
+      &lt;U&gt; IList&lt;U&gt; map(Function&lt;T, U&gt; converter);
+
+      //combine the items in this list using the given function
+      &lt;U&gt; U fold(BiFunction&lt;T,U,U&gt; converter, U initial);  
+    }
+
+    //represents a generic empty list
+    class MtList&lt;T&gt; implements IList&lt;T&gt; {
+
+      MtList() {}
+
+      /* fields:
+      * 
+      * methods:
+      * this.filter(Predicate&lt;T&gt;) ... IList&lt;T&gt;
+      * this.map(Function&lt;T, U&gt;) ... &lt;U&gt; IList&lt;U&gt;
+      * this.fold(BiFunction&lt;T,U,U&gt;, U) ... &lt;U&gt; U
+
+      * methods for fields:
+
+      */
+
+      //filter this empty list using the given predicate
+      public IList&lt;T&gt; filter(Predicate&lt;T&gt; pred) {
+        return new MtList&lt;T&gt;();
+      }
+
+      //map a given function onto every member of this list and return a list of the results
+      public &lt;U&gt; IList&lt;U&gt; map(Function&lt;T, U&gt; converter) {
+        return new MtList&lt;U&gt;();
+      }
+
+      //combine the items in this list using the given function
+      public &lt;U&gt; U fold(BiFunction&lt;T,U,U&gt; converter, U initial) {
+        return initial;
+      }
+    }
+
+    //represents a generic non-empty list
+    class ConsList&lt;T&gt; implements IList&lt;T&gt; {
+      T first;
+      IList&lt;T&gt; rest;
+
+      ConsList(T first, IList&lt;T&gt; rest) {
+        this.first = first;
+        this.rest = rest;
+      }
+
+      /* fields:
+      * this.first ... T
+      * this.rest ...  IList&lt;T&gt;
+      * methods:
+      * this.filter(Predicate&lt;T&gt;) ... IList&lt;T&gt;
+      * this.map(Function&lt;T, U&gt;) ... &lt;U&gt; IList&lt;U&gt;
+      * this.fold(BiFunction&lt;T,U,U&gt;, U) ... &lt;U&gt; U
+
+      * methods for fields:
+      * this.rest.filter(Predicate&lt;T&gt;) ... IList&lt;T&gt;
+      * this.rest.map(Function&lt;T, U&gt;) ... &lt;U&gt; IList&lt;U&gt;
+      * this.rest.fold(BiFunction&lt;T,U,U&gt;, U) ... &lt;U&gt; U
+      */
+
+      //filter this non-empty list using the given predicate
+      public IList&lt;T&gt; filter(Predicate&lt;T&gt; pred) {
+        if (pred.test(this.first)) {
+          return new ConsList&lt;T&gt;(this.first, this.rest.filter(pred));
+        }
+        else {
+          return this.rest.filter(pred);
+        }
+      }
+
+      //map a given function onto every member of this list and return a list of the results
+      public &lt;U&gt; IList&lt;U&gt; map(Function&lt;T, U&gt; converter) {
+        return new ConsList&lt;U&gt;(converter.apply(this.first), this.rest.map(converter));
+      }
+
+      //combine the items in this list using the given function
+      public &lt;U&gt; U fold(BiFunction&lt;T,U,U&gt; converter, U initial) {
+        return converter.apply(this.first, this.rest.fold(converter,initial));
+      }
+    }
+
+    // rep a pred that cjeck str start w a
+    class StingStartWJ implements Predicate<String> {
+      public boolean test(String t) {
+        return t.substring(0,1).equals("a");
+      }
+    }
+
+    // rep a bifunc that check str end w/ er
+    class EndWEr implements BiFunction<String, Integer, Integer> {
+
+      @Override
+      public Integer apply(String t, Integer u) {
+        return t.substring(t.length() - 2).equals("er") ?
+            u + 1 : u;
+      }
+
+    }
+
+    // rep a func that make str start w first 2 letters 
+    class First2 implements Function<String, String> {
+
+      @Override
+      public String apply(String t) {
+        return t.substring(0,2);
+      }
+
+    }
+
+    class ExamplesLists{ 
+
+      void testFilter(Tester t) {
+        months.filter((mon) -> mon.substring(0,1).equals("a")) -> "April" 
+      }
+
+      void testFold(Tester t) {
+            t.checkExpect(months.fold((cur,acc) -> 
+            cur.substring(cur.length() - 2).equals("er") ?
+                acc + 1 : acc, 0)
+                , 4)
+            &&  t.checkExpect(months.fold(new EndWEr(), 0), 4); 
+      }
+
+      void testMap(Tester t) {
+            (months.map((cur) -> cur.substring(0,2))) -> list of all months with only 2 letters
+    }
+  }
+</code></pre>
+
+      <h2 class="fontM" id="ilist-visitor2">IListVisitor Approch</h2>
+
+      <p>Below is a great graph map for different implementation for this approch (please overlook my handwriting)</p>
+      <div style="width: 100%" class="ui rounded images">
+        <p><img class="ui image" src="../img/f2.png"></p>
+      </div>
+
+      <p>Here are examples of higher-order visitor function</p>
+
+      <pre><code>
+// visitor interface for lists
+interface IListVisitor&lt;T, R&gt; {
+  // visits an empty list
+  R visit(MtList&lt;T&gt; mt);
+
+  // visits a non-empty list
+  R visit(ConsList&lt;T&gt; cons);
+}
+
+// visitor that filters the list based on a predicate
+class FilterVisitor&lt;T&gt; implements IListVisitor<T, IList&lt;T&gt;> {
+  Predicate&lt;T&gt; pred;
+
+  FilterVisitor(Predicate&lt;T&gt; pred) {
+    this.pred = pred;
+  }
+
+  // returns the empty list when visiting an empty list
+  public IList&lt;T&gt; visit(MtList&lt;T&gt; mt) {
+    return mt;
+  }
+
+  // returns a filtered non-empty list based on the predicate
+  public IList&lt;T&gt; visit(ConsList&lt;T&gt; cons) {
+    if (this.pred.test(cons.first)) {
+      return new ConsList&lt;T&gt;(cons.first, cons.rest.accept(this));
+    } else {
+      return cons.rest.accept(this);
+    }
+  }
+}
+
+// visitor that maps a function onto every element in the list
+class MapVisitor&lt;T, U&gt; implements IListVisitor<T, IList&lt;U&gt;> {
+  Function&lt;T, U&gt; converter;
+
+  MapVisitor(Function&lt;T, U&gt; converter) {
+    this.converter = converter;
+  }
+
+  // returns an empty list when visiting an empty list
+  public IList&lt;U&gt; visit(MtList&lt;T&gt; mt) {
+    return new MtList&lt;U&gt;();
+  }
+
+  // returns a mapped non-empty list based on the converter function
+  public IList&lt;U&gt; visit(ConsList&lt;T&gt; cons) {
+    return new ConsList&lt;U&gt;(this.converter.apply(cons.first),
+        cons.rest.accept(this));
+  }
+}
+
+// visitor that folds the list into a single value based on a function and initial value
+class FoldRVisitor&lt;T, U&gt; implements IListVisitor&lt;T, U&gt; {
+  BiFunction&lt;T, U, U&gt; converter;
+  U initial;
+
+  FoldRVisitor(BiFunction&lt;T, U, U&gt; converter, U initial) {
+    this.converter = converter;
+    this.initial = initial;
+  }
+
+  // returns the initial value when visiting an empty list
+  public U visit(MtList&lt;T&gt; mt) {
+    return initial;
+  }
+
+  // returns the folded value when visiting a non-empty list
+  public U visit(ConsList&lt;T&gt; cons) {
+    return this.converter.apply(cons.first, cons.rest.accept(this));
+  }
+}
+
+// visitor that appends a list to another list
+class AppendVisitor&lt;T&gt; implements IListVisitor<T, IList&lt;T&gt;>  {
+  IList&lt;T&gt; aList;
+
+  AppendVisitor(IList&lt;T&gt; aList) {
+    this.aList = aList;
+  }
+
+  // returns the list to append when visiting an empty list
+  public IList&lt;T&gt; visit(MtList&lt;T&gt; mt) {
+    return aList;
+  }
+
+  // returns a new list that is the result of appending the list to a non-empty list
+  @Override
+  public IList&lt;T&gt; visit(ConsList&lt;T&gt; cons) {
+    return new ConsList&lt;T&gt;(cons.first, cons.rest.accept(this));
+  }
+}</code></pre>
+
+
+
+      <br>
+      <h1 id="aiasing">Aliasing -- Mutation</h1>
+
+      <p>
+        When updating a person's information, it's often better to modify the existing person object rather than
+        creating a new one with the updated value. This approach ensures that any references to the person in other
+        lists or directly will reflect the changes.
+      </p>
+
+      <h2 class="fontM">Person Class</h2>
+
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>class Person {
+    String name;
+    int phone;
+    
+    Person(String name, int phone) {
+        this.name = name;
+        this.phone = phone;
+    }
+    
+    // Returns true if the given person has the same name and phone number as this person
+    boolean samePerson(Person that) {
+        return this.name.equals(that.name) && this.phone == that.phone;
+    }
+    
+    // Returns true if this person has the same name as the given String
+    boolean sameName(String name) {
+        return this.name.equals(name);
+    }
+    
+    // Returns the phone number of this person if they have the same name as the given String
+    int phoneOf(String name) {
+        if (this.name.equals(name)) {
+            return this.phone;
+        } else {
+            throw new RuntimeException("The given name does not match this person's name");
+        }
+    }
+    
+    // EFFECT: changes this person's phone number to the given one
+    void changePhone(int newNum) {
+        this.phone = newNum;
+    }
+}
+    </code></pre>
+
+      <h2 class="fontM">ILoPerson Interface and Implementations</h2>
+      <pre><code>interface ILoPerson {
+    // Returns true if this list contains a person with the given name
+    boolean contains(String name);
+    
+    // Gets the phone number of the person with the given name
+    int findPhoneNum(String name);
+    
+    // EFFECT: changes the phone number of the person with the given name
+    void changeNum(String name, int newNum);
+}
+
+class MtLoPerson implements ILoPerson {
+    public boolean contains(String name) {
+        return false;
+    }
+    
+    public int findPhoneNum(String name) {
+        return -1; 
+    }
+    
+    public void changeNum(String name, int newNum) {}
+}
+
+class ConsLoPerson implements ILoPerson {
+    Person first;
+    ILoPerson rest;
+    
+    ConsLoPerson(Person first, ILoPerson rest) {
+        this.first = first;
+        this.rest = rest;
+    }
+    
+    public boolean contains(String name) {
+        return this.first.sameName(name) || this.rest.contains(name);
+    }
+    
+    public int findPhoneNum(String name) {
+        if (this.first.sameName(name)) {
+            return this.first.phoneOf(name);
+        } else {
+            return this.rest.findPhoneNum(name);
+        }
+    }
+    
+    public void changeNum(String name, int newNum) {
+        if (this.first.sameName(name)) {
+            this.first.changePhone(newNum);
+        } else {
+            this.rest.changeNum(name, newNum);
+        }
+    }
+}
+    </code></pre>
+
+      <h2 class="fontM">Examples and Test Cases</h2>
+      <pre><code>class Examples {
+    ILoPerson friends;
+    ILoPerson family;
+    Person frank;
+    
+    void initData() {
+        frank = new Person("Frank", 7294);
+        friends = new ConsLoPerson(frank, new MtLoPerson());
+        family = new ConsLoPerson(frank, new MtLoPerson());
+    }
+    
+    void testChangePhoneNum(Tester t) {
+        this.initData();
+        
+        t.checkExpect(this.friends.findPhoneNum("Frank"), 7294);
+        t.checkExpect(this.family.findPhoneNum("Frank"), 7294);
+        t.checkExpect(this.frank.phone, 7294);
+        
+        this.friends.changeNum("Frank", 4927);
+        
+        t.checkExpect(this.friends.findPhoneNum("Frank"), 4927);
+        t.checkExpect(this.family.findPhoneNum("Frank"), 4927);
+        t.checkExpect(this.frank.phone, 4927);
+    }
+}
+    </code></pre>
+
+      <h2 class="fontM">Alias Example</h2>
+      <p>
+        Aliasing occurs when multiple variables refer to the same object. Here are some examples to illustrate this
+        concept:
+      </p>
+      <pre><code>Person alice1 = new Person("Alice", 67890);
+Person alice2 = new Person("Alice", 67890);
+Person alice3 = alice1; // Alias for alice1
+
+alice1.samePerson(alice2); // -> false, different objects with the same values
+alice1.samePerson(alice3); // -> true, same object
+
+alice1.phone = 09676; // Change phone number of alice1
+
+alice1.samePerson(alice2); // -> false, still different objects
+alice1.samePerson(alice3); // -> true, still the same object
+    </code></pre>
+
+
+      <br>
+      <h1 id="eq-iq">Extensional Equality vs Intensional Equality -- Mutation</h1>
+
+      <h2 class="fontM">Extensional Equality vs. Intensional Equality</h2>
+      <br>
+      <p>There are generally two kinds of equality:</p>
+      <li>
+        <strong>Extensional Equality:</strong> compares objects field-by-field to see if all their values are
+        equivalent.
+      </li>
+      <li>
+        <strong>Intensional Equality:</strong> checks if two objects are the exact same object in memory.
+      </li>
+      <ul>
+
+      </ul>
+
+      <p>Examples:</p>
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>Person alice1 = new Person("Alice", 67890);
+Person alice2 = new Person("Alice", 67890);
+Person alice3 = alice1; // Alias for alice1
+
+alice1.equals(alice2); // -> false, different objects with the same values (intensional equality)
+alice1.equals(alice3); // -> true, same object (intensional equality)
+    </code></pre>
+
+      <h2 class="fontM">Counter Class Example</h2>
+      <pre><code>class Counter {
+    int val;
+    
+    Counter() {
+        this(0);
+    }
+    
+    Counter(int initialVal) {
+        this.val = initialVal;
+    }
+    
+    int get() {
+        int ans = this.val;
+        this.val = this.val + 1;
+        return ans;
+    }
+}
+
+class ExamplesCounter {
+    boolean testCounter(Tester t) {
+        Counter c1 = new Counter();
+        Counter c2 = new Counter(5);
+        Counter c3 = c1;
+        
+        return t.checkExpect(c1.get(), 0)       // Test 1
+            && t.checkExpect(c2.get(), 5)       // Test 2
+            && t.checkExpect(c3.get(), 1)       // Test 3
+            && t.checkExpect(c1.get() == c1.get(), false) // Test 4
+            && t.checkExpect(c2.get() == c1.get(), true)  // Test 5
+            && t.checkExpect(c2.get() == c1.get(), true)  // Test 6
+            && t.checkExpect(c1.get() == c1.get(), false) // Test 7
+            && t.checkExpect(c2.get() == c1.get(), false);// Test 8
+    }
+}
+    </code></pre>
+
+      <h2 class="fontM">Modifying Lists with Generic Types</h2>
+      <p>
+        When abstracting over types in Java, you can use the <code class="hl">Void</code> type if a method should not return
+        anything. In the method, you return <code class="hl">null</code>. This is different from the primitive <code class="hl">void</code>
+        type.
+      </p>
+
+      <pre><code>interface IList&lt;T&gt; {
+    // EFFECT: modifies the first object in this list that passes the predicate
+    void modify(IPred&lt;T&gt; whichOne, IFunc<T, Void> whatToDo);
+}
+
+class MtList&lt;T&gt; implements IList&lt;T&gt; {
+    public T find(IPred&lt;T&gt; whichOne) {
+        return null; 
+    }
+    
+    // EFFECT: modifies the first object in this list that passes the predicate
+    public void modify(IPred&lt;T&gt; whichOne, IFunc<T, Void> whatToDo) {}
+}
+
+class ConsList&lt;T&gt; implements IList&lt;T&gt; {
+    T first;
+    IList&lt;T&gt; rest;
+    
+    ConsList(T first, IList&lt;T&gt; rest) {
+        this.first = first;
+        this.rest = rest;
+    }
+    
+    public T find(IPred&lt;T&gt; whichOne) {
+        if (whichOne.apply(this.first)) {
+            return this.first;
+        } else {
+            return this.rest.find(whichOne);
+        }
+    }
+    
+    // EFFECT: modifies the first object in this list that passes the predicate
+    public void modify(IPred&lt;T&gt; whichOne, IFunc<T, Void> whatToDo) {
+        if (whichOne.apply(this.first)) {
+            whatToDo.apply(this.first);
+        } else {
+            this.rest.modify(whichOne, whatToDo);
+        }
+    }
+}
+    </code></pre>
+
+      <h2 class="fontM">Using a Consumer for Modifying List Elements</h2>
+      <pre><code>class ChangePhone implements IFunc<Person, Void> {
+    int num;
+    
+    ChangePhone(int num) {
+        this.num = num;
+    }
+    
+    public Void apply(Person x) {
+        x.phone = this.num;
+        return null;
+    }
+}
+    </code></pre>
+
+      <p>
+        In the example above, <code class="hl">ChangePhone</code> implements <code class="hl">IFunc</code> and modifies the phone number of a
+        <code class="hl">Person</code> object. This is a common pattern when you need to apply changes to objects in a list.
+      </p>
+
+      <br>
+      <h1 id="loops">Loops -- ArrayLists</h1>
+      <p>Loops are a fundamental concept in programming that allow you to execute a block of code multiple times. Java
+        supports several types of loops:</p>
+      <ul>
+        <li><a href="#fel"> For-each loop</a></li>
+        <li><a href="#cfl">Counted for loop</a></li>
+        <li><a href="#wl">While loop</a></li>
+      </ul>
+
+      <p>Every <code class="hl">while</code> loop can be converted into a counted <code class="hl">for</code> loop, and every counted
+        <code class="hl">for</code> loop can be transformed into a for-each loop.</p>
+
+      <h2 class="fontM" id="fel">For-Each Loops</h2>
+      <p>The for-each loop is used to iterate over elements in a collection, such as an array or an ArrayList.</p>
+
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>... setup ...
+  for (T item : list) {
+      ... body ...
+  }
+  ... use the results ...
+      </code></pre>
+      <p>Example:</p>
+      <pre><code>ArrayList<String> strings = new ArrayList<>(Arrays.asList("one", "two", "three"));
+  for (String s : strings) {
+      System.out.println(s);
+  }
+      </code></pre>
+
+      <h2 class="fontM" id="cfl">Counted For Loop</h2>
+      <p>A counted for loop is used when you know in advance how many times you want to execute a statement or a block
+        of statements.</p>
+      <pre><code>for (initialization; termination condition; update statement) {
+      ... body ...
+  }
+      </code></pre>
+      <p>Explanation:</p>
+      <ul>
+        <li><strong>Initialization:</strong> Declares a loop variable and initializes it to the starting value. This
+          runs once at the beginning.</li>
+        <li><strong>Termination condition:</strong> Checked before every iteration. If it returns false, the loop
+          terminates.</li>
+        <li><strong>Loop body:</strong> Executed at every iteration of the loop.</li>
+        <li><strong>Update statement:</strong> Executed after the loop body, used to advance the loop variable to its
+          next value.</li>
+      </ul>
+      <p>Example:</p>
+      <pre><code>for (int i = 0; i < 10; i++) {
+      System.out.println(i);
+  }
+      </code></pre>
+
+      <h3>Example: Find Index of Minimum Item</h3>
+      <p>This example finds the index of the string that comes first alphabetically in an ArrayList:</p>
+      <pre><code>// In ArrayListUtils
+  int findIndexOfMinItem(ArrayList<String> strings) {
+      if (strings.size() == 0) {
+          throw new RuntimeException("No min of an empty list");
+      }
+      int currentMin = 0;
+      
+      for (int i = 0; i < strings.size(); i++) {
+          if (strings.get(currentMin).compareTo(strings.get(i)) > 0) {
+              currentMin = i;
+          }
+      }
+      
+      return currentMin;
+  }
+      </code></pre>
+
+      <h2 class="fontM">Nested For Loops</h2>
+      <p>Nested for loops are used when you need to perform multiple iterations within another iteration. This is often
+        used for multi-dimensional arrays or creating combinations.</p>
+      <p>Example: Get every combination of suits and values to create a deck of cards:</p>
+      <pre><code>// In ArrayListUtils class
+  ArrayList<Card> makeDeck() {
+      ArrayList<Card> cards = new ArrayList<Card>();
+      ArrayList<String> suits = new ArrayList<String>(Arrays.asList("hearts", "diamonds", "spades", "clubs"));
+      ArrayList<String> values = new ArrayList<String>(Arrays.asList("ace", "two", "three", "four"));
+      
+      for (int i = 0; i < values.size(); i++) {
+          for (int j = 0; j < suits.size(); j++) {
+              cards.add(new Card(values.get(i), suits.get(j)));
+          }
+      }
+      
+      return cards;
+  }
+  
+  // Outside of ArrayListUtils class
+  class Card {
+      String value;
+      String suit;
+      
+      Card(String value, String suit) {
+          this.value = value;
+          this.suit = suit;
+      }
+  }
+      </code></pre>
+
+      <h2 class="fontM" id="wl">While Loops</h2>
+      <p>A while loop repeatedly executes a block of statements while a specified condition is true. It is used when you
+        do not know in advance how many times the loop should run.</p>
+      <pre><code>... initialize ...
+  while (termination condition) {
+      ... body ...
+      ... update ...
+  }
+      </code></pre>
+      <p>Example:</p>
+      <pre><code>// Count to 10 using a while loop
+  int count = 0;
+  while (count < 10) {
+      System.out.println(count);
+      count++;
+  }
+      </code></pre>
+
+      <p>While loops are useful when the termination condition is not based on a simple counter and may depend on more
+        complex logic or input from the user.</p>
+
+
+      <br>
+      <h1 id="sorting">Sorting -- ArrayLists</h1>
+
+      <h2 class="fontM">Selection Sort</h2>
+      <p>Selection Sort is a simple comparison-based sorting algorithm. The algorithm divides the input list into two
+        parts: the sublist of items already sorted, which is built up from left to right at the front of the list, and
+        the sublist of items remaining to be sorted that occupy the rest of the list.</p>
+      <ol>
+        <li>Find the index of the minimum item.</li>
+        <li>Swap the minimum item with the first item of the unsorted part.</li>
+      </ol>
+
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>// In ILoInt
+ILoInt nsort();
+ILoInt insert(int n);
+
+// In Mt
+ILoInt nsort() {
+    return this;
+}
+
+ILoInt insert(int n) {
+    return new ConsLoInt(n, this);
+}
+
+// In Cons
+ILoInt nsort() {
+    return this.rest.nsort().insert(this.first);
+}
+
+ILoInt insert(int n) {
+    if (this.first < n) {
+        return new ConsLoInt(this.first, this.rest.insert(n));
+    } else {
+        return new ConsLoInt(n, this);
+    }
+}
+    </code></pre>
+
+      <h2 class="fontM">Insertion Sort</h2>
+      <p>Insertion Sort is a simple sorting algorithm that builds the final sorted array one item at a time. It is much
+        less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.</p>
+      <pre><code>// In ILoInt
+ILoInt nsort();
+ILoInt insert(int n);
+
+// In Mt
+ILoInt nsort() {
+    return this;
+}
+
+ILoInt insert(int n) {
+    return new ConsLoInt(n, this);
+}
+
+// In Cons
+ILoInt nsort() {
+    return this.rest.nsort().insert(this.first);
+}
+
+ILoInt insert(int n) {
+    if (this.first < n) {
+        return new ConsLoInt(this.first, this.rest.insert(n));
+    } else {
+        return new ConsLoInt(n, this);
+    }
+}
+    </code></pre>
+
+      <h2 class="fontM">Quicksort</h2>
+      <p><a href="https://www.qquella.com/Quick_Sort/quick-sort.html" style="color: #f08cb6;">Quicksort</a> is a highly
+        efficient sorting algorithm and is based on partitioning of the array of data into smaller arrays. A large array
+        is partitioned into two arrays, one of which holds values smaller than the specified value, say pivot, based on
+        which the partition is made, and another array holds values greater than the pivot value.</p>
+      <ol>
+        <li>Choose a pivot.</li>
+        <li>Partition the array into two parts.</li>
+        <li>Recursively apply the above steps to the sub-arrays.</li>
+      </ol>
+      <p>For a more detailed explanation and live analysis, please refer <a
+          href="https://www.qquella.com/Quick_Sort/quick-sort.html">here</a>, where I did a full presentation on
+        Quicksort</p>
+      <pre><code>while (low <= high) {
+    while (list.get(low) <= pivot) {
+        low++;
+    }
+    while (list.get(high) > pivot) {
+        high--;
+    }
+    if (low < high) {
+        swap(list, low, high);
+    }
+}
+    </code></pre>
+
+      <h2 class="fontM">Merge Sort</h2>
+      <p>Merge Sort is an efficient, stable, comparison-based, divide and conquer sorting algorithm. Most
+        implementations produce a stable sort, which means that the implementation preserves the input order of equal
+        elements in the sorted output.</p>
+      <ol>
+        <li>Divide the unsorted list into n sublists, each containing one element.</li>
+        <li>Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining.</li>
+      </ol>
+      <p>Example:</p>
+      <pre><code>Consider the list: 4 7 6 5 3 0 1
+
+Sort pairs of numbers:
+47  56  03  1
+
+Merge:
+4 5 6 7  0 1 3
+0 1 3 4 5 6 7
+    </code></pre>
+      <p>Note: You don’t have to compare every element to every other element if each sublist is already sorted. This
+        can also be done in place by advancing low and high pointers.</p>
+
+      <h2 class="fontM">Priority Queues and Heapsort</h2>
+      <p>Priority queues are abstract data types similar to regular queues or stacks, but with an added priority for
+        each element. The element with the highest priority is served before the elements with lower priority.</p>
+      <h3>Max Heap</h3>
+      <p>A max heap is a special tree-based data structure that satisfies the following properties:</p>
+      <ol>
+        <li><strong>Structural Invariant:</strong> The tree is complete, meaning all levels are fully filled except
+          possibly for the last level, which is filled from left to right.</li>
+        <li><strong>Logical Invariant:</strong> Every parent node is greater than or equal to its children.</li>
+      </ol>
+      <h3>Upheap and Downheap Operations</h3>
+      <p><strong>Upheap:</strong> When adding a new element, place it in the next available position to maintain
+        structural integrity, then swap it up to maintain heap order.</p>
+      <p><strong>Downheap:</strong> When removing the root element, replace it with the last element in the heap, then
+        swap it down to maintain heap order.</p>
+
+      <pre><code>// Array-based representation of a heap
+leftChild(i) = 2 * i + 1
+rightChild(i) = 2 * i + 2
+parent(i) = (i - 1) / 2 (integer math)
+    </code></pre>
+      <p>Example of adding an element:</p>
+      <pre><code>Index   0  1  2  3  4  5  6  7  8  9 10
+Priority 70 65 50 30 60 40 20 10 20 15 50
+
+// Add 65 and swap with its parent until heap property is restored
+Index   0  1  2  3  4  5  6  7  8  9 10
+Priority 70 65 50 30 60 40 20 10 20 15 50
+    </code></pre>
+
+      <p>Example of removing an element:</p>
+      <pre><code>Index   0  1  2  3  4  5  6  7  8  9
+Priority 60 50 50 30 15 40 20 10 20 70
+
+// Remove 70 and replace with last element, then downheap
+Index   0  1  2  3  4  5  6  7  8  9
+Priority 60 50 50 30 15 40 20 10 20 70
+    </code></pre>
+
+      <h3>Heapsort</h3>
+      <p>Heapsort is a comparison-based sorting algorithm that uses a binary heap data structure. It divides its input
+        into a sorted and an unsorted region, and iteratively shrinks the unsorted region by extracting the largest
+        element and moving it to the sorted region.</p>
+      <ol>
+        <li>Build a valid heap from the input data.</li>
+        <li>Repeatedly remove the maximum element from the heap, swapping it with the last item in the heap, and then
+          restoring the heap property.</li>
+      </ol>
+      <pre><code>
+To build a heap from an ArrayList:
+
+  For each i from 1 to the size of the ArrayList,
+
+    upheap(i)
+
+To upheap at index idx:
+
+   Let parentIdx = floor((idx - 1) / 2)
+
+   If the item at index idx is greater than the item at index parentIdx:
+
+       Swap items at indices idx and parentIdx
+
+       upheap(parentIdx)
+
+To remove the maximum item:
+
+   Swap the item at index 0 with the item at the index of the last heap item
+
+   downheap(0)
+
+To downheap at index idx:
+
+   Let leftIdx = 2 * idx + 1
+
+   Let rightIdx = 2 * idx + 2
+
+   If the item at index idx is less than either of the items at leftIdx or rightIdx:
+
+      Let biggestIdx = index of the largest of the items at leftIdx or rightIdx
+
+      Swap items at indices idx and biggestIdx
+
+      downheap(biggestIdx)
+    </code></pre>
+
+
+      <br>
+      <h1 id="deque">Deque -- ArrayLists</h1>
+
+      <p>A <strong>Deque</strong> (Double-Ended Queue) is a linear collection that supports element insertion and
+        removal at both ends. This implementation includes nodes, a sentinel node, and operations for manipulating the
+        deque.</p>
+
+      <h2 class="fontM">Abstract Class for Nodes</h2>
+      <pre><code>abstract class ANode&lt;T&gt; {
+    ANode&lt;T&gt; next;
+    ANode&lt;T&gt; prev;
+
+    // Constructor with next and prev nodes
+    ANode(ANode&lt;T&gt; next, ANode&lt;T&gt; prev) {
+        this.next = next;
+        this.prev = prev;
+    }
+
+    // Constructor with no arguments (used for Sentinel)
+    ANode() {
+        this.next = this;
+        this.prev = this;
+    }
+}</code></pre>
+      <p>The <code class="hl">ANode</code> class serves as a base class for the sentinel and data nodes. It maintains references to
+        the next and previous nodes, facilitating bidirectional traversal.</p>
+
+      <h2 class="fontM">Data Nodes</h2>
+      <pre><code>class Node&lt;T&gt; extends ANode&lt;T&gt; {
+    T data;
+
+    // Constructor with just data (used for creating new nodes)
+    Node(T data) {
+        super();
+        this.data = data;
+    }
+
+    // Constructor with data, next, and prev nodes
+    Node(T data, ANode&lt;T&gt; next, ANode&lt;T&gt; prev) {
+        super(next, prev);
+        if (next == null || prev == null) {
+            throw new IllegalArgumentException("Next and prev nodes cannot be null");
+        }
+        this.data = data;
+        this.next.prev = this;
+        this.prev.next = this;
+    }
+}</code></pre>
+      <p>The <code class="hl">Node</code> class extends <code class="hl">ANode</code> and adds a data field. It provides
+        constructors for creating nodes with or without specified next and previous nodes.</p>
+
+      <h2 class="fontM">Sentinel Node</h2>
+      <pre><code>class Sentinel&lt;T&gt; extends ANode&lt;T&gt; {
+
+    // Default constructor for sentinel node
+    Sentinel() {
+        super();
+    }
+}</code></pre>
+      <p>The <code class="hl">Sentinel</code> class represents a special node that does not hold data. It serves as a
+        marker for the start and end of the deque, making boundary conditions simpler to handle.</p>
+
+      <h2 class="fontM">Deque Class</h2>
+      <pre><code>class Deque&lt;T&gt; {
+    Sentinel&lt;T&gt; header;
+
+    // Constructor with sentinel node
+    Deque(Sentinel&lt;T&gt; header) {
+        this.header = header;
+    }
+
+    // Default constructor
+    Deque() {
+        this.header = new Sentinel&lt;T&gt;();
+    }
+
+    // Counts the number of nodes in the Deque, not including the header node
+    int size() {
+        int count = 0;
+        ANode&lt;T&gt; current = this.header.next;
+        while (current != this.header) {
+            count++;
+            current = current.next;
+        }
+        return count;
+    }
+
+    // Effect: consumes a value of type T and inserts it at the front of the list
+    void addAtHead(T val) {
+        new Node<>(val, this.header.next, this.header);
+    }
+
+    // Effect: consumes a value of type T and inserts it at the back of the list
+    void addAtTail(T val) {
+        new Node<>(val, this.header, this.header.prev);
+    }
+
+    // Returns the removed note
+    // Effect: removes the node at the head of the linked list and returns that node
+    T removeFromHead() {
+        if (this.header.prev == this.header 
+            || this.header.next == this.header) {
+            throw new RuntimeException("Cannot remove from empty deque");
+        }
+        Node&lt;T&gt; firstNode = (Node&lt;T&gt;) this.header.next;
+        this.header.next = firstNode.next;
+        firstNode.next.prev = this.header;
+        return firstNode.data;
+    }
+
+    // Returns the removed note
+    // Effect: removes the node at the tail of the linked list and returns that node
+    T removeFromTail() {
+        if (this.header.prev == this.header 
+            || this.header.next == this.header) {
+            throw new RuntimeException("Cannot remove from empty deque");
+        }
+        Node&lt;T&gt; lastNode = (Node&lt;T&gt;) this.header.prev;
+        this.header.prev = lastNode.prev;
+        lastNode.prev.next = this.header;
+        return lastNode.data;
+    }
+
+    // Finds the first node within this deque that satisfies the given predicate
+    ANode&lt;T&gt; find(Predicate&lt;T&gt; pred) {
+        ANode&lt;T&gt; current = this.header.next;
+        while (current != this.header) {
+            Node&lt;T&gt; node = (Node&lt;T&gt;) current;
+            if (pred.test(node.data)) {
+                return current;
+            }
+            current = current.next;
+        }
+        return this.header;
+    }
+
+    // Appends a given Deque&lt;T&gt; to the end of this Deque&lt;T&gt;
+    void append(Deque&lt;T&gt; dq) {
+        int size = dq.size();
+        for (int i = 0; i < size; i++) {
+            this.addAtTail(dq.removeFromHead());
+        }
+    }
+
+    // Reverses the order of the elements in the deque
+    void reverse() {
+        Deque&lt;T&gt; d = new Deque&lt;T&gt;();
+        for (int i = size() - 1; i >= 0; i--) {
+            T last = this.removeFromTail();
+            d.addAtTail(last);
+        }
+        this.append(d);
+    }
+}</code></pre>
+      <p>The <code class="hl">Deque</code> class manages the sentinel node and provides various methods to manipulate
+        the deque:</p>
+      <ul>
+        <li><strong>Constructor:</strong> Initializes the deque with a sentinel node.</li>
+        <li><strong>Size:</strong> Counts the number of nodes in the deque.</li>
+        <li><strong>AddAtHead:</strong> Inserts a value at the front of the deque.</li>
+        <li><strong>AddAtTail:</strong> Inserts a value at the back of the deque.</li>
+        <li><strong>RemoveFromHead:</strong> Removes and returns the node at the head of the deque.</li>
+        <li><strong>RemoveFromTail:</strong> Removes and returns the node at the tail of the deque.</li>
+        <li><strong>Find:</strong> Finds the first node that satisfies a given predicate.</li>
+        <li><strong>Append:</strong> Appends another deque to the end of the current deque.</li>
+        <li><strong>Reverse:</strong> Reverses the order of the elements in the deque.</li>
+      </ul>
+
+      <p>Lovely reminder: these examples are accessing a field of a field. They are meant to showcase the functionality!
+        Please add helpers to rely on dynamic dispatch in case of an exam! (they should not take too long if you
+        understand the structure of a deque)</p>
+
+      <br>
+      <h1 id="iter">Iterators</h1>
+
+      <h2 class="fontM">Why Using Iterator???</h2>
+      <p>Assuming we have an <code class="hl">ArrayList</code> called <code class="hl">alist</code>, we often want to
+        iterate over its elements and perform some operations. This can be done using a for-each loop:</p>
+
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>for (T t : alist) {
+    ... do something ...
+}</code></pre>
+      <p>In English, this is what we want:</p>
+      <pre><code>while (there are more items in alist) {
+    T t = get next item;
+    ... do something ...
+    // We need to keep track of the state
+}</code></pre>
+      <p>Remember: Always call <code class="hl">hasNext</code> before you try to get the next item!</p>
+
+      <h2 class="fontM">Using Iterators</h2>
+      <p>This is already implemented in Java. See the documentation for <code class="hl">Iterator</code> and <code
+          class="hl">Iterable</code> interfaces.</p>
+
+      <h3>Iterator Interface</h3>
+      <pre><code>interface Iterator&lt;T&gt; {
+    // Are there any more items to process?
+    boolean hasNext();
+    
+    // Gets the next item to process
+    // Usually advances to the item following the one returned
+    T next();
+}</code></pre>
+
+      <h3>Iterable Interface</h3>
+      <pre><code>interface Iterable&lt;T&gt; {
+    Iterator&lt;T&gt; iterator();
+}</code></pre>
+
+      <h3>ArrayList Implementation</h3>
+      <pre><code>class ArrayList&lt;T&gt; implements Iterable&lt;T&gt; {
+    ...
+    Iterator&lt;T&gt; iterator() {
+        // And the ArrayListIterator implements Iterator
+        return new ArrayListIterator&lt;T&gt;(this);
+    }
+}
+
+class ArrayListIterator&lt;T&gt; implements Iterator&lt;T&gt; {
+    ArrayList&lt;T&gt; items;
+    int currentIndex;
+    
+    ArrayListIterator(ArrayList&lt;T&gt; items) {
+        this.items = items;
+        this.currentIndex = 0;
+    }
+    
+    // Are there any more items to process?
+    public boolean hasNext() {
+        return this.currentIndex < this.items.size();
+    }
+    
+    // Gets the next item to process
+    // EFFECT: Add 1 to the current index
+    public T next() {
+        T result = this.items.get(this.currentIndex);
+        this.currentIndex++;
+        return result;
+        // OR (this might work)
+        // return this.items.get(this.currentIndex++);
+    }
+}</code></pre>
+
+      <h2 class="fontM">Behind the Scenes of For-Each Loops</h2>
+      <p>In the <code class="hl">Examples</code> class, we can use the iterator to simulate what a for-each loop does behind the
+        scenes:</p>
+      <pre><code>// In Examples class
+Iterator&lt;T&gt; arrayListIter = new ArrayListIterator&lt;T&gt;(alist);
+
+while (arrayListIter.hasNext()) {
+    T t = arrayListIter.next();
+    ... body ...
+}</code></pre>
+
+      <h2 class="fontM">Example - Linked Lists</h2>
+      <p>For linked lists, we have to use <code class="hl">extends</code> when it's an interface.</p>
+
+      <h3>IList Interface</h3>
+      <pre><code>interface IList&lt;T&gt; extends Iterable&lt;T&gt; {
+    // Is this list a cons?
+    boolean isCons();
+}</code></pre>
+
+      <h3>Empty List Implementation</h3>
+      <pre><code>class MtList&lt;T&gt; implements IList&lt;T&gt; {
+    // Returns an Iterator especially for this empty list
+    public Iterator&lt;T&gt; iterator() {
+        return new IListIterator&lt;T&gt;(this);
+    }
+    
+    // Is this list a cons?
+    public boolean isCons() {
+        return false;
+    }
+}</code></pre>
+
+      <h3>Non-Empty List Implementation</h3>
+      <pre><code>class ConsList&lt;T&gt; implements IList&lt;T&gt; {
+    T first;
+    IList&lt;T&gt; rest;
+    
+    ConsList(T first, IList&lt;T&gt; rest) {
+        this.first = first;
+        this.rest = rest;
+    }
+    
+    // Returns an Iterator especially for this non-empty list
+    public Iterator&lt;T&gt; iterator() {
+        return new IListIterator&lt;T&gt;(this);
+    }
+    
+    // Is this list a cons?
+    public boolean isCons() {
+        return true;
+    }
+}</code></pre>
+
+      <h3>IListIterator Implementation</h3>
+      <pre><code>class IListIterator&lt;T&gt; implements Iterator&lt;T&gt; {
+    IList&lt;T&gt; items;
+    
+    IListIterator(IList&lt;T&gt; items) {
+        this.items = items;
+    }
+    
+    // Are there any more items to process?
+    public boolean hasNext() {
+        return this.items.isCons();
+    }
+    
+    // Gets the next item to process
+    // EFFECT: Queues the next 
+    public T next() {
+        ConsList&lt;T&gt; cons = (ConsList&lt;T&gt;) this.items;
+        T answer = cons.first;
+        items = cons.rest;
+        return answer;
+    }
+}</code></pre>
+
+      <h2 class="fontM">Using For-Each Loops with Custom Lists</h2>
+      <p>We can now use for-each loops with our custom ILists:</p>
+      <pre><code>class Examples {
+      IList<Integer> ints = new ConsList<>(2, new ConsList<>(1, new MtList<>()));
+        IList<String> strs = new ConsList<>("fundies", new ConsList<>("two", new MtList<>()));
+        int result;
+        String str;
+      
+        int count() {
+          result = 0;
+          for (Integer i : ints2) {
+            result += i; 
+          }
+          return result;
+        }
+        // checkExpect(result, 3) -> true
+      
+        String count2() {
+          str = "";
+          for (String i : strs) {
+            str += i;
+          }
+          return str;
+        }
+        // checkExpect(strs, "fundiestwo") -> true
+}</code></pre>
+
+
+      <br>
+      <h1 id="higher-iter">Higher-order Iterators -- Iterators</h1>
+
+      <p>Higher-order iterators are iterators that operate on other iterators. They can modify the behavior of the
+        underlying iterator, allowing for more flexible and reusable code. In this explanation, we will explore two
+        higher-order iterators: <code class="hl">EveryOtherIter</code> and <code class="hl">TakeN</code>.</p>
+
+      <h2 class="fontM">EveryOtherIter</h2>
+      <p>The <code class="hl">EveryOtherIter</code> class represents an iterator that returns every other item from a
+        given sequence. It skips every second item in the source iterator.</p>
+
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>class EveryOtherIter&lt;T&gt; implements Iterator&lt;T&gt; {
+    Iterator&lt;T&gt; source;
+    
+    EveryOtherIter(Iterator&lt;T&gt; source) {
+        this.source = source;
+    }
+    
+    public boolean hasNext() {
+        // this sequence has a next item if the source does
+        return this.source.hasNext();
+    }
+    
+    public T next() {
+        if (!this.hasNext()) {
+            throw new NoSuchElementException("there are no more items!");
+        }
+        T answer = this.source.next(); // gets the answer, and advances the source
+        // We need to have the source "skip" the next value
+        if (this.source.hasNext()) {
+            this.source.next(); // get the next value and ignore it
+        }
+        return answer;
+    }
+    
+    public void remove() {
+        // We can remove an item if our source can remove the item
+        this.source.remove(); // so just delegate to the source
+    }
+}</code></pre>
+
+      <h3>Explanation</h3>
+      <p>The <code class="hl">EveryOtherIter</code> class takes an existing iterator as its source and overrides the
+        <code class="hl">hasNext</code> and <code class="hl">next</code> methods to return every other item:</p>
+      <ul>
+        <li><strong>hasNext:</strong> Checks if the source iterator has more items.</li>
+        <li><strong>next:</strong> Returns the next item and skips the following one if it exists.</li>
+      </ul>
+
+      <h3>Example Usage</h3>
+      <pre><code>class ExamplesEveryOther {
+    ArrayList<String> strs = new ArrayList<>(Arrays.asList("bird", "cat", "dog"));
+    EveryOtherIter<String> eo = new EveryOtherIter<>(this.strs.iterator());
+    
+    void testEveryOtherIter(Tester t) {
+        t.checkExpect(this.eo.hasNext(), true);
+        t.checkExpect(this.eo.next(), "bird");
+        t.checkExpect(this.eo.hasNext(), true);
+        t.checkExpect(this.eo.next(), "dog");
+        t.checkExpect(this.eo.hasNext(), false);
+    }
+}</code></pre>
+
+      <h2 class="fontM">TakeN</h2>
+      <p>The <code class="hl">TakeN</code> class represents an iterator that returns only the first <code
+          class="hl">n</code> items from a given sequence.</p>
+
+      <pre><code>class TakeN&lt;T&gt; implements Iterator&lt;T&gt; {
+    Iterator&lt;T&gt; source;
+    int howMany;
+    int countSoFar;
+    
+    TakeN(Iterator&lt;T&gt; source, int n) {
+        this.source = source;
+        this.howMany = n;
+        this.countSoFar = 0;
+    }
+    
+    public boolean hasNext() {
+        return (this.countSoFar < this.howMany) && this.source.hasNext();
+    }
+    
+    public T next() {
+        if (!this.hasNext()) {
+            throw new NoSuchElementException("there are no more items!");
+        }
+        this.countSoFar++;
+        return this.source.next();
+    }
+    
+    public void remove() {
+        // We can remove an item if our source can remove the item
+        this.source.remove(); // so just delegate to the source
+    }
+}</code></pre>
+
+      <h3>Explanation</h3>
+      <p>The <code class="hl">TakeN</code> class takes an existing iterator as its source and a number <code
+          class="hl">n</code>. It overrides the <code class="hl">hasNext</code> and <code class="hl">next</code> methods
+        to return only the first <code class="hl">n</code> items:</p>
+      <ul>
+        <li><strong>hasNext:</strong> Checks if there are more items to process and if the count of items processed so
+          far is less than <code class="hl">n</code>.</li>
+        <li><strong>next:</strong> Returns the next item and increments the count.</li>
+      </ul>
+
+      <h3>Example Usage</h3>
+      <pre><code>class ExamplesTakeN {
+    ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+    TakeN<Integer> tn = new TakeN<>(this.nums.iterator(), 3);
+    
+    void testTakeN(Tester t) {
+        t.checkExpect(this.tn.hasNext(), true);
+        t.checkExpect(this.tn.next(), 1);
+        t.checkExpect(this.tn.hasNext(), true);
+        t.checkExpect(this.tn.next(), 2);
+        t.checkExpect(this.tn.hasNext(), true);
+        t.checkExpect(this.tn.next(), 3);
+        t.checkExpect(this.tn.hasNext(), false);
+    }
+}</code></pre>
+
+      <h2 class="fontM">Conclusion</h2>
+      <p>Higher-order iterators like <code class="hl">EveryOtherIter</code> and <code class="hl">TakeN</code> allow for
+        flexible and reusable iteration patterns. By implementing custom iterators, we can extend the functionality of
+        existing collections and create more complex iteration behaviors.</p>
+
+
+      <br>
+      <h1 id="big-o">Big-O Analysis -- Algorithms</h1>
+
+      <h2 class="fontM">Table of Contents</h2>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#complexity">Best, Worst, and Average-Case Complexity</a></li>
+        <li><a href="#big-o">Big O Notation</a></li>
+        <li><a href="#growth-rates">Growth Rates and Dominance Relations</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+
+      <h2 class="fontM" id="introduction">Introduction</h2>
+      <p>Algorithm analysis involves calculating the complexity of algorithms, focusing on time complexity and space
+        complexity. Common tools for this are the RAM model of computation and asymptotic analysis of worst-case
+        complexity.</p>
+
+      <h2 class="fontM" id="complexity">Best, Worst, and Average-Case Complexity</h2>
+      <p>An algorithm's input determines the number of steps it takes to run. For a given input size <code class="hl">n</code>:</p>
+      <ul>
+        <li><strong>Best-case complexity:</strong> The minimum number of steps.</li>
+        <li><strong>Worst-case complexity:</strong> The maximum number of steps.</li>
+        <li><strong>Average-case complexity:</strong> The average number of steps.</li>
+      </ul>
+      <p>For example, if an algorithm takes <code class="hl">2n</code> steps in the worst case, the worst-case function for time
+        complexity is <code class="hl">T(n) = 2n</code>.</p>
+
+      <h2 class="fontM" id="big-o">Big O Notation</h2>
+      <p>Big O notation describes the limiting behavior of a function as its input tends towards infinity. It simplifies
+        the comparison of algorithm efficiencies by focusing on the dominant term and ignoring constants.</p>
+      <ul>
+        <li><strong>Big O:</strong> Upper bound of a function. <code class="hl">f(n) = O(g(n))</code> means <code class="hl">f(n)</code> is at
+          most <code class="hl">c * g(n)</code> for some constant <code class="hl">c</code> and sufficiently large <code class="hl">n</code>.</li>
+        <li><strong>Big Omega:</strong> Lower bound of a function. <code class="hl">f(n) = Ω(g(n))</code> means <code class="hl">f(n)</code>
+          is at least <code class="hl">c * g(n)</code> for some constant <code class="hl">c</code> and sufficiently large <code class="hl">n</code>.</li>
+        <li><strong>Big Theta:</strong> Tight bound of a function. <code class="hl">f(n) = Θ(g(n))</code> means <code class="hl">f(n)</code>
+          is both <code class="hl">O(g(n))</code> and <code class="hl">Ω(g(n))</code>.</li>
+      </ul>
+
+      <h2 class="fontM" id="growth-rates">Growth Rates and Dominance Relations</h2>
+      <p>Big O notation creates classes of functions that describe their growth rates. Common classes include:</p>
+      <ul>
+        <li><code>O(1)</code>: Constant time</li>
+        <li><code>O(log n)</code>: Logarithmic time (e.g., binary search)</li>
+        <li><code>O(n)</code>: Linear time</li>
+        <li><code>O(n log n)</code>: Superlinear time (e.g., mergesort)</li>
+        <li><code>O(n²)</code>: Quadratic time</li>
+        <li><code>O(2^n)</code>: Exponential time</li>
+        <li><code>O(n!)</code>: Factorial time</li>
+      </ul>
+      <p>The following table shows the growth rates of common classes:</p>
+      <div style="text-align: center;
+    margin: auto 5%;">
+        <table border="1">
+          <tr>
+            <th>n</th>
+            <th>log n</th>
+            <th>n</th>
+            <th>n log n</th>
+            <th>n²</th>
+            <th>2^n</th>
+            <th>n!</th>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>0.003 μs</td>
+            <td>0.01 μs</td>
+            <td>0.033 μs</td>
+            <td>0.1 μs</td>
+            <td>1 μs</td>
+            <td>3.63 ms</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>0.004 μs</td>
+            <td>0.02 μs</td>
+            <td>0.086 μs</td>
+            <td>0.4 μs</td>
+            <td>1 ms</td>
+            <td>77.1 years</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>0.005 μs</td>
+            <td>0.03 μs</td>
+            <td>0.147 μs</td>
+            <td>0.9 μs</td>
+            <td>1 sec</td>
+            <td>8.4 × 10^15 years</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>0.005 μs</td>
+            <td>0.04 μs</td>
+            <td>0.213 μs</td>
+            <td>1.6 μs</td>
+            <td>18.3 min</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>0.006 μs</td>
+            <td>0.05 μs</td>
+            <td>0.282 μs</td>
+            <td>2.5 μs</td>
+            <td>13 days</td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+      <br>
+
+      <h2 class="fontM" id="references">References</h2>
+      <p> Donald Knuth (June–July 1998). "Teach Calculus with Big O" (PDF). Notices of the American Mathematical
+        Society. 45 (6): 687. Archived (PDF) from the original on 2021-10-14. Retrieved 2021-09-05. (Unabridged version
+        Archived 2008-05-13 at the Wayback Machine)</p>
+
+      <h2 class="fontM">Example in Java: Time Complexity</h2>
+      <p>Here are some examples to illustrate different time complexities in Java:</p>
+
+      <h3>Constant Time: O(1)</h3>
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>public class ConstantTime {
+    public int getFirstElement(int[] arr) {
+        return arr[0];
+    }
+}</code></pre>
+
+      <h3>Linear Time: O(n)</h3>
+      <pre><code>public class LinearTime {
+    public int sumArray(int[] arr) {
+        int sum = 0;
+        for (int num : arr) {
+            sum += num;
+        }
+        return sum;
+    }
+}</code></pre>
+
+      <h3>Quadratic Time: O(n²)</h3>
+      <pre><code>public class QuadraticTime {
+    public void printPairs(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                System.out.println(arr[i] + ", " + arr[j]);
+            }
+        }
+    }
+}</code></pre>
+
+      <h3>Exponential Time: O(2^n)</h3>
+      <pre><code>public class ExponentialTime {
+    public int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}</code></pre>
+
+
+      <br>
+      <h1 id="union-data">Searching -- Algorithms</h1>
+
+      <h2 class="fontM">Table of Contents</h2>
+      <ul>
+        <li><a href="#binary-search">Binary Search</a></li>
+        <li><a href="#bfs">Breadth-First Search (BFS)</a></li>
+        <li><a href="#dfs">Depth-First Search (DFS)</a></li>
+      </ul>
+
+      <h2 class="fontM" id="binary-search">Binary Search</h2>
+      <h3>How Binary Search Works</h3>
+      <p>Binary Search is a search algorithm that finds the position of a target value within a sorted array. It works
+        by repeatedly dividing the search interval in half:</p>
+      <ul>
+        <li><strong>Initial Setup:</strong> Start with the entire array or list. Identify the initial low (leftmost) and
+          high (rightmost) indices.</li>
+        <li><strong>Iteration:</strong></li>
+        <ul>
+          <li>Calculate the middle index: <code class="hl">mid = ⌊(low + high) / 2⌋</code></li>
+          <li>Compare the target value with the value at the middle index.</li>
+          <li>If the target is equal to the middle value: The search is successful, and the index of the middle value is
+            returned.</li>
+          <li>If the target is less than the middle value: Narrow the search to the left half by setting high to
+            <code class="hl">mid - 1</code>.</li>
+          <li>If the target is greater than the middle value: Narrow the search to the right half by setting low to
+            <code class="hl">mid + 1</code>.</li>
+        </ul>
+        <li>Repeat the iteration until the target is found or the subarray has no elements (i.e., low > high).</li>
+      </ul>
+      <h3>Graphic Explanation</h3>
+      <p>Binary Search is a search algorithm that finds the position of a target value within a sorted array. It works
+        by repeatedly dividing the search interval in half:</p>
+      <div style="max-width: 100%" class="ui rounded images">
+        <p><img class="ui image" src="../img/bns.png"></p>
+      </div>
+
+      <h3>Java Code Implementation</h3>
+
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>public class BinarySearch {
+    public static int binarySearch(int[] arr, int target) {
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (arr[mid] == target) {
+                return mid;
+            } else if (arr[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return -1; // target not found
+    }
+
+    class Examples {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int target = 5;
+        int result = binarySearch(arr, target);
+        // Index of target: 
+        result
+    }
+}</code></pre>
+
+      <h3>Analysis</h3>
+      <p>Binary Search has a time complexity of <code class="hl">O(log n)</code>. It is very efficient for searching in large
+        sorted arrays because it reduces the search space by half in each step.</p>
+
+      <h2 class="fontM" id="bfs">Breadth-First Search (BFS)</h2>
+      <p>Breadth-First Search (BFS) is a search algorithm that explores all the nodes at the present depth level before
+        moving on to nodes at the next depth level:</p>
+      <h3>How BFS Works</h3>
+      <p>Breadth-First Search (BFS) is a search algorithm that explores all the nodes at the present depth level before
+        moving on to nodes at the next depth level:</p>
+      <ul>
+        <li><strong>Initial Setup:</strong> Start with the root node and add it to the queue.</li>
+        <li><strong>Iteration:</strong></li>
+        <ul>
+          <li>Dequeue the front node from the queue.</li>
+          <li>Visit the node and add its children to the queue.</li>
+        </ul>
+        <li>Repeat the iteration until the queue is empty.</li>
+      </ul>
+      <h3>Graphic Explanation</h3>
+      <div style="max-width: 100%" class="ui rounded images">
+        <p><img class="ui image" src="../img/bfs.png"></p>
+      </div>
+
+      <h3>Java Code Implementation</h3>
+      <pre><code>import java.util.*;
+
+public class BreadthFirstSearch {
+     class Graph {
+        private int V; // Number of vertices
+        private LinkedList<Integer> adj[]; // Adjacency lists
+
+        Graph(int v) {
+            V = v;
+            adj = new LinkedList[v];
+            for (int i = 0; i < v; ++i) {
+                adj[i] = new LinkedList();
+            }
+        }
+
+        void addEdge(int v, int w) {
+            adj[v].add(w);
+        }
+
+        void BFS(int s) {
+            boolean visited[] = new boolean[V];
+            LinkedList<Integer> queue = new LinkedList<Integer>();
+
+            visited[s] = true;
+            queue.add(s);
+
+            while (queue.size() != 0) {
+                s = queue.poll();
+                System.out.print(s + " ");
+
+                Iterator<Integer> i = adj[s].listIterator();
+                while (i.hasNext()) {
+                    int n = i.next();
+                    if (!visited[n]) {
+                        visited[n] = true;
+                        queue.add(n);
+                    }
+                }
+            }
+        }
+    }
+
+    class Examples {
+        Graph g = new Graph(4);
+
+        g.addEdge(0, 1);
+        g.addEdge(0, 2);
+        g.addEdge(1, 2);
+        g.addEdge(2, 0);
+        g.addEdge(2, 3);
+        g.addEdge(3, 3);
+
+        // Breadth First Traversal starting from vertex 2:
+        g.BFS(2);
+    }
+}</code></pre>
+
+      <h3>Analysis</h3>
+      <p>Breadth-First Search (BFS) has a time complexity of <code class="hl">O(V + E)</code>, where <code class="hl">V</code> is the number
+        of vertices and <code class="hl">E</code> is the number of edges. It is useful for finding the shortest path in an
+        unweighted graph.</p>
+
+      <h2 class="fontM" id="dfs">Depth-First Search (DFS)</h2>
+      <h3>How DFS Works</h3>
+      <p>Depth-First Search (DFS) is a search algorithm that explores as far as possible along each branch before
+        backtracking:</p>
+      <ul>
+        <li><strong>Initial Setup:</strong> Start with the root node and push it onto the stack.</li>
+        <li><strong>Iteration:</strong></li>
+        <ul>
+          <li>Pop the top node from the stack.</li>
+          <li>Visit the node and push its children onto the stack.</li>
+        </ul>
+        <li>Repeat the iteration until the stack is empty.</li>
+      </ul>
+      <h3>Graphic Explanation</h3>
+      <p>Depth-First Search (DFS) is a search algorithm that explores as far as possible along each branch before
+        backtracking:</p>
+      <div style="max-width: 100%" class="ui rounded images">
+        <p><img class="ui image" src="../img/dijkstra.png"></p>
+      </div>
+
+      <h3>Java Code Implementation</h3>
+      <pre><code>import java.util.*;
+
+public class DepthFirstSearch {
+     class Graph {
+        private int V; // Number of vertices
+        private LinkedList<Integer> adj[]; // Adjacency lists
+
+        Graph(int v) {
+            V = v;
+            adj = new LinkedList[v];
+            for (int i = 0; i < v; ++i) {
+                adj[i] = new LinkedList();
+            }
+        }
+
+        void addEdge(int v, int w) {
+            adj[v].add(w);
+        }
+
+        void DFSUtil(int v, boolean visited[]) {
+            visited[v] = true;
+            System.out.print(v + " ");
+
+            Iterator<Integer> i = adj[v].listIterator();
+            while (i.hasNext()) {
+                int n = i.next();
+                if (!visited[n]) {
+                    DFSUtil(n, visited);
+                }
+            }
+        }
+
+        void DFS(int v) {
+            boolean visited[] = new boolean[V];
+            DFSUtil(v, visited);
+        }
+    }
+
+    class Examples {
+        Graph g = new Graph(4);
+
+        g.addEdge(0, 1);
+        g.addEdge(0, 2);
+        g.addEdge(1, 2);
+        g.addEdge(2, 0);
+        g.addEdge(2, 3);
+        g.addEdge(3, 3);
+
+        // Depth First Traversal starting from vertex 2:
+        g.DFS(2);
+    }
+}</code></pre>
+
+      <h3>Analysis</h3>
+      <p>Depth-First Search (DFS) has a time complexity of <code class="hl">O(V + E)</code>, where <code class="hl">V</code> is the number of
+        vertices and <code class="hl">E</code> is the number of edges. It is useful for exploring all the nodes in a graph and can
+        be used to detect cycles.</p>
+
+      <h2 class="fontM" id="references">References</h2>
+      <p>[1] Knuth, Donald (1998). Sorting and Searching. The Art of Computer Programming. Vol. 3 (2nd ed.). Reading,
+        MA: Addison-Wesley Professional.</p>
+
+
+      <br>
+      <h1 id="union-data">Dijkstra’s Algorithm -- Algorithms</h1>
+
+      <h2 class="fontM">Table of Contents</h2>
+      <ul>
+        <li><a href="#intro-dij">Introduction</a></li>
+        <li><a href="#how-it-works">How the Algorithm Works</a></li>
+        <li><a href="#code">Java Code Implementation</a></li>
+        <li><a href="#analysis">Analysis of the Algorithm</a></li>
+      </ul>
+
+      <h2 class="fontM" id="intro-dij">Introduction</h2>
+      <p>Finding the shortest path between two vertices in a graph is a common problem in computer science. The
+        algorithm discussed here calculates the cost of the cheapest path as well as the actual path between the source
+        and target vertices.</p>
+
+      <h2 class="fontM" id="how-it-works">How the Algorithm Works</h2>
+      <p>The algorithm works by using a priority queue to explore the shortest path in a weighted graph:</p>
+      <ul>
+        <li><strong>Initial Setup:</strong> Initialize the distance of the source vertex to 0 and all other vertices to
+          infinity. Add the source vertex to the unvisited list.</li>
+        <li><strong>Iteration:</strong></li>
+        <ul>
+          <li>Remove the vertex with the smallest distance from the unvisited list.</li>
+          <li>Update the distances to the neighboring vertices.</li>
+          <li>If a shorter path to a neighbor is found, update the distance and add the neighbor to the unvisited list.
+          </li>
+        </ul>
+        <li>Repeat the iteration until the target vertex is reached or all vertices have been visited.</li>
+      </ul>
+      <div style="max-width: 100%" class="ui rounded images">
+        <p><img class="ui image" src="../img/dfs.png"></p>
+      </div>
+
+      <h2 class="fontM" id="code">Java Code Implementation</h2>
+
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>import java.util.*;
+
+class Vertex {
+    String name;
+    List<Edge> outEdges = new ArrayList<>();
+
+    Vertex(String name) {
+        this.name = name;
+    }
+
+    void addEdge(Vertex to, int weight) {
+        outEdges.add(new Edge(this, to, weight));
+    }
+}
+
+class Edge {
+    Vertex from;
+    Vertex to;
+    int weight;
+
+    Edge(Vertex from, Vertex to, int weight) {
+        this.from = from;
+        this.to = to;
+        this.weight = weight;
+    }
+}
+
+class Graph {
+    // Find the cost of the cheapest path between the two given vertices
+    int shortestPathCost(Vertex source, Vertex target) {
+        ArrayList<Vertex> unvisited = new ArrayList<>();
+        HashMap<Vertex, Integer> distances = new HashMap<>();
+        HashMap<Vertex, Vertex> predecessors = new HashMap<>();
+        
+        unvisited.add(source);
+        distances.put(source, 0);
+        
+        while (unvisited.size() > 0) {
+            Vertex v = unvisited.remove(0);
+            
+            for (Edge e : v.outEdges) {
+                if (distances.get(e.to) == null || distances.get(e.to) > distances.get(v) + e.weight) {
+                    distances.put(e.to, distances.get(v) + e.weight); 
+                    predecessors.put(e.to, v);
+                    unvisited.add(e.to);
+                }
+            }
+        }
+        
+        return distances.getOrDefault(target, -1);
+    }
+
+    // Find the cheapest path between the two given vertices
+    ArrayList<Vertex> shortestPath(Vertex source, Vertex target) {
+        ArrayList<Vertex> unvisited = new ArrayList<>();
+        HashMap<Vertex, Integer> distances = new HashMap<>();
+        HashMap<Vertex, Vertex> predecessors = new HashMap<>();
+        
+        unvisited.add(source);
+        distances.put(source, 0);
+        
+        while (unvisited.size() > 0) {
+            Vertex v = unvisited.remove(0);
+            
+            for (Edge e : v.outEdges) {
+                if (distances.get(e.to) == null || distances.get(e.to) > distances.get(v) + e.weight) {
+                    distances.put(e.to, distances.get(v) + e.weight); 
+                    predecessors.put(e.to, v);
+                    unvisited.add(e.to);
+                }
+            }
+        }
+        
+        ArrayList<Vertex> path = new ArrayList<>();
+        Vertex step = target;
+        
+        if (predecessors.get(step) == null) {
+            return path;
+        }
+        
+        path.add(step);
+        
+        while (step != source) {
+            step = predecessors.get(step);
+            path.add(0, step);
+        }
+        
+        return path;
+    }
+}
+
+public class Examples {
+    Vertex v1 = new Vertex("A");
+    Vertex v2 = new Vertex("B");
+    Vertex v3 = new Vertex("C");
+    Vertex v4 = new Vertex("D");
+
+    v1.addEdge(v2, 1);
+    v2.addEdge(v3, 2);
+    v3.addEdge(v4, 1);
+    v1.addEdge(v4, 4);
+
+    Graph g = new Graph();
+    
+    System.out.println("Shortest path cost from A to D: " + g.shortestPathCost(v1, v4));
+    ArrayList<Vertex> path = g.shortestPath(v1, v4);
+    System.out.print("Path: ");
+    for (Vertex v : path) {
+        System.out.print(v.name + " ");
+    }
+  
+}</code></pre>
+
+      <h2 class="fontM" id="analysis">Analysis of the Algorithm</h2>
+      <p>This shortest path algorithm, similar to Dijkstra's algorithm, has a time complexity of <code
+          class="hl">O(V^2)</code> due to the use of a simple unvisited list. This can be improved to <code
+          class="hl">O(V log V + E)</code> by using a priority queue (such as a min-heap) instead of a list for the
+        unvisited vertices. It efficiently finds the shortest path in graphs with non-negative edge weights.</p>
+
+
+
+      <br>
+      <h1 id="union-data">Minimum Spanning Trees -- Algorithms</h1>
+
+      <h2 class="fontM">Table of Contents</h2>
+      <ul>
+        <li><a href="#intro-mst">Introduction</a></li>
+        <li><a href="#boruvka">Borůvka’s Algorithm</a></li>
+        <li><a href="#prim">Prim’s Algorithm</a></li>
+        <li><a href="#kruskal">Kruskal’s Algorithm</a></li>
+      </ul>
+
+      <h2 class="fontM" id="intro-mst">Introduction</h2>
+      <p>Finding the Minimum Spanning Tree (MST) of a graph is a fundamental problem in computer science. The MST
+        connects all vertices in a weighted graph such that the total edge weight is minimized, and no cycles are
+        formed. We will explore three different algorithms to solve this problem: Borůvka’s, Prim’s, and Kruskal’s
+        algorithms.</p>
+
+      <div style="width: 100%" class="ui rounded images">
+        <p><img class="ui image" src="../img/mst.png"></p>
+      </div>
+
+      <h2 class="fontM" id="boruvka">Borůvka’s Algorithm</h2>
+      <h3>How Borůvka’s Algorithm Works</h3>
+      <p>Borůvka’s algorithm starts with each vertex as a separate component and repeatedly adds the shortest edge from
+        each component to another component until all components are connected.</p>
+      <div style="width: 100%" class="ui rounded images">
+        <p><img class="ui image" src="../img/bor.png"></p>
+      </div>
+
+      <h3>Java Code Implementation</h3>
+
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>import java.util.*;
+
+class Vertex {
+    String name;
+    List<Edge> outEdges = new ArrayList<>();
+
+    Vertex(String name) {
+        this.name = name;
+    }
+
+    void addEdge(Vertex to, int weight) {
+        outEdges.add(new Edge(this, to, weight));
+    }
+}
+
+class Edge implements Comparable<Edge> {
+    Vertex from;
+    Vertex to;
+    int weight;
+
+    Edge(Vertex from, Vertex to, int weight) {
+        this.from = from;
+        this.to = to;
+        this.weight = weight;
+    }
+
+    public int compareTo(Edge other) {
+        return this.weight - other.weight;
+    }
+}
+
+class Graph {
+    List<Vertex> vertices = new ArrayList<>();
+    List<Edge> edges = new ArrayList<>();
+
+    void addVertex(Vertex v) {
+        vertices.add(v);
+    }
+
+    void addEdge(Vertex from, Vertex to, int weight) {
+        Edge edge = new Edge(from, to, weight);
+        from.addEdge(to, weight);
+        edges.add(edge);
+    }
+
+    List<Edge> boruvka() {
+        List<Edge> mst = new ArrayList<>();
+        UnionFind uf = new UnionFind(vertices.size());
+
+        while (mst.size() < vertices.size() - 1) {
+            Edge[] cheapest = new Edge[vertices.size()];
+
+            for (Edge e : edges) {
+                int set1 = uf.find(vertices.indexOf(e.from));
+                int set2 = uf.find(vertices.indexOf(e.to));
+
+                if (set1 != set2) {
+                    if (cheapest[set1] == null || e.weight < cheapest[set1].weight) {
+                        cheapest[set1] = e;
+                    }
+
+                    if (cheapest[set2] == null || e.weight < cheapest[set2].weight) {
+                        cheapest[set2] = e;
+                    }
+                }
+            }
+
+            for (Edge e : cheapest) {
+                if (e != null) {
+                    int set1 = uf.find(vertices.indexOf(e.from));
+                    int set2 = uf.find(vertices.indexOf(e.to));
+
+                    if (set1 != set2) {
+                        mst.add(e);
+                        uf.union(set1, set2);
+                    }
+                }
+            }
+        }
+
+        return mst;
+    }
+}
+
+class UnionFind {
+    int[] parent;
+    int[] rank;
+
+    UnionFind(int size) {
+        parent = new int[size];
+        rank = new int[size];
+        for (int i = 0; i < size; i++) {
+            parent[i] = i;
+            rank[i] = 0;
+        }
+    }
+
+    int find(int i) {
+        if (parent[i] != i) {
+            parent[i] = find(parent[i]);
+        }
+        return parent[i];
+    }
+
+    void union(int i, int j) {
+        int root1 = find(i);
+        int root2 = find(j);
+
+        if (root1 != root2) {
+            if (rank[root1] > rank[root2]) {
+                parent[root2] = root1;
+            } else if (rank[root1] < rank[root2]) {
+                parent[root1] = root2;
+            } else {
+                parent[root2] = root1;
+                rank[root1]++;
+            }
+        }
+    }
+}
+
+public class Examples {
+    Graph g = new Graph();
+    Vertex a = new Vertex("A");
+    Vertex b = new Vertex("B");
+    Vertex c = new Vertex("C");
+    Vertex d = new Vertex("D");
+    Vertex e = new Vertex("E");
+    Vertex f = new Vertex("F");
+
+    g.addVertex(a);
+    g.addVertex(b);
+    g.addVertex(c);
+    g.addVertex(d);
+    g.addVertex(e);
+    g.addVertex(f);
+
+    g.addEdge(a, b, 30);
+    g.addEdge(a, e, 50);
+    g.addEdge(b, c, 40);
+    g.addEdge(b, e, 35);
+    g.addEdge(c, d, 25);
+    g.addEdge(c, e, 15);
+    g.addEdge(d, f, 50);
+    g.addEdge(e, f, 50);
+
+    List<Edge> mst = g.boruvka();
+    for (Edge e : mst) {
+        System.out.println(e.from.name + " - " + e.to.name + " : " + e.weight);
+    }
+}</code></pre>
+
+      <h3>Analysis</h3>
+      <p>Borůvka’s algorithm has a time complexity of <code class="hl">O(E log V)</code>. It repeatedly adds the cheapest edge from
+        each component until all components are connected, making it efficient for parallel processing.</p>
+
+      <h2 class="fontM" id="prim">Prim’s Algorithm</h2>
+      <h3>How Prim’s Algorithm Works</h3>
+      <p>Prim’s algorithm grows a single tree starting from an arbitrary vertex. It repeatedly adds the cheapest edge
+        that connects a vertex in the tree to a vertex outside the tree until all vertices are connected.</p>
+      <div style="width: 100%" class="ui rounded images">
+        <p><img class="ui image" src="../img/pri.gif"></p>
+      </div>
+
+      <h3>Java Code Implementation</h3>
+      <pre><code>import java.util.*;
+
+class PrimGraph {
+    List<Vertex> vertices = new ArrayList<>();
+    List<Edge> edges = new ArrayList<>();
+
+    void addVertex(Vertex v) {
+        vertices.add(v);
+    }
+
+    void addEdge(Vertex from, Vertex to, int weight) {
+        Edge edge = new Edge(from, to, weight);
+        from.addEdge(to, weight);
+        to.addEdge(from, weight); // Since the graph is undirected
+        edges.add(edge);
+    }
+
+    List<Edge> prim(Vertex start) {
+        List<Edge> mst = new ArrayList<>();
+        PriorityQueue<Edge> pq = new PriorityQueue<>(Comparator.comparingInt(e -> e.weight));
+        Set<Vertex> inMST = new HashSet<>();
+
+        inMST.add(start);
+        pq.addAll(start.outEdges);
+
+        while (!pq.isEmpty() && inMST.size() < vertices.size()) {
+            Edge edge = pq.poll();
+            if (inMST.contains(edge.to)) continue;
+
+            mst.add(edge);
+            inMST.add(edge.to);
+            for (Edge e : edge.to.outEdges) {
+                if (!inMST.contains(e.to)) {
+                    pq.add(e);
+                }
+            }
+        }
+
+        return mst;
+    }
+}
+
+public class PrimExamples {
+    PrimGraph g = new PrimGraph();
+    Vertex a = new Vertex("A");
+    Vertex b = new Vertex("B");
+    Vertex c = new Vertex("C");
+    Vertex d = new Vertex("D");
+    Vertex e = new Vertex("E");
+    Vertex f = new Vertex("F");
+
+    g.addVertex(a);
+    g.addVertex(b);
+    g.addVertex(c);
+    g.addVertex(d);
+    g.addVertex(e);
+    g.addVertex(f);
+
+    g.addEdge(a, b, 30);
+    g.addEdge(a, e, 50);
+    g.addEdge(b, c, 40);
+    g.addEdge(b, e, 35);
+    g.addEdge(c, d, 25);
+    g.addEdge(c, e, 15);
+    g.addEdge(d, f, 50);
+    g.addEdge(e, f, 50);
+
+    List<Edge> mst = g.prim(a);
+    for (Edge e : mst) {
+        System.out.println(e.from.name + " - " + e.to.name + " : " + e.weight);
+    }
+}</code></pre>
+
+      <h3>Analysis</h3>
+      <p>Prim’s algorithm has a time complexity of <code class="hl">O(E log V)</code> when using a priority queue. It is efficient
+        for dense graphs and is widely used due to its simplicity and effectiveness.</p>
+
+      <h2 class="fontM" id="kruskal">Kruskal’s Algorithm</h2>
+      <h3>How Kruskal’s Algorithm Works</h3>
+      <p>Kruskal’s algorithm sorts all edges in the graph by their weight and adds the smallest edge to the MST,
+        provided it does not form a cycle, until all vertices are connected.</p>
+      <div style="width: 100%" class="ui rounded images">
+        <p><img class="ui image" src="../img/kru.png"></p>
+      </div>
+
+      <h3>Java Code Implementation</h3>
+      <pre><code>import java.util.*;
+
+class KruskalGraph {
+    List<Vertex> vertices = new ArrayList<>();
+    List<Edge> edges = new ArrayList<>();
+
+    void addVertex(Vertex v) {
+        vertices.add(v);
+    }
+
+    void addEdge(Vertex from, Vertex to, int weight) {
+        Edge edge = new Edge(from, to, weight);
+        edges.add(edge);
+    }
+
+    List<Edge> kruskal() {
+        List<Edge> mst = new ArrayList<>();
+        UnionFind uf = new UnionFind(vertices.size());
+
+        Collections.sort(edges);
+
+        for (Edge e : edges) {
+            int set1 = uf.find(vertices.indexOf(e.from));
+            int set2 = uf.find(vertices.indexOf(e.to));
+
+            if (set1 != set2) {
+                mst.add(e);
+                uf.union(set1, set2);
+            }
+        }
+
+        return mst;
+    }
+}
+
+public class KruskalExamples {
+    KruskalGraph g = new KruskalGraph();
+    Vertex a = new Vertex("A");
+    Vertex b = new Vertex("B");
+    Vertex c = new Vertex("C");
+    Vertex d = new Vertex("D");
+    Vertex e = new Vertex("E");
+    Vertex f = new Vertex("F");
+
+    g.addVertex(a);
+    g.addVertex(b);
+    g.addVertex(c);
+    g.addVertex(d);
+    g.addVertex(e);
+    g.addVertex(f);
+
+    g.addEdge(a, b, 30);
+    g.addEdge(a, e, 50);
+    g.addEdge(b, c, 40);
+    g.addEdge(b, e, 35);
+    g.addEdge(c, d, 25);
+    g.addEdge(c, e, 15);
+    g.addEdge(d, f, 50);
+    g.addEdge(e, f, 50);
+
+    List<Edge> mst = g.kruskal();
+    for (Edge e : mst) {
+        System.out.println(e.from.name + " - " + e.to.name + " : " + e.weight);
+    }
+}</code></pre>
+
+      <h3>Analysis</h3>
+      <p>Kruskal’s algorithm has a time complexity of <code class="hl">O(E log E)</code> due to the sorting of edges. It is
+        particularly efficient for sparse graphs and is known for its simplicity in implementation.</p>
+
+      <h2 class="fontM" id="references">References</h2>
+      <p>[1] Chin, F.; Houck, D. (1978), "Algorithms for updating minimal spanning trees", Journal of Computer and
+        System Sciences, 16 (3): 333–344, doi:10.1016/0022-0000(78)90022-3.</p>
+
+
+      <br>
+      <h1 id="union-data">JUnit Testing</h1>
+      <h2 class="fontM">Table of Contents</h2>
+      <ul>
+        <li><a href="#intro-junit">Introduction</a></li>
+        <li><a href="#how-it-works-junit">How JUnit Testing Works</a></li>
+        <li><a href="#code-junit">Java Code Implementation</a></li>
+        <li><a href="#analysis-junit">Analysis of JUnit Testing</a></li>
+      </ul>
+
+      <h2 class="fontM" id="intro-junit">Introduction</h2>
+      <p>JUnit is a widely used testing framework for Java that helps developers write and run repeatable tests. It is
+        an essential tool for ensuring code quality and reliability. JUnit allows for the creation of automated tests
+        that can be executed frequently to verify that the code behaves as expected.</p>
+
+      <h2 class="fontM" id="how-it-works-junit">How JUnit Testing Works</h2>
+      <p>JUnit follows a few simple steps to test code:</p>
+      <ul>
+        <li><strong>Write Test Cases:</strong> Define test cases as methods within a test class. Each test case should
+          test a single aspect of the code.</li>
+        <li><strong>Annotate Test Methods:</strong> Use annotations such as <code class="hl">@Test</code> to mark
+          methods as test cases. Additional annotations like <code class="hl">@Before</code>, <code
+            class="hl">@After</code>, <code class="hl">@BeforeClass</code>, and <code class="hl">@AfterClass</code> can
+          be used to set up and tear down resources needed for the tests.</li>
+        <li><strong>Assert Results:</strong> Use assertion methods like <code class="hl">assertEquals</code>, <code
+            class="hl">assertTrue</code>, and <code class="hl">assertFalse</code> to check that the code produces the
+          expected results.</li>
+        <li><strong class="hl">Run Tests:</strong> Execute the tests using a test runner, which can be an IDE plugin, a
+          build tool like Maven or Gradle, or the JUnit command-line runner.</li>
+      </ul>
+      <div style="width: 100%" class="ui rounded images">
+        <p><img class="ui image" src="../img/junit.png"></p>
+      </div>
+
+      <h2 class="fontM" id="code-junit">Java Code Implementation</h2>
+      <p>Here is an example of a simple Java class with JUnit tests:</p>
+
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public int divide(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Division by zero");
+        }
+        return a / b;
+    }
+}
+
+public class CalculatorTest {
+    private Calculator calculator;
+
+    @BeforeEach
+    void setUp() {
+        calculator = new Calculator();
+    }
+
+    @Test
+    void testAdd() {
+        assertEquals(5, calculator.add(2, 3));
+        assertEquals(-1, calculator.add(-2, 1));
+        assertEquals(0, calculator.add(-2, 2));
+    }
+
+    @Test
+    void testSubtract() {
+        assertEquals(1, calculator.subtract(3, 2));
+        assertEquals(-3, calculator.subtract(-2, 1));
+        assertEquals(-4, calculator.subtract(-2, 2));
+    }
+
+    @Test
+    void testMultiply() {
+        assertEquals(6, calculator.multiply(2, 3));
+        assertEquals(-2, calculator.multiply(-2, 1));
+        assertEquals(-4, calculator.multiply(-2, 2));
+    }
+
+    @Test
+    void testDivide() {
+        assertEquals(2, calculator.divide(6, 3));
+        assertEquals(-2, calculator.divide(-4, 2));
+        assertEquals(0, calculator.divide(0, 1));
+    }
+
+    @Test
+    void testDivideByZero() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            calculator.divide(1, 0);
+        });
+        assertEquals("Division by zero", exception.getMessage());
+    }
+}</code></pre>
+
+      <h2 class="fontM" id="analysis-junit">Analysis of JUnit Testing</h2>
+      <p>JUnit testing provides several benefits:</p>
+      <ul>
+        <li><strong>Early Bug Detection:</strong> Writing tests helps catch bugs early in the development process,
+          reducing the cost of fixing them later.</li>
+        <li><strong>Automated Testing:</strong> Automated tests can be run frequently to ensure that new changes do not
+          introduce regressions.</li>
+        <li><strong>Documentation:</strong> Tests serve as documentation for the expected behavior of the code.</li>
+        <li><strong>Refactoring Safety:</strong> With a comprehensive test suite, developers can refactor code with
+          confidence, knowing that tests will catch any unintended changes.</li>
+        <li><strong>Improved Code Quality:</strong> Writing tests encourages developers to write modular and testable
+          code, leading to better code quality.</li>
+      </ul>
+
+
+
+      <br>
+      <h1 id="union-data">Summary</h1>
+      <h2 class="fontM">Table of Contents</h2>
+      <ul>
+        <li><a href="#languages">Programming Languages Overview</a></li>
+        <li><a href="#javascript">JavaScript Overview</a></li>
+        <li><a href="#object-orientation">Object-Orientation</a></li>
+        <li><a href="#ood">Getting Ready for Object-Oriented Design (OOD)</a></li>
+        <li><a href="#summary">Summary of What We Learned</a></li>
+      </ul>
+
+      <h2 class="fontM" id="languages">Programming Languages Overview</h2>
+      <p>Let's review the different programming languages we have seen so far and their characteristics:</p>
+      <ul>
+        <li><strong>Racket (up to ISL):</strong></li>
+        <ul>
+          <li>Functional language</li>
+          <li>Dynamically typed (no need to explicitly declare types)</li>
+        </ul>
+        <li><strong>Java:</strong></li>
+        <ul>
+          <li>Object-oriented with classes</li>
+          <li>Statically typed (must declare types)</li>
+        </ul>
+        <li><strong>JavaScript:</strong></li>
+        <ul>
+          <li>Object-oriented without classes</li>
+          <li>Dynamically typed</li>
+        </ul>
+        <li><strong>Python:</strong></li>
+        <ul>
+          <li>Object-oriented with classes</li>
+          <li>Dynamically typed</li>
+        </ul>
+      </ul>
+
+      <h2 class="fontM" id="javascript">JavaScript Overview</h2>
+      <p>JavaScript is a versatile, dynamically typed, object-oriented language commonly used in web development. Here
+        are some key features:</p>
+      <ul>
+        <li>Not related to Java</li>
+        <li>Less object-oriented than Java</li>
+        <li>Forgiving syntax, making it good for rapid web development</li>
+        <li>Interactive execution similar to DrRacket’s interactive window</li>
+      </ul>
+
+      <h3>Examples</h3>
+      <button class="ui inverted pink button theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+
+      <pre><code>42 // Returns 42
+false // Returns false
+"world" + 10 // Returns "world10"
+50 + "hello" // Returns "50hello"
+"good" + true // Returns "goodtrue"
+"good" + false // Returns "goodfalse"
+[4, 5, 6] // Creates an Array
+[4, 5, 6].length // 3
+
+function g(x) { return x * 3; }
+g(3) // 9
+
+var obj = { "y": 7, "b": "world" }
+obj.y // 7
+obj.b // "world"
+
+function DogMaker(name) { this.name = name; this.sound = "bark"; }
+var buddy = new DogMaker("buddy");
+buddy.name // "buddy"
+buddy.sound // "bark"
+
+var biggerBuddy = { name: "biggerBuddy", __proto__: buddy }
+biggerBuddy.sound // "bark"
+buddy.sound = "woof"
+biggerBuddy.sound // "woof"
+biggerBuddy.favoriteToy = "ball"
+buddy.favoriteToy // undefined
+</code></pre>
+
+      <h2 class="fontM" id="object-orientation">Object-Oriented Programming (OOP)</h2>
+      <p>Object-oriented programming involves creating objects that contain both data and methods. Key features of
+        object-oriented languages include:</p>
+      <ul>
+        <li>Objects</li>
+        <li>Fields/Properties</li>
+        <li>Methods</li>
+        <li>Arguments</li>
+        <li>Inheritance</li>
+        <li>Constructors</li>
+        <li>Dynamic dispatch</li>
+        <li><code>this</code> keyword (refers to the current object)</li>
+        <li>Overriding methods</li>
+      </ul>
+
+      <h3>Building an Object-Oriented System in JavaScript</h3>
+      <p>In JavaScript, we can create an object-oriented system. Here's an example:</p>
+      <h3>Point Class</h3>
+      <p>The Point class represents a point in a 2D space with x and y coordinates.</p>
+      <pre><code class="language-javascript">
+class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    // Method to calculate the distance from the origin
+    distance() {
+        return Math.sqrt(this.x * this.x + this.y * this.y);
+    }
+}
+
+// Creating instances of Point
+const point1 = new Point(5, 10);
+const point2 = new Point(15, 20);
+
+// Accessing properties of the objects
+console.log(point1.x); // 5
+console.log(point2.y); // 20
+
+// Calculating distance from the origin
+console.log(point1.distance()); // 11.18
+console.log(point2.distance()); // 25
+</code></pre>
+
+      <h3>Rectangle Class</h3>
+      <p>The Rectangle class represents a rectangle with width and height.</p>
+      <pre><code class="language-javascript">
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    // Method to calculate the area of the rectangle
+    area() {
+        return this.width * this.height;
+    }
+}
+
+// Creating instances of Rectangle
+const rect1 = new Rectangle(5, 10);
+const rect2 = new Rectangle(15, 20);
+
+// Calculating the area of the rectangles
+console.log(rect1.area()); // 50
+console.log(rect2.area()); // 300
+</code></pre>
+
+      <h3>Example Usage</h3>
+      <pre><code class="language-javascript">
+// Example of creating and using Point objects
+const examplePoint1 = new Point(3, 4);
+const examplePoint2 = new Point(6, 8);
+console.log(`Point1 Distance: ${examplePoint1.distance()}`); // 5
+console.log(`Point2 Distance: ${examplePoint2.distance()}`); // 10
+
+// Example of creating and using Rectangle objects
+const exampleRect1 = new Rectangle(2, 3);
+const exampleRect2 = new Rectangle(4, 5);
+console.log(`Rectangle1 Area: ${exampleRect1.area()}`); // 6
+console.log(`Rectangle2 Area: ${exampleRect2.area()}`); // 20
+</code></pre>
+
+
+      <h2 class="fontM" id="ood">Getting Ready for Object-Oriented Design (OOD)</h2>
+      <p>When transitioning to OOD, remember the following key points:</p>
+      <ul>
+        <li>Organize your code for readability and maintenance.</li>
+        <li>Each class and interface should be in its own file.</li>
+        <li>Use packages to manage a large number of classes.</li>
+        <li>Make interfaces and classes public, and fields private.</li>
+      </ul>
+
+      <h2 class="fontM" id="summary">Summary of What We Learned</h2>
+      <h3>Data:</h3>
+      <ul>
+        <li><strong>Classes vs Interfaces:</strong></li>
+        <ul>
+          <li>Interfaces specify what classes should do.</li>
+          <li>Interfaces provide behavior without implementation.</li>
+          <li>Abstract classes prevent code duplication by sharing common behavior and fields.</li>
+        </ul>
+      </ul>
+      <h3>Generics:</h3>
+      <ul>
+        <li>Type parameters and abstract types allow for flexible and reusable code.</li>
+      </ul>
+      <h3>Efficiency and Complexity:</h3>
+      <ul>
+        <li>Understanding different growth rates (constant, logarithmic, linear, etc.) is crucial for analyzing
+          algorithm efficiency.</li>
+      </ul>
+      <h3>Datatypes:</h3>
+      <ul>
+        <li><strong>Lists:</strong> Indexed and mutable lists.</li>
+        <li><strong>Trees:</strong> Binary Search Trees (BST), Heaps.</li>
+        <li><strong>Graphs:</strong> Cyclic graphs.</li>
+        <li><strong>Maps:</strong> Hashmaps for efficient data retrieval.</li>
+      </ul>
+      <h3>Abstracting:</h3>
+      <ul>
+        <li>Abstracting and sharing code helps in managing complexity and improving code reusability.</li>
+      </ul>
+      <h3>Testing:</h3>
+      <ul>
+        <li>Designing test cases, testing for correctness, and testing under mutation are essential for robust software
+          development.</li>
+      </ul>
+      <h3>Working with Mutation:</h3>
+      <ul>
+        <li>Understand how data is passed around, stored, and saved.</li>
+        <li>Properly test with test fixtures.</li>
+      </ul>
+      <h3>Why OOD?</h3>
+      <ul>
+        <li>Designing software is complex, and OOD helps in managing this complexity.</li>
+        <li>Central concepts include information hiding, interfaces, and being closed to modification but open to
+          extension.</li>
+      </ul>
+
+      <h3>Topics for OOD:</h3>
+      <ul>
+        <li>What are objects all about?</li>
+        <li>Interface polymorphism: Using interfaces for flexible code design.</li>
+        <li>Data abstraction and encapsulation: Keeping implementation details hidden while exposing necessary
+          interfaces.</li>
+      </ul>
+
+      </ul>
+
+
+      
+
+    </div>
+
+
+  </div>
+
+
+  <br><br>
+  <!-- comments section -->
+  <a id="feedback_Area"></a>
+  <div class="feedback_Area">
+    <h1><button onclick="toggleText('expandedText14')" class="feedbackB">Feedback</button></h1>
+  
+      <form action="https://formspree.io/f/xqazzqav" method="POST">
+  
+        Your name: <br>
+        <input class="input-name" type="text" name="realname"><br>
+        <br>
+        
+        Your email: <br>
+        <input type="email" name="email"><br>
+        <br>
+        
+        Your comments: <br>
+        <textarea name="comments" rows="15" cols="50"></textarea><br>
+        
+        <button class="submit" type="submit">Submit!</button>
+  
+        </form>
+  
+    </div> 
+    <!-- end feedback -->
+
+
+
+  <footer class="foot" style="margin: 0;">
+    <div class="footer-links">
+      <a class="footer-link" href="https://www.instagram.com/quinnuella_" target="_blank">Instagram</a>
+      <div style="border-right: 1px solid #fff; height: 20px; margin: 0 25px;"></div>
+      <a class="footer-link" href="mailto: mikuquella@gmail.com">Email</a>
+    </div>
+    <div class="copyright">Power by: Quella W</div>
+
+  </footer>
+
+  <!-- for highlighting code -->
+
+  <!-- highlighter -->
+  <link id="theme-stylesheet" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/srcery.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <script type="text/javascript" src="../scripts/share.js"></script>
+  <script type="text/javascript" src="../scripts/basicFun.js"></script>
+</body>
+
+</html>

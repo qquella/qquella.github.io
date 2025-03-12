@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FishWorld</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon-q.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="../styles/main-styles.css"> -->
+  <link rel="stylesheet" href="./styles/nav2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- fronts & icon -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/fish.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="./scripts/FishWorld.js"></script>
+</head>
+
+<!-- Real Header lol -->
+
+<body>
+  <a class="webLink" href="https://qquella.com/">
+    <h2>qquella.com</h2>
+  </a>
+
+  <div class="contact-button">
+    <span class="contact">Contact</span>
+    <div class="contact-dropdown">
+      <a href="mailto: mikuquella@gmail.com">Email</a>
+      <a href="#feedback_Area">Feedback</a>
+    </div>
+  </div>
+
+  <header>
+    <h1>Fish World!</h1>
+  </header>
+
+  <!-- share button -->
+  <div class="share-print">
+    <button class="fa fa-share-alt" id="shareButton"><span>Share</span></button>
+    <div id="shareOptions">
+      <a href="#" data-option="whatsapp">WhatsApp</a>
+      <a href="#" data-option="twitter">Twitter</a>
+      <a href="#" data-option="instagram">Instagram</a>
+      <a href="#" data-option="mail">Email</a>
+      <a href="#" data-option="snapchat">Snapchat</a>
+      <a href="#" data-option="pinterest">Pinterest</a>
+      <a href="#" data-option="clipboard">Copy to Clipboard</a>
+    </div>
+    <!-- print button -->
+    <button class="fa fa-print" id="printButton"><span>Print</span></button>
+  </div>
+
+  <div class="meau">
+    🎮🌊 Welcome to <span class="pink">FishWorld</span>, the ultimate p5.js recreation of the classic Feeding Frenzy
+    game! Dive into an
+    underwater
+    adventure where you control a hungry fish in a quest to become the biggest in the ocean. Experience thrilling
+    gameplay, stunning visuals, and intense challenges as you navigate through schools of fish, dodge predators, and
+    gobble up snacks to grow bigger and stronger.
+  </div>
+
+  <div class="center">
+    <main>
+    </main>
+  </div>
+
+  <div class="center">
+    <p>Watch the game introduction & say hi here!</p>
+
+    <iframe class="vid-fish" src="https://www.youtube.com/embed/u8LNjznIid0?si=kbHizV-QdabLLjxF"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <div class="meau">
+    <p>
+      🎮🌊 Welcome to <span class="pink">FishWorld</span>, the ultimate p5.js recreation of the classic Feeding Frenzy
+      game! Dive into an
+      underwater
+      adventure where you control a hungry fish in a quest to become the biggest in the ocean. Experience thrilling
+      gameplay, stunning visuals, and intense challenges as you navigate through schools of fish, dodge predators, and
+      gobble up snacks to grow bigger and stronger.
+
+    <h3>🐟 Game Features:</h3>
+
+    Dynamic fish movement with realistic behavior
+    Collect power-ups and snacks to boost your fish's abilities
+    Face off against bigger fish and rise to the top of the food chain
+    Stunning underwater graphics and immersive sound effects
+    Intuitive controls: move your fish using the mouse
+    Compete for the highest score and see if you can beat your friends!
+
+    <h3>🌟 How to Play:</h3>
+
+    Click 'Start Game' to begin your adventure.
+    Use your mouse to guide your fish towards food and away from danger.
+    Collect power-ups to gain speed, size, and special abilities.
+    Avoid bigger fish that can eat you, and become the biggest fish in the ocean to win!
+
+    <h3>🎉 Challenge Yourself:</h3>
+
+    Can you become the king of FishWorld? Share your high scores in the comments below and challenge your friends to
+    beat your score!
+    </p>
+  </div>
+
+  <br><br>
+  <!-- comments section -->
+  <a id="feedback_Area"></a>
+  <div class="feedback_Area">
+    <h1><button onclick="toggleText('expandedText14')" class="feedbackB">Feedback</button></h1>
+
+    <form action="https://formspree.io/f/mknaablk" method="POST">
+
+      Your name: <br>
+      <input class="input-name" type="text" name="realname"><br>
+      <br>
+
+      Your email: <br>
+      <input type="email" name="email"><br>
+      <br>
+
+      Your comments: <br>
+      <textarea name="comments" rows="15" cols="50"></textarea><br>
+
+      <button class="submit" type="submit">Submit!</button>
+
+    </form>
+
+  </div>
+  <!-- end feedback -->
+
+
+  <footer>
+    <div class="footer-links">
+      <a class="footer-link" href="https://www.instagram.com/quinnuella_" target="_blank">Instagram</a>
+      <div style="border-right: 1px solid #fff; height: 20px; margin: 0 25px;"></div>
+      <a class="footer-link" href="mailto: mikuquella@gmail.com">Email</a>
+    </div>
+    <div class="copyright">Power by: Quella W</div>
+
+  </footer>
+
+
+  <!-- <script>
+  function enterFullScreen() {
+    let elem = document.documentElement;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { // Firefox
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { // Chrome, Safari and Opera
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { // IE/Edge
+      elem.msRequestFullscreen();
+    }
+  }
+
+  function exitFullScreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) { // Firefox
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { // Chrome, Safari and Opera
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { // IE/Edge
+      document.msExitFullscreen();
+    }
+  }
+
+  function setup() {
+    createCanvas(windowWidth, windowHeight);
+    startNewGame();
+    enterFullScreen();
+  }
+
+  function keyPressed() {
+    if (keyCode === ESCAPE) {
+      exitFullScreen();
+    }
+  }
+
+  function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }
+</script> -->
+  <script src="./scripts/share.js"></script>
+</body>
+
+</html>

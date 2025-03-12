@@ -1,0 +1,1419 @@
+
+
+/* graphic vitualization */
+
+#container {
+  overflow: visible;
+}
+
+.controler-container .jsavcontrols .btn-blue {
+  margin: 0 10px;
+}
+
+form div.wrapper {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+form div.wrapper input[type=text] {
+  width: 60%;
+}
+
+form .reset-button {
+  background-color: transparent;
+  border: 0;
+  color: rgb(239 84 157);
+}
+
+form .reset-button:hover {
+  text-decoration: underline;
+}
+
+form .label {
+  display: inline-block;
+  min-width: 146px;
+}
+
+form .nice-select {
+  min-width: 80px;
+}
+
+.legend-text {
+  display: none;
+}
+
+.legend {
+  border: 1px solid #e5e7e8;
+  padding: 40px 20px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 20px 0 50px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.legend .legend-text {
+  display: block;
+  position: absolute;
+  background-color: #f3f3f3;
+  padding: 0 10px;
+  top: -12px;
+  left: 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.processing {
+  background-color: rgba(76, 156, 223, 0.3) !important;
+}
+
+.processing .jsavvaluelabel {
+  color: #46535e;
+}
+
+.controler-container .jsavoutput.jsavoutput-container {
+  max-width: 500px;
+  min-height: 100px;
+  margin: 0 auto 40px auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #433140;
+  background: rgba(76, 156, 223, 0.1);
+  background-color: rgba(236, 194, 244, 0.3) !important ;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.controler-container .jsavoutput.jsavoutput-container div {
+  border-left: 5px solid #e4365c;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.jsavcanvas .jsavnode.jsavindex {
+  background-color: #FFC7D3;
+}
+
+.jsavcanvas .jsavhorizontalarray .jsavnode.jsavindex {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-left: none;
+  background-color: #fff;
+}
+
+.jsavcanvas .jsavhorizontalarray .jsavnode.jsavindex .jsavvaluelabel {
+  font-weight: 600;
+}
+
+.jsavcanvas .jsavhorizontalarray .jsavnode.jsavindex:first-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.jsavcanvas .jsavverticalarray .jsavnode.jsavindex {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+}
+
+.jsavcanvas .jsavverticalarray .jsavnode.jsavindex .jsavvaluelabel {
+  font-weight: 600;
+}
+
+/* junk cont*/
+.jsavcontainer {
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #e5e7e8;
+  background-color: white;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.avcontainer.graph-container {
+  padding-left: 10%;
+  box-sizing: border-box;
+}
+
+.jsavcanvas {
+  position: relative;
+  background-color: inherit;
+}
+
+.jsavnode {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #e5e7e8;
+  color: #46535e;
+  opacity: 1;
+  padding: 0;
+  cursor: default;
+}
+
+.jsavcenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jsavarray,
+.jsavlabel,
+.jsavcode,
+.jsavlist,
+.jsavtree,
+.jsavgraph,
+.jsavmatrix {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.jsavhighlight,
+.jsavarray.jsavbararray .jsavindex.jsavhighlight .jsavvalue,
+.jsavvariable.jsavhighlight .jsavvalue {
+  background-color: #73b369 !important;
+  color: #fff !important;
+}
+
+.jsavvalue {
+  height: 50px;
+  width: 100%;
+  min-height: inherit;
+  min-width: inherit;
+  background-color: transparent;
+  display: table;
+  border-radius: inherit;
+}
+
+.jsavvaluelabel {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.jsavautoresize .jsavnode {
+  width: auto;
+  min-width: 45px;
+  height: auto;
+  min-height: 45px;
+}
+
+.jsavarray {
+  position: relative;
+  list-style: none;
+  min-height: 50px;
+  padding: 0;
+  clear: both;
+  white-space: nowrap;
+  -webkit-transform-style: preserve-3d;
+}
+
+.jsavarray * {
+  -webkit-transform-style: preserve-3d;
+}
+
+.jsavarray:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.jsavindexlabel {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  color: #46535e;
+  position: absolute;
+  vertical-align: middle;
+}
+
+.jsavarray.jsavbararray .jsavindex.jsavhighlight .jsavvaluelabel {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.jsavindex {
+  box-sizing: border-box;
+}
+
+.jsavindex span {
+  z-index: 99;
+}
+
+.jsavhorizontalarray .jsavindex {
+  display: inline-block;
+  position: relative;
+}
+
+.jsavhorizontalarray .jsavindex:not(:last-of-type) {
+  border-right: 0;
+}
+
+.jsavhorizontalarray .jsavindexlabel {
+  bottom: -25px;
+  left: 0;
+}
+
+.jsavhorizontalarray .jsavindex:first-of-type {
+  -ms-border-top-left-radius: 8px;
+  -ms-border-bottom-left-radius: 8px;
+  -moz-border-top-left-radius: 8px;
+  -moz-border-bottom-left-radius: 8px;
+  -o-border-top-left-radius: 8px;
+  -o-border-bottom-left-radius: 8px;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.jsavhorizontalarray .jsavindex:last-of-type {
+  -ms-border-top-right-radius: 8px;
+  -ms-border-bottom-right-radius: 8px;
+  -moz-border-top-right-radius: 8px;
+  -moz-border-bottom-right-radius: 8px;
+  -o-border-top-right-radius: 8px;
+  -o-border-bottom-right-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.jsavbararray {
+  height: 150px;
+  overflow: visible;
+  padding-bottom: 30px;
+}
+
+.jsavbararray .jsavnode {
+  box-shadow: none;
+}
+
+.jsavbararray .jsavindex {
+  height: 100%;
+  vertical-align: bottom;
+  border: 0;
+  background-color: #ddd;
+  margin-left: 2px;
+  float: left;
+  position: relative;
+}
+
+.jsavbararray .jsavvalue {
+  z-index: 100;
+  bottom: 0;
+  background-color: inherit;
+  min-height: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: #46535e;
+}
+
+.jsavbararray .jsavvalue span {
+  position: absolute;
+  width: inherit;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+}
+
+.jsavbararray .jsavvalue,
+.jsavbararray .jsavvaluebar {
+  display: block;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.jsavbararray .jsavvaluebar {
+  height: 100%;
+  top: 0;
+  background-color: #fff;
+}
+
+.jsavbararray .jsavindexlabel {
+  font-size: 90%;
+  position: relative;
+  top: 100%;
+  vertical-align: middle;
+  color: #46535e;
+}
+
+.jsavverticalarray.jsavindexed .jsavindex {
+  position: relative;
+}
+
+.jsavverticalarray .jsavindex {
+  margin-bottom: -1px;
+  float: left;
+  clear: left;
+}
+
+.jsavverticalarray .jsavindexlabel {
+  position: absolute;
+  text-align: right;
+  width: auto;
+  left: -17px;
+  color: #46535e;
+}
+
+.jsavverticalarray .jsavindex:first-of-type,
+.jsavverticalarray .jsavindex:first-of-type .jsavvalue {
+  -ms-border-top-left-radius: 8px;
+  -moz-border-top-left-radius: 8px;
+  -o-border-top-left-radius: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -ms-border-top-right-radius: 8px;
+  -moz-border-top-right-radius: 8px;
+  -o-border-top-right-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.jsavverticalarray .jsavindex:last-of-type,
+.jsavverticalarray .jsavindex:last-of-type .jsavvalue {
+  -ms-border-bottom-left-radius: 8px;
+  -moz-border-bottom-left-radius: 8px;
+  -o-border-bottom-left-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -ms-border-bottom-right-radius: 8px;
+  -moz-border-bottom-right-radius: 8px;
+  -o-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.jsavmark {
+  position: absolute;
+  display: none;
+  background-color: #ff6464;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  width: 8px;
+  height: 8px;
+  z-index: 190;
+}
+
+.jsavmarkline {
+  position: absolute;
+  display: none;
+  height: 1px;
+  background-color: #ff6464;
+  background-color: rgba(255, 100, 100, 0.6);
+  z-index: 190;
+}
+
+.jsavline {
+  overflow: visible;
+  border: 0;
+  background-color: inherit;
+}
+
+.jsavscroll {
+  overflow: auto;
+  background-color: white;
+  border: 1px solid #e5e7e8;
+  height: 220px;
+}
+
+.jsavoutput .jsavtitle {
+  display: block;
+  margin-top: 2.5em;
+  font-size: 300%;
+  text-align: center;
+}
+
+.jsavindex.jsavarrow:before {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top: 6px solid #e5e7e8;
+  top: -10px;
+  left: 17px;
+}
+
+.jsavcanvas svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 110;
+}
+
+.jsavcontainer svg {
+  pointer-events: none;
+}
+
+.jsavcontainer svg * {
+  pointer-events: visible;
+}
+
+.jsavcontrols {
+  text-align: center;
+}
+
+.jsavplaying span {
+  cursor: default;
+}
+
+.jsavdialog {
+  border: 1px solid #aaa;
+  background-color: #fff;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.jsavsettings-dialog {
+  border-radius: 10px;
+}
+
+.jsavsettings-dialog.arrow-top-left {
+  border-top-left-radius: 0;
+}
+
+.jsavsettings-dialog.arrow-top-right {
+  border-top-right-radius: 0;
+}
+
+.jsavsettings-dialog.arrow-bottom-left {
+  border-bottom-left-radius: 0;
+}
+
+.jsavsettings-dialog.arrow-bottom-right {
+  border-bottom-right-radius: 0;
+}
+
+.jsavsettings-dialog:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 8px solid transparent;
+  border-left-color: #eee;
+  transform: rotate(-90deg);
+}
+
+.jsavsettings-dialog.arrow-top-left:after {
+  top: -16px;
+  left: 0;
+}
+
+.jsavsettings-dialog.arrow-top-right:after {
+  top: -16px;
+  right: 0;
+}
+
+.jsavsettings-dialog.arrow-bottom-left:after,
+.jsavsettings-dialog.arrow-bottom-right:after {
+  border-left-color: #fff;
+  transform: rotate(90deg);
+  bottom: -16px;
+}
+
+.jsavsettings-dialog.arrow-bottom-left:after {
+  left: 0;
+}
+
+.jsavsettings-dialog.arrow-bottom-right:after {
+  right: 0;
+}
+
+/* Styles for .jsavsettings-dialog */
+.jsavsettings-dialog h2 {
+  border-radius: 10px 10px 0 0;
+}
+
+.jsavsettings-dialog.arrow-top-left h2 {
+  border-radius: 0 10px 0 0;
+}
+
+.jsavsettings-dialog.arrow-top-right h2 {
+  border-radius: 10px 0 0 0;
+}
+
+/* Styles for .jsavmodal */
+.jsavmodal {
+  z-index: 999;
+  background-color: #787878;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Styles for .jsavdialog h2 */
+.jsavdialog h2 {
+  background-color: #eee;
+  color: #46535e;
+  font-family: Helvetica, Arial;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 7px 15px;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.jsavdialog.ui-draggable-dragging,
+.jsavdialog.ui-draggable-dragging h2 {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* Styles for .jsavdialogclose link */
+a.jsavdialogclose {
+  border: 1px solid #777;
+  -ms-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  color: #777;
+  float: right;
+  font-family: monospace;
+  font-size: 30px;
+  font-weight: normal;
+  height: 20px;
+  padding: 3px;
+  text-align: center;
+  text-decoration: none;
+  width: 20px;
+  line-height: 22px;
+}
+
+a.jsavdialogclose:hover {
+  background-color: #ccc;
+}
+
+/* Styles for .jsavsettings */
+.jsavsettings {
+  padding: 15px;
+  font-family: Helvetica, Arial;
+}
+
+/* Styles for .jsavsettings link */
+a.jsavsettings {
+  background-image: url(images/settings.png);
+  width: 20px;
+  height: 20px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: #aaa;
+  text-indent: 120%;
+  padding: 2px;
+  border: 1px solid #777;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 50%;
+  float: right;
+  margin-right: 10px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+a.jsavsettings:hover {
+  background-color: #888;
+}
+
+/* Styles for .jsavsettings .jsavhelp and .jsavsettings .jsavversion */
+.jsavsettings .jsavhelp {
+  font-size: 80%;
+  margin-left: 40px;
+}
+
+.jsavsettings .jsavversion {
+  float: right;
+  font-size: smaller;
+}
+
+/* Styles for .jsavrow */
+.jsavrow {
+  margin: 15px 8px 4px 8px;
+}
+
+/* Styles for .jsavsettings label */
+.jsavsettings label {
+  display: inline;
+}
+
+/* Styles for .jsavmodelanswer.jsavcontainer */
+.jsavmodelanswer.jsavcontainer {
+  padding: 0;
+  padding-bottom: 5px;
+  background-color: white;
+  border-width: 0;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Styles for .jsavmodelanswer .jsavcounter and .jsavmodelanswer .jsavcontrols */
+.jsavmodelanswer .jsavcounter {
+  float: left;
+  left: 10px;
+  position: absolute;
+  top: 15px;
+}
+
+.jsavmodelanswer .jsavcontrols span {
+  margin: 5px 20px 0 0;
+}
+
+.jsavmodelanswer .jsavcontrols .jsavend {
+  margin-right: 0;
+}
+
+.jsavdialog.jsavmodelpreparing {
+  left: -110% !important;
+}
+
+.jsavexercisecontrols {
+  position: relative;
+}
+
+.jsavexercisecontrols .actionIndicator {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+
+.jsavexercisecontrols.active .actionIndicator {
+  background-image: url(images/spinner.gif);
+}
+
+.jsavexercisecontrols input[type="button"] {
+  background-color: #eee;
+  background: linear-gradient(#fff, #ccc);
+  border: 1px solid #777;
+  margin: 0;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+.jsavexercisecontrols input[type="button"]:hover {
+  background-color: #ddd;
+  background: linear-gradient(#fff, #bbb);
+}
+
+.jsavexercisecontrols input[type="button"]:last-of-type {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.jsavexercisecontrols input[type="button"]:first-of-type {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.jsavexercisecontrols input[type="button"]:not(:last-of-type) {
+  border-right: 0;
+}
+
+.jsavtree, .jsavgraph, .jsavlist {
+  position: relative;
+  background-color: inherit;
+}
+
+.jsavtreenode, .jsavgraphnode {
+  border-radius: 25px;
+  position: absolute;
+}
+
+.jsavnullnode {
+  min-width: 20px;
+  border-color: #eee;
+  opacity: 0;
+}
+
+.jsavnulledge {
+  stroke: transparent;
+  opacity: 0;
+}
+
+.jsavedgelabel {
+  background-color: inherit;
+  z-index: 700;
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+}
+
+.jsavpointerarea {
+  background-color: #eee;
+  display: block;
+}
+
+.jsavhorizontallist .jsavpointerarea {
+  border-left: 1px solid #e5e7e8;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+}
+
+.jsavverticallist .jsavpointerarea {
+  border-top: 1px solid #e5e7e8;
+  bottom: 0;
+  height: 10px;
+  position: absolute;
+  width: 100%;
+}
+
+.jsavhorizontallist.jsavautoresize .jsavnode {
+  min-width: 33px;
+  min-height: 45px;
+  padding-right: 12px;
+}
+
+.jsavverticallist.jsavautoresize .jsavnode {
+  min-width: 45px;
+  min-height: 33px;
+}
+
+.jsavlistnode {
+  position: absolute;
+  border-radius: 3px;
+}
+
+.jsavverticallist .jsavlistnode .jsavpointerarea {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.jsavhorizontallist .jsavlistnode .jsavpointerarea {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.jsavhorizontallist .jsavnonext .jsavpointerarea:after {
+  display: inline-block;
+  content: "";
+  height: 104%;
+  width: 1px;
+  background-color: #000;
+  transform: rotate(12deg);
+}
+
+.jsavlist .jsavedge {
+  stroke-width: 2;
+}
+
+.jsavcode {
+  font-family: monospace;
+}
+
+ul.jsavcode {
+  list-style: none;
+  padding: 0;
+}
+
+.jsavcodeline {
+  background-color: #fafafa;
+  padding: 2px 10px;
+  white-space: pre;
+}
+
+.jsavcodeline.jsavpreviousline {
+  background-color: #eee;
+}
+
+.jsavcodeline.jsavcurrentline {
+  background-color: #ccc;
+}
+
+.jsavcodeline.jsavhighlight {
+  background-color: #73b369;
+}
+
+.jsavhiddencode {
+  display: none !important;
+}
+
+.jsavpointer .jsavpointerarea {
+  border: 1px solid #e5e7e8;
+  height: 10px;
+  width: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.jsavnullpointer .jsavpointerarea:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(244, 144, 32, 0.4);
+  transform: rotate(-45deg);
+  transform-origin: right top;
+}
+
+.jsavpointer .jsavlabel {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.jsavmatrix .jsavarray {
+  margin: 0 auto;
+  height: 30px;
+  min-height: 30px;
+}
+
+.jsavmatrix .jsavarray li.jsavnode {
+  border-radius: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  border-top: 0;
+}
+
+.jsavmatrix .jsavarray.jsavautoresize li.jsavnode {
+  min-height: 30px;
+  min-width: 30px;
+  height: 50px;
+  width: 50px;
+  box-sizing: border-box;
+  color: #46535e;
+}
+
+.jsavmatrix .jsavarray .jsavvalue {
+  height: 30px;
+}
+
+.jsavmatrix .jsavarray:first-child li {
+  border-top: 1px solid #e5e7e8;
+}
+
+.jsavmatrix.jsavmatrixplain .jsavarray li.jsavnode,
+.jsavmatrix.jsavmatrixmatrix .jsavarray li.jsavnode {
+  border: 0;
+  box-shadow: none;
+}
+
+.jsavmatrix.jsavmatrixmatrix {
+  border-left: 2px solid #e5e7e8;
+  border-right: 2px solid #e5e7e8;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.jsavshutter {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 900;
+}
+
+.jsavplaying .jsavshutter {
+  display: block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.jsavquestionframe {
+  width: 100%;
+  height: 100%;
+}
+
+.jsavswap,
+.jsavswap .jsavvalue {
+  background-color: rgba(244, 144, 32, 0.4) !important;
+  color: #46535e !important;
+}
+
+.jsavdisabled {
+  pointer-events: none;
+}
+
+/* added styles */
+body,
+div,
+form,
+select,
+textarea,
+.dark,
+label {
+    color: #f05979 !important;
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    color: #e4365c !important;
+}
+
+.btn-blue{
+  background-color: #ff7d9a;
+  border: 1px solid #ff6284;
+  border-radius: 36px;
+  font-size: 1.4em;
+  font-weight: 600;
+  font-family: 'Libre Baskerville', serif;
+}
+.btn-blue:hover{
+  background-color: #f059e6;
+  border: 1px solid #ff6284;
+}
+
+li .processing{
+  background-color: rgba(199, 76, 223, 0.3) !important ;
+}
+
+.btn-blue-outline{
+  color: #ff6284 !important;
+}
+
+/* my sttles 2 */
+body {
+  background-color:#ffffff;
+  color: rgb(0, 0, 0);
+  font-family: Baskerville, Baskerville;
+  overflow-x: hidden;
+  margin: 3% 2%;
+  margin-bottom: 0;
+}
+header{
+  text-align: center;
+}
+p{
+  color: #53323e;
+  margin: .8% auto;
+  font-size: 1.06em;
+  margin-bottom: .3%;
+}
+a.webLink{
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 4px lightcoral;
+  padding-top: 2%;
+  line-height: .4em;
+  font-size: .99em;
+}
+.webLink:hover{
+  font-size: 1.1em;
+}
+a.webLink h2{
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+nav{
+  color: #53323e;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  position: relative;
+  color: #c24d4d; 
+  text-shadow: 4px 4px 4px rgba(255, 227, 239, 0.6); 
+  letter-spacing: 5px; 
+  text-align: center;
+  font-family: 'Lora', serif;
+  text-shadow: 1px 2px rgb(247, 216, 216);
+  font-weight: 500;
+  padding: 2% 0;
+  font-size: 2.5em;
+}
+h1:hover{
+
+  text-decoration: underline;
+  text-decoration-color: #ffcde2;
+}
+
+h2{
+  color: #ffffff;
+  margin: 0;
+}
+
+
+
+/* for the icon image */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+}
+
+.icon {
+  max-width: 70%;
+  margin: 5px auto;
+}
+
+.icon + span {
+  text-align: center; /* Center the text horizontally */
+  font-size: 1.13em;
+  color: #4b2b37;
+  text-decoration: underline;
+  text-decoration-color: #f4c5c5;
+  text-shadow: 1px .8px rgb(237, 163, 173);
+}
+
+.icon + span a {
+  color: inherit;
+}
+
+div.icon-container span{
+ font-size: 1em;
+}
+
+div.icon-container a{
+  text-decoration: none;
+  color: #b80310;
+}
+
+/* Left links style */
+.left-links, .right-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 12px;
+  text-align: center;
+}
+
+.left-links li, .right-links li {
+  margin-bottom: 10px;
+  margin: 25px 10px;
+  font-size: 23px;
+}
+
+.left-links a, .right-links a {
+  display: block; /* Display links as blocks */
+  color: #4b2b37;
+  text-decoration: underline;
+  text-decoration-color: #f4c5c5;
+  text-shadow: 1px .8px rgb(237, 163, 173);
+  font-size: 1.13em;
+}
+
+a:hover {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+
+/* Contact button style */
+.contact{
+  padding: 5px 0;
+  margin: 5px 0;
+  text-shadow: 1px 2px lightcoral;
+  font-size: 1.05em;
+}
+
+.contact-button {
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 86%;
+  font-size: 1.3em;
+  display: inline-block;
+}
+
+.contact-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #53323e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: right;
+  z-index: 1;
+}
+
+.contact-dropdown a{
+
+}
+
+.contact-button:hover .contact-dropdown {
+  display: block;
+}
+
+/* Text blocks style */
+.text-blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  color: #53323e;
+  font-size: 1.3em;
+}
+
+.text-block {
+  flex: 1;
+  padding: 10px;
+}
+
+.text-left{
+  border-right: 1px solid #fff;
+}
+
+.inner-text{
+  margin: 5px 15px;
+  margin-right: 35px;
+}
+
+/* feedback */
+.feedback_Area{
+  text-align: center;
+  font-size: 1.3em;
+  border-top: 1px solid #fff;
+  border-top-style: dotted;
+}
+
+.feedbackB {
+  color: #FFF; 
+  background: none;
+  font-size: .8em;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lora', serif;
+  text-shadow: 2px 2px lightcoral;
+
+}
+
+.feedbackB:hover {
+  font-size: 1.1em;
+}
+
+input{
+  width: 200px;
+  height: 25px;
+  font-size: 1.2em;
+  font-family: Baskerville, Baskerville;
+  margin: 4px 0;
+}
+
+.input-name{
+  width: 100px;
+}
+
+textarea{
+  font-size: 1.3em;
+  font-family: Baskerville, Baskerville;
+  height: 6.2em;
+  width: 500px;
+  max-width: 60%;
+  margin: 5px 0;
+}
+
+.submit{
+  color: #FFF; 
+  background: none;
+  font-size: 1.35em;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lora', serif;
+  text-shadow: 2px 1px lightcoral;
+  text-decoration: underline;
+  text-decoration-color: #f4c5c5;
+  margin: 8px 0;
+}
+.submit:hover{
+  font-size: 1.6em;
+  
+}
+
+
+
+/* Share & Print button */
+.share-print{
+  margin: 1.5% auto;
+  text-align: center;
+  margin-top: 2%;
+}
+
+#shareOptions{
+  display: none;
+  padding: 2% 2%;
+}
+#shareOptions a{
+  text-decoration: none;
+  padding: 1.5% 1.5%;
+  color: #523013;
+}
+#shareButton, #printButton{
+  padding: 0 4%;
+  background: none;
+  border: 0;
+  font-weight: 1;
+  font-size: 1.5em;
+  color: #b93764;
+}
+#shareButton:hover, #printButton:hover{
+  font-size: 1.8em;
+}
+#shareButton span, #printButton span{
+  display: block;
+  font-size: .5em;
+}
+#shareButton span:hover, #printButton span:hover{
+  text-decoration: underline;
+  text-decoration-color: #f4c5c5;
+}
+
+
+/* Footer style */
+footer {
+  background-color: #53323e;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  margin: 5% -2%;
+  margin-bottom: 0;
+  position: relative;
+  max-width: 100%; /* Set the width to 100% */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.footer-link, .copyright {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 2px lightcoral;
+  margin: 0 0;
+}
+
+.copyright{
+  position:relative;
+  text-align: right;
+  bottom: -10%;
+  font-size: .95em;
+}
+
+
+
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px; /* Decrease font size for smaller screens */
+  }
+
+  nav li {
+    margin: 15px 10px; /* Adjust margin for smaller screens */
+  }
+
+  nav a {
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 26px; 
+    margin: 1px;
+  }
+
+  li {
+    margin: 15px 5px; /* Further adjust margin for very small screens */
+  }
+
+  a {
+    padding: 10px; /* Further adjust padding for very small screens */
+  }
+  .contact-button{
+    font-size: 1.1em;
+    margin-left: 80%;
+  }
+
+  .text-blocks{
+    padding-top: 0;
+    display: block;
+  }
+  .text-block{
+    padding-top: 0;
+  }
+
+  nav{
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .left-links li{
+    margin: 15px 5px;
+  }
+  ul.left-links, ul.right-links{
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* footer styles */
+  footer {
+    padding: 20px;
+  }
+
+  .footer-links {
+    justify-content: center; /* Center the links on small screens */
+  }
+
+  .footer-link, .copyright {
+    margin: 0;
+    display: block; /* Display links and copyright in a column on small screens */
+  }
+
+  .copyright {
+    text-align: center; 
+    font-size: .8em;
+    margin-top: 7px;
+}
+
+a.footer-link{
+  padding-top: 1px;
+}
+}
+
+

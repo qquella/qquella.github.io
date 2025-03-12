@@ -1,0 +1,189 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  color: rgb(209, 208, 210);
+  font-family: 'Source Code Pro', monospace;
+  max-block-size: 100%;
+}
+
+h2{
+  margin: 15px;
+}
+a{
+  color: rgb(208, 208, 210);
+  text-decoration: none;
+  background-color: #484848;
+  border-radius: 5px;
+  text-shadow: 1px 2px rgb(148, 128, 240);
+}
+
+.container {
+  display: block;
+  width: 700px;
+  max-width: 100%;
+  margin: 8% auto;
+  padding: 20px;
+  background-color: #000000;
+  border: 8px solid #8269f49b;
+  box-shadow: 0 0 10px rgba(71, 35, 91, 0.2);
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 32px;
+}
+
+.input-section, .output-section {
+  margin-bottom: 20px;
+}
+
+label, div p {
+  display: inline;
+  width: 20%;
+  text-align: center;
+  margin-right: 2px;
+  font-size: 1.2em;
+  white-space: normal;
+  text-shadow: 4px 4px 4px rgba(220, 161, 233, 0.935);
+}
+
+input[type="number"] {
+  width: 65px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 20px;
+  margin: 18px;
+}
+
+
+input:focus{
+  border: 3px solid #d16fef;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #7937ea;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1.6em;
+  font-family: 'Source Code Pro', monospace;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #bd43d3;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 34px;
+  color: #7937ea;
+  width: 30%;
+  text-shadow: none;
+  margin: 30px auto;
+  margin-top: 50px;
+}
+
+.result-label{
+  width: 20%;
+  display: inline;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+
+@media screen and (min-width: 770px) {
+.input-display{
+  white-space: nowrap;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 10% auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  label {
+    width: 40%;
+    margin-right: 0px;
+    margin-top: 50px;
+  }
+
+  input[type="number"] {
+    width: 50px;
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 1.4em;
+  }
+
+  .space{
+    display: none;
+  }
+
+  div.output-section label{
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .input-section{
+    margin-bottom: 0px;
+  }
+
+  h1 {
+    font-size: 23px;
+    margin-bottom: 12px;
+  }
+
+  label {
+    font-size: 1.1em;
+    margin-top: 38px;
+    margin-bottom: 20px;
+  }
+
+  input[type="number"] {
+    width: 42px;
+    margin: 10px;
+    font-size: 17px;
+  }
+
+  button {
+    padding: 7px 14px;
+    font-size: 1.3em;
+    margin: 18px;
+  }
+
+  div.input-section span{
+    display: none;
+  }
+
+  label, div p {
+    font-size: 1.03em;
+  }
+
+  .result-label{
+    font-size: 1.03em;
+  }
+}
+
+
+
+
+
+

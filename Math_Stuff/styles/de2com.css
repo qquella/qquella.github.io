@@ -1,0 +1,290 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  color: rgb(209, 208, 210);
+  font-family: 'Source Code Pro', monospace;
+  max-block-size: 100%;
+}
+
+h2{
+  margin: 30px;
+  text-shadow: 2px 2px 2px rgba(231, 176, 243, 0.935);
+  color: #8269f4;
+  font-size: 1.6em;
+}
+
+h3{
+  color: #dd77e6;
+  font-size: 1.3em;
+}
+
+a h2{
+  margin: 15px;
+}
+a{
+  color: rgb(208, 208, 210);
+  text-decoration: none;
+  background-color: #484848;
+  border-radius: 5px;
+  text-shadow: 1px 2px rgb(148, 128, 240);
+}
+
+.container {
+  display: block;
+  width: 700px;
+  max-width: 100%;
+  margin: 8% auto;
+  padding: 20px;
+  background-color: #000000;
+  border: 8px solid #8269f49b;
+  box-shadow: 0 0 10px rgba(71, 35, 91, 0.2);
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 32px;
+}
+
+.input-section, .output-section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.2em;
+  text-shadow: 4px 4px 4px rgba(220, 161, 233, 0.935);
+
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 4px;
+  margin: 20px;
+  margin-left: 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+input:focus{
+  border: 3px solid #d16fef;
+}
+
+button {
+  padding: 16px 4px;
+  word-break: break-word;
+  white-space: normal;
+  background-color: #7937ea;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin: 20px;
+  margin-left: 0;
+  position: relative;
+  left: -12%;
+  max-width: 70%;
+  margin-left: 0;
+  font-family: 'Source Code Pro', monospace;
+}
+button.right{
+  top: 10px;
+}
+
+button:hover {
+  background-color: #bd43d3;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 20px;
+  color: #7937ea;
+  width: 30%;
+}
+
+.result-label{
+  width: 20%;
+  display: inline;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.column{
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 300px;
+}
+.input-display:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.output1{
+  position: relative;
+  left: -15%;
+  margin-top: 20px;
+}
+.output2{
+  position: relative;
+  left: -6%;
+  margin-top: 40px;
+}
+p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+  margin: 30px auto;
+  
+}
+
+main{
+  position: relative;
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+
+table.center {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+table.center th, table.center td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table.center th {
+  font-weight: bold;
+}
+
+.break {
+  clear: both;
+}
+
+
+
+
+
+@media screen and (min-width: 751px) {
+.input-display{
+  white-space: nowrap;
+}
+
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    width: 80%;
+    margin: 10% auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  label {
+    width: 40%;
+    margin-right: 0px;
+    margin-top: 0px;
+    font-size: 1em;
+    width: 65%;
+  }
+
+  input[type="text"] {
+    width: 150px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 3px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 1.1em;
+  }
+
+  .space{
+    display: none;
+  }
+
+  div.output-section label{
+    margin-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 617px) {
+  .container {
+    width: 85%;
+    margin: 10% auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .input-section{
+    margin-bottom: 0px;
+  }
+
+  h1 {
+    font-size: 23px;
+    margin-bottom: 0;
+    margin-top: 2px;
+  }
+
+  label {
+    font-size: 1.1em;
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+
+  input[type="text"] {
+    width: 150px;
+    margin: 10px;
+    font-size: 17px;
+  }
+
+  button {
+    padding: 5px 9px;
+    font-size: 1em;
+    margin: 18px auto;
+    max-width: 80%;
+    left: -5%;
+  }
+
+  div.input-section span{
+    display: none;
+  }
+  .column{
+    width: 100%;
+    float: none;
+    height: 250px;
+  }
+
+  .output1{
+    margin-top: 15px;
+
+  }
+  .output2{
+    margin-top: 20px;
+    left: -10%;
+  }
+}
+
+
+
+
+
+

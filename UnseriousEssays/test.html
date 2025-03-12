@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Content Changing Page</title>
+  <style>
+    .content {
+      margin-top: 20px;
+    }
+    
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Title Header</h1>
+  
+  <button onclick="showContent(1)">Button 1</button>
+  <button onclick="showContent(2)">Button 2</button>
+  <button onclick="showContent(3)">Button 3</button>
+  
+  <div id="content1" class="content">
+    <h2>Content 1</h2>
+    <p>This is the content for Button 1.</p>
+  </div>
+  
+  <div id="content2" class="content hidden">
+    <h2>Content 2</h2>
+    <p>This is the content for Button 2.</p>
+  </div>
+  
+  <div id="content3" class="content hidden">
+    <h2>Content 3</h2>
+    <p>This is the content for Button 3.</p>
+  </div>
+  
+  <script>
+    function showContent(contentId) {
+      // Hide all content divs
+      const contentDivs = document.getElementsByClassName('content');
+      for (let i = 0; i < contentDivs.length; i++) {
+        contentDivs[i].classList.add('hidden');
+      }
+      
+      // Show the selected content div
+      const selectedContentDiv = document.getElementById('content' + contentId);
+      selectedContentDiv.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

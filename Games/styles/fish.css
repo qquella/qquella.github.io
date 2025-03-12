@@ -1,0 +1,41 @@
+
+main {
+  text-align: center;
+  margin: 1% auto;
+  padding: 1% 2%;
+  max-height: fit-content;
+  min-width: 70%;
+  max-width: 72%;
+}
+
+iframe {
+  margin: 4% auto;
+  max-width: 75%;
+  text-align: center;
+  padding: auto;
+}
+
+div.center {
+  text-align: center;
+}
+
+.vid-fish {
+  width: 1800px;
+  max-width: 70%;
+  margin: 1% auto;
+  margin-top: 0;
+  padding-top: 0;
+  height: 600px;
+}
+
+.meau {
+  margin: 2% 15%;
+  font-size: 1.5em;
+
+}
+
+.pink {
+  color: rgb(255, 100, 185);
+  font-size: 1.9em;
+  font-family: cursive;
+}

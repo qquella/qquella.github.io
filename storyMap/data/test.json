@@ -1,0 +1,477 @@
+{
+  "storymap": {
+    "call_to_action": true,
+    "call_to_action_text": "Los Gehts",
+    "language": "en",
+    "map_as_image": false,
+    "map_type": "osm:standard",
+    "slides": [
+      {
+        "date": "",
+        "location": {
+          "line": true
+        },
+        "media": {
+          "caption": "",
+          "credit": "Thrive Global",
+          "url": "https://jocelynbrewer.com/wp-content/uploads/2022/11/TechuseAgreementWEB.jpg"
+        },
+        "text": {
+          "headline": "Technologie über Generationen hinweg",
+          "text": "<p>In den letzten paar Jahrzehnten ist die Technologie so wichtig geworden. Generation-Z ist mit der Technologie aufgewachsen, aber die anderen Generationen sind das nicht. Für die anderen Generationen, insbesondere 60+, ist die Technologie sehr schwer zu verstehen. Wir müssen Technologie für alle entwickeln, und wir müssen das jetzt tun.</p><p><a href=\"https://on.soundcloud.com/8iRwC\" title=\"Link: https://on.soundcloud.com/8iRwC\">https://on.soundcloud.com/8iRwC</a><br></p>"
+        },
+        "type": "overview"
+      },
+      {
+        "date": "",
+        "location": {
+          "lat": 53.558838,
+          "line": true,
+          "lon": 10.024364,
+          "zoom": 12
+        },
+        "media": {
+          "caption": "",
+          "credit": "Mission Senior Living",
+          "url": "https://missionseniorliving.net/wp-content/uploads/social-media-for-seniors-why-staying-active-online-is-beneficial-lead-image.jpg"
+        },
+        "text": {
+          "headline": "Soziale Medien für ältere Menschen",
+          "text": "<span><p>Ältere Menschen nutzen die sozialen Medien mehr, um mit jüngeren Menschen in Kontakt zu bleiben und ihre sozialen Bindungen zu stärken. Plattformen wie Facebook sind ideal, um mit Kindern und Enkeln in Kontakt zu bleiben. Sie teilen schöne Kommentare und teilen das tägliche Leben ihrer Familie über Fotos und Beiträge.</p><p>Auch Instagram wird bei älteren Menschen immer beliebter. Sie können durch Bilder und kurze Videos einen Einblick in das Leben ihrer Kinder haben. Wenn sie durch diese scrollen, können sie einfach an den Erfahrungen und wichtigen Momenten ihrer Familie teilen.</p><p>Die sozialen Medien sind nicht nur eine Möglichkeit, in Kontakt zu bleiben. Sie bieten auch neue Möglichkeiten für ältere Menschen, positive Beziehungen zu entwickeln und an den großen und kleinen Freuden des Lebens teilzuhaben.</p></span><br>"
+        }
+      },
+      {
+        "date": "",
+        "location": {
+          "lat": 42.33911,
+          "line": true,
+          "lon": -71.08822,
+          "zoom": 12
+        },
+        "media": {
+          "caption": "",
+          "credit": "Teens and Tech",
+          "url": "https://images.squarespace-cdn.com/content/v1/5ed7fc192e580074ee102e2a/ca6a54dc-397b-4103-bbdd-138a490b1f72/research-projects-optim.jpg"
+        },
+        "text": {
+          "headline": "Soziale Medien für Studenten and junge Menschen",
+          "text": "<span><p>Junge Menschen und Studenten nutzen soziale Medien, um ihre Freundschaften zu pflegen, Trends zu entdecken und ihre Kreativität zu zeigen. Plattformen wie Instagram helfen, das Leben von Freunden zu erleben und Beziehungen zu stärken. TikTok ist ein Ort, an dem die Kreativität glänzt, an dem junge Menschen Trends kreieren und lustige Videos ausprobieren. BeReal ist eine Plattform für echten Austausch und Unterstützung.</p><p>Snapchat ist beliebt, um spontane Momente zu teilen und Interaktionen einfach zu machen. Gemeinsam bieten diese Plattformen jungen Menschen die Möglichkeit, Beziehungen zu pflegen, kreativ zu sein und sich in der dynamischen digitalen Welt auszudrücken. Soziale Medien werden zu einem wichtigen Teil ihres Alltags und helfen ihnen, in Verbindung zu bleiben und ihre Identität online zu formen.</p></span><br>"
+        }
+      },
+      {
+        "date": "",
+        "location": {
+          "lat": 52.4271294,
+          "line": true,
+          "lon": 10.7722452,
+          "zoom": 12
+        },
+        "media": {
+          "caption": "",
+          "credit": "Volkswagen",
+          "url": "https://uploads.vw-mms.de/system/production/images/vwn/018/583/images/a59565795ecf1feda608fed96280e11620d3483d/DB2017AU00592_web_1600.jpg?1649151112"
+        },
+        "text": {
+          "headline": "Alles ist jetzt “Smart”",
+          "text": "<p><span>Technologie ist nicht nur für Online-Spiele und soziale Medien. Technologie ist jetzt steckt in allem. Technologie ist in unseren neuen Autos. Autos können selbst fahren. Sie ist in unseren Häusern. Man kann mit seinem Telefon seine Tür abschließen. Es gibt Technologie in unseren Armbanduhren und wir können Bücher durch Technologie lesen. Jetzt gibt es Online-Banking und vieles mehr. Weil das Bankwesen online ist, müssen die Menschen das Internet verstehen. Man muss einen Benutzernamen und ein Passwort eingeben. Obwohl es einfach scheint, viele ältere Menschen damit Schwierigkeiten haben. Die Technologie muss erklärt werden, jeder nutzen kann. Die Technologie ist überall und für alle.</span></p><p><span> </span></p>"
+        }
+      },
+      {
+        "date": "",
+        "location": {
+          "lat": 42.36262,
+          "line": true,
+          "lon": -71.07014,
+          "zoom": 12
+        },
+        "media": {
+          "caption": "",
+          "credit": "Digital Dealer",
+          "url": "https://digitaldealer.com/wp-content/uploads/2020/09/Volvo-V40-driver-assistance-features.jpg"
+        },
+        "text": {
+          "headline": "Technologie für die Sicherheit",
+          "text": "<p><span>Neue Technologie bringt neue und bessere Sicherheit. Es gibt viele Verbesserungen in Autos wegen der neuen Technologie. Es gibt einen Toten-Winkel-Monitor, der wirklich helfen kann. Es gibt auch Rückfahrkameras. In der Apple Watch gibt es eine Sturzerkennungsfunktion und jetzt gibt es einen Alarm zur Lebensrettung für ältere Menschen, die öfter stürzen. Technologie ist somit gut für alle Menschen, und insbesondere für ältere Menschen, weil es bei so vielem Sicherheit bringt.</span></p>"
+        }
+      },
+      {
+        "date": "",
+        "location": {
+          "lat": 42.34902,
+          "line": true,
+          "lon": -71.082435,
+          "zoom": 12
+        },
+        "media": {
+          "caption": "",
+          "credit": "Wege aus der Einsamkeit",
+          "url": "//uploads.knightlab.com/storymapjs/70a6abcbfaf841714f40b4d1715919a0/technologie-uber-generationen-hinweg/_images/Screenshot 2023-11-28 at 1.10.05 PM.png"
+        },
+        "text": {
+          "headline": "Programme über Technologie für ältere Menschen",
+          "text": "<p><span>Wie können ältere Menschen etwas über Technologie lernen? Es gibt ein paar Programme für genau dieses Problem. „Wege aus der Einsamkeit\" ist ein perfektes Beispiel für ein gutes Programm. In der Gruppe gibt es viele Erklärvideos über Technologie, Telefonieren und das Internet. „Wege aus der Einsamkeit\" ist sehr hilfreich und eine gute Möglichkeit, online zu kommunizieren. Im Apple Store gibt es auch viele Seminare für alle jeden. Sie helfen den Menschen bei iPhones, iPads und Macs. Apple gibt Kurse zum Thema Funktion des iPhones und was man mit der Technologie machen kann. Es gibt viele Ressourcen, wenn man sucht. Die große Problem ist, dass viele ältere Menschen keine Ahnung von diesen Ressourcen haben, oder sie haben keine Ahnung, wo sie das finden können.</span></p>"
+        }
+      },
+      {
+        "date": "",
+        "location": {
+          "lat": 52.518591,
+          "line": true,
+          "lon": 13.37568,
+          "zoom": 12
+        },
+        "media": {
+          "caption": "",
+          "credit": "",
+          "url": "https://hemophilianewstoday.com/forums/wp-content/uploads/2020/08/shutterstock_186962081_zpswicjmvvy-1000x480@2x-2.jpg"
+        },
+        "text": {
+          "headline": "Technologie sollte für alle da sein",
+          "text": "<p>Es kommt häufig vor, dass ältere Menschen den Anschluss verlieren. Weil sich die Technologie immer schneller verbessert und junge Menschen das einfach lernen können, dürfen wir nicht vergessen, dass es nicht für alle einfach ist. Es ist somit wichtig, dass wir ältere Menschen helfen, neue Technologien zu lernen. Alle können davon profitieren, die Technologie und das Internet zu verstehen.</p><p><a href=\"https://on.soundcloud.com/q9hyf\" title=\"Link: https://on.soundcloud.com/q9hyf\">https://on.soundcloud.com/q9hyf</a><br></p>"
+        }
+      },
+      {
+        "date": "1850",
+        "text": {
+          "headline": "1850: Uncle Tom's Cabin",
+          "text": "<p>The mean is in Wirt County in what is now West Virginia. In 1852, Harriet Beecher Stowe's 'Uncle Tom's Cabin' was published, galvanizing the abolitionist movement.</p> <span class='vco-note'>Embed a YouTube URL like this one about Uncle Tom's Cabin.</span>"
+        },
+        "location": {
+          "name": "Wirt County, Virginia (now W. Virginia)",
+          "lat": 38.98333,
+          "lon": -81.31667,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.youtube.com/watch?v=8g1uDOLP83E",
+          "credit": "Edwin S. Porter, via Early Cinema History",
+          "caption": "Uncle Tom's Cabin (1903 Silent Film)"
+        }
+      },
+      {
+        "date": "1860",
+        "text": {
+          "headline": "1860: Abraham Lincoln",
+          "text": "<p>Abraham Lincoln is elected as the 16th President of the U.S.</p> <span class='vco-note'>This excerpt is embedded from Wikipedia</span></p>."
+        },
+        "location": {
+          "name": "Pike County, Ohio",
+          "lat": 39.00667,
+          "lon": -82.81333,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+          "credit": "wikipedia",
+          "caption": "1860 Abraham Lincoln elected President"
+        }
+      },
+      {
+        "date": "1870",
+        "text": {
+          "headline": "1870: Finally counting everyone",
+          "text": "This census was the first to record the names and other personal information of all African-Americans, including those who were formerly enslaved. In researching your African-American ancestors, moving backward from the present, the 1870 federal census may be the last census in which you are able to identify these ancestors by name. The 1870 census often even serves as a powerful tool in identifying former slave owners, a necessary step for anyone desiring to reclaim the heritage of their enslaved ancestors."
+        },
+        "location": {
+          "name": "Highland County, Ohio",
+          "lat": 39.2,
+          "lon": -83.595,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.archives.gov/exhibits/treasures_of_congress/Images/page_13/47a.jpg",
+          "credit": "Archives.gov",
+          "caption": "41st & 42nd Congress newly elected"
+        }
+      },
+      {
+        "date": "1880",
+        "text": {
+          "headline": "1880: Decade when film is created",
+          "text": "<p>The mean is in Boone County, Kentucky, 8 miles west by south of Cincinnati, OH. Here are some frames from film pioneer Louis Le Prince's record of Leeds Bridge and horse traffic made as a series of glass plates in 1889 (some sources say paper). The first film ever made.</p> <span class='vco-note'>Embed videos from YouTube.</span>"
+        },
+        "location": {
+          "name": "Boone County, Kentucky",
+          "lat": 39.06889,
+          "lon": -84.66111,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.youtube.com/watch?v=iZTtASAj8Ew",
+          "credit": "Huntley Film Archives",
+          "caption": "Louis Le Prince's record of Leeds Bridge"
+        }
+      },
+      {
+        "date": "1890",
+        "text": {
+          "headline": "1890: Columbus, IN",
+          "text": "<p>Mean population is now 20 miles east of Columbus, IN. This vintage photo shows the Bartholomew County, Indiana treasurer and colleagues.</p>"
+        },
+        "location": {
+          "name": "Decatur County, Indiana",
+          "lat": 39.19889,
+          "lon": -85.54806,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://s3.amazonaws.com/pastperfectonline/images/museum_383/037/ia02890017.jpg",
+          "credit": "Indiana Album, <a href='https://indianaalbum.pastperfectonline.com/photo/CB02D4C3-5E3A-45BA-A7A2-878745331010'> Marjorie (Glick) Foster Collection </a>",
+          "caption": " Four men in a government office, Columbus, Indiana, circa 1890"
+        }
+      },
+      {
+        "date": "1900",
+        "text": {
+          "headline": "1900: Hear some music from the time",
+          "text": "<p>The mean population is now 6 miles southeast of Columbus. Listen to 'In the sweet bye and bye' by Harry MacDonough. Original recording by Roger Harding released in 1898. Popular music from 1900-1910.</p> <span class='vco-note'>Embed soundclips from Soundcloud.</span>"
+        },
+        "location": {
+          "name": "Bartholomew County, Indiana",
+          "lat": 39.16,
+          "lon": -85.815,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://soundcloud.com/mister-click/harry-macdonough-in-the-sweet",
+          "credit": "Soundcloud",
+          "caption": "In the sweet bye and bye"
+        }
+      },
+      {
+        "date": "1910",
+        "text": {
+          "headline": "1910: Old Photos",
+          "text": "The mean is now in the city of Bloomington, which has been the home of the University of Indiana since 1820. In 1910 the population was 8,838 people. One hundred years later in 2010 the population was 80,405 people."
+        },
+        "location": {
+          "name": "Monroe County, Indiana",
+          "lat": 39.17,
+          "lon": -86.53889,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/US-center-pop.jpg/471px-US-center-pop.jpg",
+          "credit": "wikipedia",
+          "caption": "1910 Center of the US Population"
+        }
+      },
+      {
+        "date": "1920",
+        "text": {
+          "headline": "1920: An American in the Making",
+          "text": "<p>An old film from the time showing Gary, Indiana, which is near Owen County where the population mean is in 1920. Director/Photographer: Carl Lewis Gregory, Locations: Ellis Island in New York Harbor; the Gary, Indiana works of the United States Steel Corporation.</p> <span class='vco-note'>Embed a Vimeo.</span>"
+        },
+        "location": {
+          "name": "Owen County, Indiana",
+          "lat": 39.1725,
+          "lon": -86.72083,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://vimeo.com/63929704",
+          "credit": "Ned Thanhouser",
+          "caption": "An American in the Making"
+        }
+      },
+      {
+        "date": "1930",
+        "text": {
+          "headline": "1930: Dorothy as a kid",
+          "text": "<p>Greene County, Indiana located 3 miles northeast of Linton. Judy Garland singing 'Bubbles' from 1930.</p> <span class='vco-note'>Embed from Daily Motion.</span>"
+        },
+        "location": {
+          "name": "Greene County, Indiana",
+          "lat": 39.0625,
+          "lon": -87.135,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.youtube.com/watch?v=xp9kONt2X54",
+          "credit": "You Tube",
+          "caption": "Judy Garland 1930"
+        }
+      },
+      {
+        "date": "1940",
+        "text": {
+          "headline": "1940: World at war",
+          "text": "The mean population has moved to Sullivan County, Indiana, 2 miles southeast by east of Carlisle. Here is a newspaper from 1941, Chicago Tribune publisher Col. Robert McCormick had been opposed to the U.S. getting into a war with Japan, but once war was declared, the Tribune lines up solidly behind FDR's war efforts."
+        },
+        "location": {
+          "name": "Sullivan County, Indiana",
+          "lat": 38.94833,
+          "lon": -87.37639,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://illinoisstatesoceity.typepad.com/photos/19411950_illinois_state_s/pearl5.jpg",
+          "credit": "Illinois State Society",
+          "caption": "Chicago Tribune front page 1941"
+        }
+      },
+      {
+        "date": "1950",
+        "text": {
+          "headline": "1950: Video about the railroads",
+          "text": "Richland County, Illinois is the new mean center of the US. Here is an educational documentary from the time by the 31 members of the Illinois Association of Railroads. It examines the problems facing railroads in the 1950's such as competition from cars, trucks and planes, as well as the unfair tax burden faced by railroads at the time."
+        },
+        "location": {
+          "name": "Richland County, Illinois",
+          "lat": 38.83917,
+          "lon": -88.15917,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.youtube.com/watch?v=diqvO7LMrkI",
+          "credit": "Charlie Dean Archives",
+          "caption": "“The Railroad Story” presented by the Illinois Railroad Association"
+        }
+      },
+      {
+        "date": "1960",
+        "text": {
+          "headline": "1960: Chicago Blues",
+          "text": "<p>Clinton County, Illinois has become the new mean of the populatin as it moves west. This is the time period of Chicago Blues and Chess Records released the Best of Muddy Waters which included this song.</p> <span class='vco-note'>Embed a Soundcloud track</span>"
+        },
+        "location": {
+          "name": "Clinton County, Illinois",
+          "lat": 38.59944,
+          "lon": -89.20972,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://soundcloud.com/carolebphotographe/4-muddy-waters-louisiana-blues",
+          "credit": "Soundcloud",
+          "caption": "Muddy Waters - Louisiana Blues"
+        }
+      },
+      {
+        "date": "1970",
+        "text": {
+          "headline": "1970: To the Moon!",
+          "text": "St. Clair County, Illinois is the new population center. In 1969, the US not only went west, but landed on the moon! Check out this cool <b>Vimeo</b> of the Apollo 11 trip in 100 seconds."
+        },
+        "location": {
+          "name": "St. Clair County, Illinois",
+          "lat": 38.46306,
+          "lon": -89.70611,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://vimeo.com/62707231",
+          "credit": "Spacecraft Films",
+          "caption": "Apollo 11 in 100 seconds"
+        }
+      },
+      {
+        "date": "1980",
+        "text": {
+          "headline": "1980: Westward ho!",
+          "text": "Jefferson County, Missouri a 1/4 mile west of DeSoto. This is the first year that the mean was outside and west of the territory of the original 13 states."
+        },
+        "location": {
+          "name": "Jefferson County, Missouri",
+          "lat": 38.13694,
+          "lon": -90.57389,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Territorial-acquisition-uscensus-bureau.jpg",
+          "credit": "wikimedia",
+          "caption": "United States Territories"
+        }
+      },
+      {
+        "date": "1990",
+        "text": {
+          "headline": "1990: Hubble",
+          "text": "<p>The US mean moved west to Crawford County, Missouri, but the US again makes a leap into space, launching the Hubble telescope.</p> <span class='vco-note'>YouTube video featuring images taken by Hubble space telescope.</span>"
+        },
+        "location": {
+          "name": "Crawford County, Missouri",
+          "lat": 37.87222,
+          "lon": -91.21528,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.youtube.com/watch?v=XqnaiBezoUE",
+          "credit": "Coconut Science Lab",
+          "caption": "Hubble Telescope's 10 Best Images of 2017"
+        }
+      },
+      {
+        "date": "2000",
+        "text": {
+          "headline": "2000: A new millenium",
+          "text": "<p>Phelps County, Missouri is the new center of US population. Here's a good laugh and some good perspective, remember Y2K?</p> <span class='vco-note'>YouTube video</span>"
+        },
+        "location": {
+          "name": "Phelps County, Missouri",
+          "lat": 37.696987,
+          "lon": -91.809567,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.youtube.com/watch?v=X_KoNZkf-2k",
+          "credit": "KGBT",
+          "caption": "Valley Residents Prepare for Y2K"
+        }
+      },
+      {
+        "date": "2010",
+        "text": {
+          "headline": "2010: And Twitter happened",
+          "text": "<p>In 2010, the new center was Texas County, Missouri, which has nothing to do with Texas. In the past decade many things happened but a big one is the founding of Twitter in 2006. Here is the #1 most retweeted tweet from 2010.</p> <span class='vco-note'>Another example of an embedded tweet.</span>"
+        },
+        "location": {
+          "name": "Texas County, Missouri",
+          "lat": 37.517534,
+          "lon": -92.173096,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://twitter.com/StephenAtHome/status/16360461594",
+          "credit": "Twitter",
+          "caption": "Stephen Colbert"
+        }
+      },
+      {
+        "date": "2020",
+        "text": {
+          "headline": "2020: Further West, Further South",
+          "text": "<p>The 2020 center of population is only 11.8 miles from the 2010 center, the shortest distance the center has moved since 1920, and the second shortest since 1790. In total, the center of population has moved almost 886 miles since 1790.</p> <span class='vco-note'>Another example of an embedded YouTube video.</span>"
+        },
+        "location": {
+          "name": "Wright County, Missouri",
+          "lat": 37.517534,
+          "lon": -92.173096,
+          "zoom": 10,
+          "line": true
+        },
+        "media": {
+          "url": "https://www.youtube.com/watch?v=D9XelnGyggI",
+          "credit": "US Census Bureau",
+          "caption": "Video explaining the Center of Population from the US Census Bureau's <a href='https://www.census.gov/newsroom/press-kits/2021/2020-center-of-population.html'>2020 Center of Population Press Kit</a>"
+        }
+      }
+    ]
+  }
+}

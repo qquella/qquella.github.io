@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/landing-travel.css">
+  <link rel="icon" type="image/x-icon" href="./img/favicon-q.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<!-- Real Header lol -->
+<body>
+	<a class="webLink" href="https://qquella.com/"><h2>qquella.com</h2></a>
+  
+  <div class="contact-button">
+    <span class="contact">Contact</span>
+    <div class="contact-dropdown">
+        <a href="mailto: mikuquella@gmail.com">Email</a>
+        <a href="#feedback_Area">Feedback</a>
+    </div>
+</div>
+
+
+  <header>
+	  <h1>Cities i Love</h1>
+
+    <section class="sec-map">
+      <li><a href="./views/countryMap.html">Mark Your Own WORLD MAP 🌏</a></li>
+    </section>
+
+    <p>📍 Countries I have been to (in progress!)✨</p>
+  </header>
+
+    <!-- Navigation links -->
+  <nav>
+    <ul class="left-links">
+      <li><a href="./views/zurich.html">Zürich</a></li>
+      <li><a href="#">weitere/coming</a></li>
+    </ul>
+
+    <div class="myMap" id="myMap_div"></div>
+
+    <ul class="right-links">
+      <li><a href="./views/now&then.html">Thessaloniki Now and Then</a></li>
+      <li><a href="#">weitere/coming</a></li>
+    </ul>
+  </nav>
+
+  <!-- text blocks -->
+  <div class="text-blocks">
+    <div class="text-block text-left">
+        <p>About Me:</p>
+        <p class="inner-text">I am Quella and hello, welcome to my website! Here, you will find random things I create because they sparked my interest, such as Philosophy, CS, Math, History, etc. Feel free to navigate around and leave a lovely comment: topic recommendations? Improvement ideas? Just say hi!! Special thanks to Marielle for being my ‘professional website tester.’ Enjoy and have fun! XD</p>
+    </div>
+    <div class="text-block">
+        <p style="margin: .7em auto;">Über Mich</p>
+        <p class="inner-text" style="margin-top: 0; line-height: 1.1em;">Ich bin Quella und hallo, willkommen auf meiner Website! Hier werden Sie zufällige Dinge finden, die ich erstelle, weil sie mein Interesse geweckt haben, wie z.B. Philosophie, CS, Mathe, Geschichte, etc. Du kannst dich gerne umsehen und einen netten Kommentar hinterlassen: Themenvorschläge? Verbesserungsvorschläge? Sagt einfach Hallo!! Ein besonderer Dank geht an Marielle, die meine 'professionelle Website-Testerin' ist. Viel Spaß und viel Freude! XD</p>
+    </div>
+</div>
+
+<br><br>
+<!-- comments section -->
+<a id="feedback_Area"></a>
+<div class="feedback_Area">
+  <h1><button onclick="toggleText('expandedText14')" class="feedbackB">Feedback</button></h1>
+
+    <form action="https://formspree.io/f/mknaablk" method="POST">
+
+      Your name: <br>
+      <input class="input-name" type="text" name="realname"><br>
+      <br>
+      
+      Your email: <br>
+      <input type="email" name="email"><br>
+      <br>
+      
+      Your comments: <br>
+      <textarea name="comments" rows="15" cols="50"></textarea><br>
+      
+      <button class="submit" type="submit">Submit!</button>
+
+      </form>
+
+  </div> 
+  <!-- end feedback -->
+
+
+  <footer>
+    <div class="footer-links">
+        <a class="footer-link" href="https://www.instagram.com/quinnuella_" target="_blank">Instagram</a>
+        <div style="border-right: 1px solid #fff; height: 20px; margin: 0 25px;"></div>
+        <a class="footer-link" href="mailto: mikuquella@gmail.com">Email</a> 
+      </div>
+        <div class="copyright">Power by: Quella W</div>
+   
+</footer>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="scripts/map-myCountries.js"></script>
+
+</body>
+
+</html>

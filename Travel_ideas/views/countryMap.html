@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/countryMap.css">
+  <link rel="icon" type="image/x-icon" href="../img/favicon-q.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- Real Header lol -->
+<body>
+	<a class="webLink" href="https://qquella.com/"><h2>qquella.com</h2></a>
+  
+  <div class="contact-button">
+    <span class="contact">Contact</span>
+    <div class="contact-dropdown">
+        <a href="mailto: mikuquella@gmail.com">Email</a>
+        <a href="https://www.instagram.com/quinnuella_">Instagram</a>
+    </div>
+</div>
+
+<header>
+  <h1>Places You Have Visited</h1>
+  <p>📍 Click on the continents to choose countries on the map ✨</p>
+</header>
+
+<!-- share button -->
+<div class="share-print">
+  <button class="fa fa-share-alt" id="shareButton"><span>Share</span></button>
+    <div id="shareOptions">
+      <a href="#" data-option="whatsapp">WhatsApp</a>
+      <a href="#" data-option="twitter">Twitter</a>
+      <a href="#" data-option="instagram">Instagram</a>
+      <a href="#" data-option="mail">Email</a>
+      <a href="#" data-option="snapchat">Snapchat</a>
+      <a href="#" data-option="pinterest">Pinterest</a>
+      <a href="#" data-option="clipboard">Copy to Clipboard</a>
+    </div>
+    <!-- print button -->
+  <button class="fa fa-print" id="printButton"><span>Print</span></button>
+</div>
+
+<!-- Interactive Country Map -->
+
+<div id="continent-buttons">
+  <button data-continent="Europe" class="continent-button">Europe</button>
+  <button data-continent="North America" class="continent-button">North America</button>
+  <button data-continent="South America" class="continent-button">South America</button>
+  <button data-continent="Asia" class="continent-button">Asia</button>
+  <button data-continent="Africa" class="continent-button">Africa</button>
+  <button data-continent="Oceania" class="continent-button">Oceania</button>
+  <button data-continent="Antarctica" class="continent-button">Antarctica</button>
+</div>
+
+<ul id="country-list">
+  <!-- Country list will be populated dynamically -->
+</ul>
+
+<div class="countryMap" id="countriesMap_div"></div>
+
+
+
+<footer>
+  <div class="footer-links">
+      <a class="footer-link" href="https://www.instagram.com/quinnuella_" target="_blank">Instagram</a>
+      <div style="border-right: 1px solid #fff; height: 20px; margin: 0 25px;"></div>
+      <a class="footer-link" href="mailto: mikuquella@gmail.com">Email</a> 
+    </div>
+      <div class="copyright">Power by: Quella W</div>
+ 
+</footer>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="../scripts/map-worldCountries.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickSort Presentation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/quick-sort.css">
+  <link rel="icon" type="image/x-icon" href="./img/favicon-q.png">
+</head>
+
+<body onclick="toggleText()">
+  <a class="webLink" href="https://qquella.com/"><h2>See more on: <u>qquella.com</u></h2></a>
+  <div class="container">
+    <div class="slide" id="slide1">
+        <h1>
+          TODAY, We Are Talking About...
+        </h1>
+        <h2>
+          <b class="rainbow-header">QUICK SORT</b>
+        </h2>
+        <p>
+          Divide & Conquer <s><& Combine</s>
+        </p>
+        <video class="v1" width="640" height="360" autoplay loop muted>
+          <source src="./img/qs1.mov" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="slide" id="slide2">
+      <h1 class="hidden-text" style="display:none;">
+        Uhh What it is???
+      </h1>
+      <h2 class="hidden-text" style="display:none;">
+        Naja -It is a <b>SORTING algorithm...</b>
+      </h2>
+      <h2 class="hidden-text" style="display:none;">
+        <span class="rainbow-header">
+          <a href="./views/qs-visualization.html" target="_blank">Let Me Explain</a></span>
+      </h2>
+    </div>
+
+    <div class="slide" id="slide3">
+      <h1 class="hidden-text shrink" style="display: none;">
+        Here is the <span class="rainbow-header">Javascript</span> implementation
+      </h1>
+      <pre class="hidden-text" style="display:none;">
+        <code>    'use strict'
+          
+      function quickSort(arr, lowIndex = 0, highIndex = arr.length - 1) {
+        // Base case: if the lowIndex is greater than or equal to the highIndex, the array is already sorted
+        if (lowIndex >= highIndex) {
+          return;
+        }
+
+        // Choose a random pivot index between lowIndex and highIndex (inclusive)
+        const pivotIndex = Math.floor(Math.random() * (highIndex - lowIndex + 1)) + lowIndex;
+        const pivot = array[pivotIndex];
+
+        // Swap the pivot element to the end of the array
+        swap(array, pivotIndex, highIndex);
+
+        // Perform partitioning and get the index of the pivot in its sorted position
+        const leftPointer = partition(array, lowIndex, highIndex, pivot);
+
+        // Recursively sort the subarrays on the left and right of the pivot
+        quickSort(array, lowIndex, leftPointer - 1);
+        quickSort(array, leftPointer + 1, highIndex);
+      }
+
+      // Function to partition the array around a pivot and return the pivot's final index
+      function partition(array, lowIndex, highIndex, pivot) {
+        // Initialize pointers for the partitioning process
+        let leftPointer = lowIndex;
+        let rightPointer = highIndex - 1;
+
+        // Continue partitioning until the leftPointer crosses the rightPointer
+        while (leftPointer < rightPointer) {
+          // Move leftPointer to the right until finding an element greater than the pivot
+          while (array[leftPointer] <= pivot && leftPointer < rightPointer) {
+            leftPointer++;
+          }
+
+          // Move rightPointer to the left until finding an element smaller than the pivot
+          while (array[rightPointer] >= pivot && leftPointer < rightPointer) {
+            rightPointer--;
+          }
+
+          // Swap the elements at leftPointer and rightPointer
+          swap(array, leftPointer, rightPointer);
+        }
+
+        // Swap the pivot to its final sorted position
+        if (array[leftPointer] > array[highIndex]) {
+          swap(array, leftPointer, highIndex);
+        } else {
+          leftPointer = highIndex;
+        }
+
+        // Return the final index of the pivot
+        return leftPointer;
+      }
+
+      // Function to swap two elements in an array
+      function swap(array, index1, index2) {
+        const temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+      }
+
+        </code>
+      </pre>
+    </div>
+
+    <div class="slide" id="slide4">
+      <h1 class="hidden-text" style="display:none;">
+        NOW, is the time for
+      </h1>
+      <h2 class="hidden-text shrink" style="display:none;">
+        <span class="rainbow-header">
+          <a href="./views/qs-analysis.html" target="_blank">Algorithm Analysis</a></span>
+      </h2>
+      <p class="hidden-text" style="display:none;">
+        Of Course, In REAL Time
+      </p>
+      <h1 class="hidden-text" style="display:none;">
+        <span class="rainbow-header">
+          <a href="./views/qs-anaM3.html" target="_blank">With MEDIAN of 3 Random Elements</a></span>
+      </h1>
+      <p class="hidden-text rainbow-header" style="display:none; font-size: 2.5em;">
+        <a href="./views/qs-RMPivot.html" target="_blank">Using Right Most Element for Pivot</a></span>
+      </p>
+    </div>
+
+    <!-- a add slide lol -->
+    <div class="slide" id="slide5">
+      <h1 class="hidden-text shrink" style="display: none;">
+        Code implementation for <span class="rainbow-header shrink" style="font-size: 2.5em;">STACK Method & MEDIAN of 3 </span> 
+      </h1>
+      <pre class="hidden-text" style="display: none;">
+        <code>    'use strict'
+
+                  // quick sort with median 3 method
+                  function quickSortMedian3(arr) {
+                    const stack = [{ low: 0, high: arr.length - 1 }];
+                  
+                    while (stack.length) {
+                      const { low, high } = stack.pop();
+                      if (low < high) {
+                        const pivotIndex = partitionMedian3(arr, low, high);
+                        stack.push({ low, high: pivotIndex - 1 });
+                        stack.push({ low: pivotIndex + 1, high });
+                      }
+                    }
+                  }
+                  
+                  // partition function with median 3 method
+                  function partitionMedian3(arr, lowIndex, highIndex) {
+                    const midIndex = Math.floor((lowIndex + highIndex) / 2);
+                  
+                    // Sort low, mid, and high to determine the median
+                    if (arr[lowIndex] > arr[midIndex]) {
+                      swap(arr, lowIndex, midIndex);
+                    }
+                    if (arr[midIndex] > arr[highIndex]) {
+                      swap(arr, midIndex, highIndex);
+                    }
+                    if (arr[lowIndex] > arr[midIndex]) {
+                      swap(arr, lowIndex, midIndex);
+                    }
+                  
+                    // Move the pivot to highIndex - 1 and return its index
+                    swap(arr, midIndex, highIndex - 1);
+                    return highIndex - 1;
+                  }
+                  
+                  // helper method to SWAP elements
+                  function swap(arr, i, j) {
+                    let temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                  }
+                  
+                  // Calculation toolbox
+                  function generateRandomArray(size) {
+                    const arr = [];
+                    for (let i = 0; i < size; i++) {
+                      arr.push(Math.random());
+                    }
+                    return arr;
+                  }
+                  
+                  function measureExecutionTime(func, arr) {
+                    const start = performance.now();
+                    func(arr);
+                    const end = performance.now();
+                    return end - start;
+                  }
+                  
+                  function generateAscendingArray(size) {
+                    const arr = [];
+                    for (let i = 0; i < size; i++) {
+                      arr.push(i);
+                    }
+                    return arr;
+                  }
+                  
+                  function generateDescendingArray(size) {
+                    const arr = [];
+                    for (let i = size - 1; i >= 0; i--) {
+                      arr.push(i);
+                    }
+                    return arr;
+                  }
+          
+        </code>
+      </pre>
+    </div>
+
+    <div class="slide" id="slide6">
+      <h1 class="hidden-text" style="display:none;">
+        On TIME COMPLEXITY
+      </h1>
+      <div class="calculation hidden-text" style="display:none;">
+        
+        <label>\(n = \)</label> <textarea rows="1" type="number" id="input-n"></textarea>
+        <label>\(t = \)</label> <textarea rows="1" type="number" id="input-t"></textarea>
+        <button class="calculate" onclick="calculateK()">Calculate</button>
+        <p>\(t(n) = k*n^2\) &nbsp; &rarr; \(k=\) <span id="result-k"></span></p>
+      </div>
+      <div class="calculation hidden-text" style="display:none;">
+        <p style="display: inline-block; margin-right: 0;">I want to know the time(\(t\)) when \(n=\)</p> <textarea rows="1" type="number" id="input-n2"></textarea>
+        <button class="calculate" onclick="calculateT()">Calculate</button>
+        <p style="margin-top: 6%;">new &nbsp; \(t(n)=k*n^2=\)<span id="result-t2"></span></p>
+      </div>
+    </div>
+
+    <div class="slide" id="slide7">
+      <h1 class="hidden-text" style="display:none;">
+       Worst-Case: 
+      </h1>
+      <p class="hidden-text" style="display:none;">When quicksort always has the most unbalanced partitions possible, the original call takes: 
+        <span>\(cn \)</span> time for some constant <span>\( c \)</span>, the recursive call on 
+        <span>\( n-1 \)</span> elements takes 
+        <span>\( c(n-1) \) </span>time, the recursive call on  
+        <span>\(n-2 \) </span>elements takes 
+        <span>\( c(n-2) \)</span> time, and so on</p>
+      <p class="hidden-text" style="display:none;"><span>\[ \begin{aligned} cn + c(n-1) + c(n-2) + \cdots + 2c &= c(n + (n-1) + (n-2) + \cdots + 2) \\ &= c((n+1)(n/2) - 1) \ . \end{aligned} \]</span></p>
+      <h2 class="hidden-text" style="display:none;">
+        \[ \Theta (n^2) \]
+      </h2>
+    </div>
+
+    <div class="slide" id="slide8">
+      <h1 class="hidden-text" style="display:none;">
+        Best-Case: 
+      </h1>
+      <p class="hidden-text" style="display:none;">
+       Quicksort's best case occurs when the partitions are as evenly balanced as possible: their sizes either are equal or are within 1 of each other. The former case occurs if the subarray has an odd number of elements and the pivot is right in the middle after partitioning, and each partition has 
+        <span>\( (n-1)/2 \) </span>elements. The latter case occurs if the subarray has an even number 
+        <span>\( n \) </span>of elements and one partition has 
+        <span>\( n/2 \) </span>elements with the other having 
+        <span>  \( n/2-1 \)</span>. In either of these cases, each partition has at most 
+        <span>\( n/2 \)</span> elements(similar to merge sort)</p>
+            
+       <h2 class="hidden-text" style="display:none;">
+        \[ \Theta(n \log_2 n) \]
+       </h2>
+    </div>
+
+    <div class="slide" id="slide9">
+      <h1 class="hidden-text" style="display:none;">
+        Have Something to Say? <br>
+        Leave a Comment at: 
+      </h1>
+            
+       <h2 class="hidden-text" style="display:none;">
+        <span class="rainbow-header">
+          <a href="https://qquella.com/comments.html" target="_blank">qquella.com/comments.html</a></span>
+      </h2>
+
+      <p class="hidden-text" style="display:none;">Thank you for wanting to know more today then you did yesterday!</p>
+    </div>
+
+    <button id="arrow-left" onclick="prevSlide()">❮</button>
+    <button id="arrow-right" onclick="nextSlide()">❯</button>
+
+  </div>
+  <!-- end container -->
+
+  <script type="text/javascript" src="./scripts/quick-sort.js"></script>
+  <!-- highlighter -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/srcery.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- display math equations -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

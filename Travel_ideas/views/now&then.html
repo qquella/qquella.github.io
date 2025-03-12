@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thessaloniki Now and Then</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/now&then.css">
+  <link rel="icon" type="image/x-icon" href="../img/n-t/Flag-of-Macedonia-Greece.png">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <!-- share icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- Real Header lol -->
+<body>
+	<a class="webLink" href="https://qquella.com/"><h2>qquella.com</h2></a>
+  
+  <div class="contact-button">
+    <span class="contact">Contact</span>
+    <div class="contact-dropdown">
+        <a href="mailto: mikuquella@gmail.com">Email</a>
+        <a href="#feedback_Area">Feedback</a>
+    </div>
+  </div>
+
+
+<div class="real-container">
+
+  <header>
+	  <h1>Thessaloniki Now & Then</h1>
+  </header>
+  <p style="text-align: center; margin-top: 1%; margin-bottom: 4%; font-size: 1em;">
+    Content Co-authors: Quella Wang, Ally Wang, Anna Tang, Shreyaan Pathak
+  </p>
+
+  <!-- share button -->
+<div class="share-print">
+  <button class="fa fa-share-alt" id="shareButton"><span>Share</span></button>
+    <div id="shareOptions">
+      <a href="#" data-option="whatsapp">WhatsApp</a>
+      <a href="#" data-option="twitter">Twitter</a>
+      <a href="#" data-option="instagram">Instagram</a>
+      <a href="#" data-option="mail">Email</a>
+      <a href="#" data-option="snapchat">Snapchat</a>
+      <a href="#" data-option="pinterest">Pinterest</a>
+      <a href="#" data-option="clipboard">Copy to Clipboard</a>
+    </div>
+    <!-- print button -->
+  <button class="fa fa-print" id="printButton"><span>Print</span></button>
+</div>
+
+<!-- intro -->
+<p>
+  The Thessaloniki "Now and Then" documentary project aims to unveil the captivating transformation of the cityscape by juxtaposing historic photos or videos with their contemporary counterparts. Through a meticulous process of sourcing images from varied sites, we seek to create a visual narrative that not only highlights the architectural evolution of Thessaloniki but also resonates with the rich history embedded in its landmarks.*
+  <br><br>
+  *The vintage photographs originated from the public collection 'Παλιές φωτογραφίες της Θεσσαλονίκης - Old Photos of Thessaloniki' (see below for full citation), while the modern photographs were taken by us in November 2023.
+</p>
+
+<div class="imgGalleryContainer">
+  <div class="imgGallery" id="image-container1">
+    <h1 class="title-img">Now</h1>
+    <img class="galleryImg" id="gallery-image1" src="../img/n-t/wt-n.jpeg" alt="Gallery Image">
+    
+    <p id="description1">
+      Our journey begins with the iconic White Tower, a symbol synonymous with Thessaloniki. Originally constructed during the Ottoman period, the White Tower has stood as a silent witness to centuries of history. The juxtaposition of archival images capturing its original splendor and present-day photographs evokes a profound sense of time travel. As you delve into the images, you will witness the subtle changes in the Tower's surroundings, from the bustling markets of the past to the modern cityscape that now envelops this historic monument.
+    </p>
+    <span class="arrow left-arrow" onclick="changeImage('gallery-image1', 'now', -1, 'description1')">&#9665;</span>
+    <span class="arrow right-arrow" onclick="changeImage('gallery-image1', 'now', 1, 'description1')">&#9655;</span>
+  </div>
+
+  <div class="imgGallery" id="image-container2">
+    <h1 class="title-img">Then</h1>
+    <img class="galleryImg" id="gallery-image2" src="../img/n-t/wt-p.jpeg" alt="Gallery Image">
+    <p id="description2">
+      Moving on to the Arch of Galerius, another architectural gem that has weathered the ages, we explore the juxtaposition of images capturing its grandeur in different eras. Originally built to commemorate the Roman Emperor Galerius' victory, the arch's majestic reliefs and intricate details come to life as we compare historical images with their contemporary counterparts. The Arch of Galerius serves as a living testament to the city's layered past, where ancient triumphs coexist with the vibrant pulse of the present.
+    </p>
+    <span class="arrow left-arrow" onclick="changeImage('gallery-image2', 'then', -1, 'description2')">&#9665;</span>
+    <span class="arrow right-arrow" onclick="changeImage('gallery-image2', 'then', 1, 'description2')">&#9655;</span>
+  </div>
+</div>
+
+<!-- the text discription -->
+<p>
+  <b>Monumental Reflections:</b>
+  <br><br>
+  As we delve deeper into the heart of Thessaloniki's historical and architectural treasures, the juxtaposition of images reveals more than just physical transformations. The monuments featured in this documentary project become mirrors reflecting the city's cultural metamorphosis. Beyond the stones and structures, these images capture the essence of a city that has gracefully evolved while retaining its intrinsic identity. 
+  <br><br>
+  The White Tower, with its stark white facade, narrates stories of Ottoman rule, Byzantine glory, and modern urbanization. The changing landscape surrounding the tower mirrors the shifts in Thessaloniki's socio-economic fabric. The juxtaposition invites viewers to contemplate the physical alterations and the intangible heritage embedded in the monument's very foundation. It prompts questions about the lives that unfolded in its shadow and the myriad cultures that left their imprints.
+  <br><br>
+  Similarly, the Arch of Galerius, adorned with intricate reliefs depicting victorious battles, becomes a time capsule transporting us through epochs. The juxtaposition of images elucidates the arch's transformation from a testament to Roman glory to a backdrop for contemporary life. Each carving on the arch tells a tale, and as we witness its juxtaposition against a modern backdrop, we find ourselves immersed in a narrative that transcends the limitations of time.
+  <br><br><br>
+  <b>The Materialization of the Project:</b>
+  <br><br>
+  Undertaking the Thessaloniki "Now and Then" documentary project has been akin to an archaeological expedition, unearthing layers of history and breathing life into frozen moments. The materialization of this project involved meticulous curation, collaboration, and a profound connection with the city's past and present.
+  <br><br>
+  The process began with selecting archival materials, a journey into Thessaloniki's archives that unveiled hidden gems capturing moments frozen in time. These visual treasures became the raw material for our project, a bridge connecting the city's historical narrative with its contemporary reality. 
+  <br><br>
+  Aligning historical photos or videos with their present-day counterparts required a delicate touch. Each frame and angle had to be carefully considered to ensure a seamless blend of the past and present. This aspect of the project was not merely technical; it was an art form, a dance between eras that demanded a keen eye for detail and a deep appreciation for the city's evolution.
+  <br><br>
+  As the images took shape and the monuments began to tell their stories, the project became more than just a visual juxtaposition. It became a tribute to the resilience of Thessaloniki and its ability to embrace change while honoring its past. The monuments, through the lens of "now and then," emerged as storytellers, and the project's materialization was the realization of a collective endeavor to narrate the city's history in a language that transcends the constraints of words.
+  <br><br>
+  In the end, the project's materialization is not just the creation of a documentary; it is a celebration of Thessaloniki's living history and an invitation for all to witness the harmonious coexistence of the old and the new in this vibrant city by the Aegean Sea.
+  
+</p>
+
+<p>
+  <b>Reflections:</b>
+  <br><br>
+  This class project is not merely a collection of juxtaposed images but a collective effort to weave together the threads of Thessaloniki's history. Each monument serves as a chapter, and together, they form a narrative that transcends individual timelines. The eventual compilation of all class projects into an overall video will celebrate Thessaloniki's enduring spirit, inviting viewers to witness the dynamic interplay between its storied past and vibrant present.
+</p>
+<p>
+  We created "Now and Then" as a visual ode to the city's past and present resilience, inviting viewers to immerse themselves in the transformative journey of a place where history is preserved and lives and breathes through its architectural marvels.
+</p>
+
+<!-- citation page -->
+<p>
+  <br><br>
+  Work Cited:
+  <br><br>
+  Evangelidis, Vasilis. “AGORAS AND FORA: DEVELOPMENTS IN THE CENTRAL PUBLIC SPACE OF THE CITIES OF GREECE DURING THE ROMAN PERIOD.” <cite> The Annual of the British School at Athens</cite>  109 (2014): 335–56. http://www.jstor.org/stable/44082098.
+  <br><br>
+  GAVRA, Eleni G. “THE REFUGEE ESTABLISHMENT IN GREECE OF MODERN TIMES: INSTITUTIONAL AND URBAN TOOLS FOR THE SPATIAL MANAGEMENT.” <cite>Theoretical and Empirical Researches in Urban Management</cite> 12, no. 3 (2017): 5–15. http://www.jstor.org/stable/26201229.
+  <br><br>
+  Horne, John. “Reconstruction, Reform and Peace in Europe after the First World War.” In <cite>Revival After the Great War: Rebuild, Remember, Repair, Reform</cite>, edited by Luc Verpoest, Leen Engelen, Rajesh Heynickx, Jan Schmidt, Pieter Uyttenhove, and Pieter Verstraete, 297–316. Leuven University Press, 2020. https://doi.org/10.2307/j.ctv1b0fvbf.20.
+  <br><br>
+  Samaras, Nicholas. “Thessaloniki.” <cite>Literature Today 83</cite> , no. 2 (2009): 34–34. http://www.jstor.org/stable/20621532.
+  <br><br><br>
+  Figures:
+  <br><br>
+  “Παλιές Φωτογραφίες Της Θεσσαλονίκης - Old Photos of Thessaloniki.” Παλιές φωτογραφίες της θεσσαλονίκης - old photos of Thessaloniki, 2008. https://www.facebook.com/groups/oldthessaloniki/media?locale=el_GR. 
+
+</p>
+  
+<br><br><br><br>
+<!-- map -->
+<div id="map-container">
+  <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38899.50433962517!2d22.934358204433845!3d40.63120571588311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838f41428e0ed%3A0x9bae715b8d574a9!2sThessaloniki%2C%20Greece!5e0!3m2!1sen!2sus!4v1700140791452!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<br><br>
+<!-- comments section -->
+<a id="feedback_Area"></a>
+<div class="feedback_Area">
+  <h1><button onclick="toggleText('expandedText14')" class="feedbackB">Feedback</button></h1>
+
+    <form action="https://formspree.io/f/mknaablk" method="POST">
+
+      Your name: <br>
+      <input class="input-name" type="text" name="realname"><br>
+      <br>
+      
+      Your email: <br>
+      <input type="email" name="email"><br>
+      <br>
+      
+      Your comments: <br>
+      <textarea name="comments" rows="15" cols="50"></textarea><br>
+      
+      <button class="submit" type="submit">Submit!</button>
+
+      </form>
+
+  </div> 
+  <!-- end feedback -->
+</div>
+<!-- end real container -->
+
+
+  <footer>
+    <div class="footer-links">
+        <a class="footer-link" href="https://www.instagram.com/quinnuella_" target="_blank">Instagram</a>
+        <div style="border-right: 1px solid #fff; height: 20px; margin: 0 25px;"></div>
+        <a class="footer-link" href="mailto: mikuquella@gmail.com">Email</a> 
+      </div>
+        <div class="copyright">Power by: Quella W</div>
+   
+  </footer>
+
+<script type="text/javascript" src="../scripts/now&then.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest Common Divisor Calculator</title>
+    <link rel="stylesheet" href="../styles/gcd.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon-q.png">
+</head>
+
+<body>
+  <a href="https://qquella.github.io/"><h2>qquella.github.io</h2></a>
+    <div class="container">
+        <h1>Greatest Common Divisor Calculator</h1>
+        <div class="input-section">
+          <p>Enter numbers to find their greatest common divisor (GCD).</p>
+          <br> <br>
+          <label for="numCount">Number of Inputs:</label>
+          <input type="number" id="numCount" min="2" placeholder="Enter count">
+          
+          <br> 
+          <div id="numberInputs"></div>
+          <br> <br> 
+
+          <button id="findGCD" style="display: none;">Find GCD</button>
+          <p id="gcdResult" class="result" style="display: none;"></p>
+      </div>
+    <script src="../scripts/gcd.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zürich in all weathers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/wetter.css">
+  <link rel="icon" type="image/x-icon" href="../img/favicon-q.png">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<!-- Real Header lol -->
+<body>
+	<a class="webLink" href="https://qquella.com/"><h2>qquella.com</h2></a>
+  
+  <div class="contact-button">
+    <span class="contact">Contact</span>
+    <div class="contact-dropdown">
+        <a href="mailto: mikuquella@gmail.com">Email</a>
+        <a href="#feedback_Area">Feedback</a>
+    </div>
+  </div>
+
+<div class="container" >
+
+    <!-- share button -->
+<div class="share-print">
+  <button class="fa fa-share-alt" id="shareButton"><span>Share</span></button>
+    <div id="shareOptions">
+      <a href="#" data-option="whatsapp">WhatsApp</a>
+      <a href="#" data-option="twitter">Twitter</a>
+      <a href="#" data-option="instagram">Instagram</a>
+      <a href="#" data-option="mail">Email</a>
+      <a href="#" data-option="snapchat">Snapchat</a>
+      <a href="#" data-option="pinterest">Pinterest</a>
+      <a href="#" data-option="clipboard">Copy to Clipboard</a>
+    </div>
+    <!-- print button -->
+  <button class="fa fa-print" id="printButton"><span>Print</span></button>
+</div>
+
+  <header>
+	  <h1>Zürich in all weathers: the best time to travel☀️</h1>
+    <p>Are you planning a trip or excursion to Zürich and are interested in knowing what the weather is like at the moment? Our city weather report will tell you all about the current weather situation in Zürich and also provides the forecast for tomorrow and the following 3 days. It also contains some valuable tips for your trip – any time of the year.</p>
+  </header>
+
+  <!-- pics -->
+  <div class="galleries">
+    <div class="image-container left">
+      <img src="../img/swiss/L.jpeg" alt="Image 1">
+    </div>
+    <div class="image-container right">
+      <img src="../img/swiss/O.jpeg" alt="Image 2">
+    </div>
+    <div class="image-container up">
+      <img src="../img/swiss/V.jpeg" alt="Image 3">
+    </div>
+    <div class="image-container down">
+      <img src="../img/swiss/E.jpeg" alt="Image 4">
+    </div>
+  </div>
+
+  <!-- real time forecast -->
+  <h2 class="title">Zürich: Weather forecast</h2>
+
+  <div id="current-weather"></div>
+    <div id="current-details"></div>
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Temperature</th>
+            <th>Weather</th>
+        </tr>
+        <tr>
+            <td id="today">Today</td>
+            <td id="today-temperature">Loading...</td>
+            <td id="today-weather">Loading...</td>
+        </tr>
+        <tr>
+            <td>Mon, Dec 04</td>
+            <td id="monday-temperature">Loading...</td>
+            <td id="monday-weather">Loading...</td>
+        </tr>
+        <tr>
+            <td>Tue, Dec 05</td>
+            <td id="tuesday-temperature">Loading...</td>
+            <td id="tuesday-weather">Loading...</td>
+        </tr>
+        <tr>
+            <td>Wed, Dec 06</td>
+            <td id="wednesday-temperature">Loading...</td>
+            <td id="wednesday-weather">Loading...</td>
+        </tr>
+        <tr>
+            <td>Thu, Dec 07</td>
+            <td id="thursday-temperature">Loading...</td>
+            <td id="thursday-weather">Loading...</td>
+        </tr>
+    </table>
+
+    <div style="font-size: 1.2em;" id="precipitation-timeline"></div>
+
+    <!-- end forecast -->
+
+
+  <h2 class="title">Travelling weather and the best time to visit Zürich</h2>
+  <div class="image-con">
+    <img style="max-width:70%; margin-bottom: .6%;" src="../img/swiss/zurich-Rathaus.jpeg" alt="zurich-Rathaus">
+    <a class="lovely-link" style="display: block; margin-top: .0%;" href="./zurich-attraction.html">📍 Zürich Rathaus</a> 
+  </div>
+  <p>
+    Are you dreaming of <a class="lovely-link" href="./zurich-attraction.html">exploring Zurich</a> where the scenic beauty intertwines with cultural richness? Whether your heart beats for the vibrant colors of spring, the lively atmosphere of summer, the enchanting hues of autumn, or the magical winter wonderland, Zurich has something to offer throughout the year.
+    <br><br>
+    If you're captivated by the blossoming charm of spring, envision strolling along the shores of <a class="lovely-link" href="./zurich-attraction.html#lake-zurich">Lake Zurich</a> as flowers bloom, or exploring the Old Town under the warm sunshine. Summer enthusiasts can bask in the brilliance of the Limmat River, perhaps taking a refreshing dip while enjoying the city's dynamic energy.
+    <br><br>
+    Autumn unveils Zurich in a different light, with its streets adorned in warm tones and the cultural scene thriving. The city's museums beckon with captivating exhibits, providing a cozy retreat on crisp fall days. And for those enchanted by winter's embrace, Zurich transforms into a festive wonderland. Picture yourself wandering through Christmas markets, sipping on hot cocoa, and seeking refuge in the city's renowned <a class="lovely-link" href="./zurich-attraction.html#museum">museums</a>.
+    <br><br>
+    Zurich caters to every weather preference, whether it's a drizzly day, a sunny afternoon, a hot summer escapade, or a frosty winter expedition. The city's attractions and nearby day-trip destinations promise delightful experiences, regardless of the weather conditions.
+    <br><br>
+    For those planning their visit, the prime times to immerse yourself in Zurich's allure are during the months of April and May, from September to October, and the magical atmosphere of December. These periods witness Zurich at its most welcoming, drawing visitors from around the globe. Will you be joining the multitude of enthusiasts during these enchanting seasons?
+  </p>
+
+  <!-- pics -->
+  <div class="galleries">
+    <div class="image-container left">
+      <img src="../img/swiss/first.jpeg" alt="Image 1">
+    </div>
+    <div class="image-container right">
+      <img src="../img/swiss/second.jpeg" alt="Image 2">
+    </div>
+    <div class="image-container up">
+      <img src="../img/swiss/third.jpeg" alt="Image 3">
+    </div>
+    <div class="image-container down">
+      <img src="../img/swiss/fourth.jpeg" alt="Image 4">
+    </div>
+  </div>
+
+  <h2 class="title">The climate in Zürich</h2>
+  <p>
+    According to the climate table for Zürich, June, July and August are the warmest months on average, boasting the most hours of sunshine. During the spring and autumn, however, temperatures are ideal for sightseeing in the city and day trips further afield. In winter, you should dress warmly from December to February, when temperatures can fall below zero degrees.
+  </p>
+  <div class="image-con">
+    <img src="../img/zurich-meteo-average-weather.webp" alt="average-monthly-temp">
+  </div>
+
+  <h2 class="title">The best time of year for a holiday in Zürich</h2>
+  <p>
+    In our perspective, any time is the perfect time to explore Zurich – a city that exudes its unique allure throughout the year. Zurich, with its rich blend of history, culture, and modernity, offers a captivating experience in every season. To enhance your visit, we've compiled some recommendations tailored to each distinct time of the year.
+  </p>
+  <p>
+    🌸 Springtime in Zurich unveils a tapestry of blossoming flowers and vibrant greenery. Take a leisurely stroll along the shores of Lake Zurich or through the charming Old Town, where the city's historical landmarks come to life against the backdrop of cherry blossoms. Don't miss the opportunity to indulge in outdoor cafes and savor local delicacies in the mild spring breeze.
+  </p>
+  <div class="image-con">
+    <img src="../img/swiss/spring.png" alt="season">
+  </div>
+  <p>
+    🌿 Summer transforms Zurich into a lively hub of outdoor activities. The lake becomes a playground for water enthusiasts, offering boat trips and lakeside relaxation. Experience the city's vibrant cultural scene with open-air concerts, festivals, and outdoor art exhibitions. Venture to the Uetliberg mountain for panoramic views of the cityscape, or explore the picturesque neighborhoods for hidden gems.
+  </p>
+  <div class="image-con">
+    <img class="seasons" src="../img/swiss/summer.jpeg" alt="season">
+  </div>
+  <p>
+    🍂 Autumn casts a warm and golden glow upon Zurich, creating a cozy atmosphere. Embrace the crisp air as you wander through the city's parks adorned with autumn foliage. Take a boat cruise along the Limmat River to witness the stunning reflections of fall colors. Dive into the city's renowned cultural institutions, such as the Kunsthaus Zurich, to appreciate art against the backdrop of the season's changing hues.
+  </p>
+  <div class="image-con">
+    <img class="seasons" src="../img/swiss/fall.jpeg" alt="season">
+  </div>
+  <p>
+    ❄️ Winter brings a magical ambiance to Zurich, with the cityscape adorned in festive lights and decorations. The Christmas markets in the Old Town offer a delightful array of crafts, treats, and seasonal festivities. Take a scenic walk along the snow-covered streets or venture to nearby ski resorts for a day of winter sports. Warm up with a cup of Swiss hot chocolate in the cozy cafes that line the city's charming alleys.
+  </p>
+
+  <div class="image-con">
+    <img class="seasons" src="../img/swiss/winter.jpeg" alt="season">
+  </div>
+  <p>
+    Whether you find yourself captivated by the blooming vitality of spring, the sun-drenched activities of summer, the warm hues of autumn, or the enchanting winter wonderland, Zurich welcomes you to discover its diverse and captivating character throughout the year.
+  </p>
+</p>
+
+<span>*Zürich music shopping night! (November 23rd 2023) </span>
+<a class="lovely-link" href="./zurich-attraction.html#Lindenhof-popup">📍Altstadt</a> 
+<video controls>
+  <source class="seasons" src="../img/swiss/night-shopping.mov" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+  
+
+<p>
+  Enjoy and have fun with the nice weather in Zürich!! 🤍💙
+</p>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- zurich map -->
+<iframe class="zurich-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33635.15537688591!2d8.525336928761604!3d47.3751679325392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b9749bea219%3A0xe66e8df1e71fdc03!2sZ%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2sus!4v1699355324105!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<br><br>
+<!-- comments section -->
+<a id="feedback_Area"></a>
+<div class="feedback_Area">
+  <h1><button onclick="toggleText('expandedText14')" class="feedbackB">Feedback</button></h1>
+
+    <form action="https://formspree.io/f/mknaablk" method="POST">
+
+      Your name: <br>
+      <input class="input-name" type="text" name="realname"><br>
+      <br>
+      
+      Your email: <br>
+      <input type="email" name="email"><br>
+      <br>
+      
+      Your comments: <br>
+      <textarea name="comments" rows="15" cols="50"></textarea><br>
+      
+      <button class="submit" type="submit">Submit!</button>
+
+      </form>
+
+  </div> 
+  <!-- end feedback -->
+</div>
+<!-- end container -->
+
+  <footer>
+    <div class="footer-links">
+        <a class="footer-link" href="https://www.instagram.com/quinnuella_" target="_blank">Instagram</a>
+        <div style="border-right: 1px solid #fff; height: 20px; margin: 0 25px;"></div>
+        <a class="footer-link" href="mailto: mikuquella@gmail.com">Email</a> 
+      </div>
+        <div class="copyright">Power by: Quella W</div>
+   
+  </footer>
+
+<script type="text/javascript" src="../scripts/wetter.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comments</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles/landingPage.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon-q.png">
+</head>
+<body>
+
+<!-- Real Header lol -->
+  <a class="webLink" href="https://qquella.com/"><h2>qquella.com</h2></a>
+  
+  <div class="contact-button">
+    <span class="contact">Contact</span>
+    <div class="contact-dropdown">
+        <a href="mailto: mikuquella@gmail.com">Email</a>
+        <a href="#feedback_Area">Feedback</a>
+    </div>
+  </div>
+
+  <header>
+	  <h1>GET SOMETHING TO SAY...?</h1>
+  </header>
+
+  <!-- share button -->
+<div class="share-print">
+  <button class="fa fa-share-alt" id="shareButton"><span>Share</span></button>
+    <div id="shareOptions">
+      <a href="#" data-option="whatsapp">WhatsApp</a>
+      <a href="#" data-option="twitter">Twitter</a>
+      <a href="#" data-option="instagram">Instagram</a>
+      <a href="#" data-option="mail">Email</a>
+      <a href="#" data-option="snapchat">Snapchat</a>
+      <a href="#" data-option="pinterest">Pinterest</a>
+      <a href="#" data-option="clipboard">Copy to Clipboard</a>
+    </div>
+    <!-- print button -->
+  <button class="fa fa-print" id="printButton"><span>Print</span></button>
+</div>
+
+
+<!-- comments section -->
+<a id="feedback_Area"></a>
+<div class="feedback_Area" style="border-top: none;">
+  <h1><button onclick="toggleText('expandedText14')" class="feedbackB">Feedback</button></h1>
+
+    <form action="https://formspree.io/f/mknaablk" method="POST">
+
+      Your name: <br>
+      <input class="input-name" type="text" name="realname"><br>
+      <br>
+      
+      Your email: <br>
+      <input type="email" name="email"><br>
+      <br>
+      
+      Your comments: <br>
+      <textarea name="comments" rows="15" cols="50"></textarea><br>
+      
+      <button class="submit" type="submit">Submit!</button>
+
+      </form>
+
+  </div> 
+  <!-- end feedback -->
+
+
+</body>
+
+  <footer>
+    <div class="footer-links">
+        <a class="footer-link" href="https://www.instagram.com/quinnuella_" target="_blank">Instagram</a>
+        <div style="border-right: 1px solid #fff; height: 20px; margin: 0 25px;"></div>
+        <a class="footer-link" href="mailto: mikuquella@gmail.com">Email</a> 
+      </div>
+        <div class="copyright">Power by: Quella W</div>
+  </footer>
+
+
+  <script type="text/javascript" src="./Travel_ideas/scripts/map-zurich.js"></script>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Converter</title>
+    <link rel="stylesheet" href="../styles/baseCon.css">
+	<link rel="icon" type="image/x-icon" href="../img/favicon-q.png">
+</head>
+
+<body>
+    <a href="https://qquella.github.io/"><h2>qquella.github.io</h2></a>
+    <div class="container">
+        <h1>Base Converter</h1>
+        <div class="input-section">
+            <label for="base">Base:</label>
+            <input type="number" id="base" min="2" max="36" value="10"> 
+            <span>&nbsp&nbsp</span>
+            <label for="decimal">Decimal Number:</label>
+            <input type="number" id="decimal" value="0">
+            <br><br><br>
+            <button id="convert">Convert</button>
+        </div>
+        <br>
+        <div class="output-section">
+            <label for="result">Result:</label>
+            <span id="result">0</span>
+        </div>
+    </div>
+    <script src="../scripts/baseCon.js"></script>
+</body>
+</html>

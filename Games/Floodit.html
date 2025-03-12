@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+
+  <title>Flood-It Game</title>
+  <link rel="stylesheet" href="../scripts/share.js">
+  <link rel="icon" type="image/x-icon" href="../images/favicon-q.png">
+
+  <!-- share icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- u1 segement tools -->
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <script src="./scripts/Floodit.js"></script>
+  <link rel="stylesheet" href="./styles/basics.css">
+
+  <style>
+    body {
+      font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #e668f1;
+      text-shadow: 2px 2px 4px #000000;
+      text-decoration: none;
+    }
+
+    form {
+      margin: 3% auto;
+    }
+
+    .topbar a {
+      color: #6881f1;
+    }
+
+    .topbar a:visited {
+      color: #e668f1;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+    <a class="webLink" href="https://qquella.com/">
+      <h2 class="weblink">qquella.com</h2>
+    </a>
+    <br>
+
+    <div class="contact-button">
+      <span class="contact">Contact</span>
+      <div class="contact-dropdown">
+        <a href="mailto: mikuquella@gmail.com">Email</a>
+        <a href="#feedback_Area">Feedback</a>
+      </div>
+    </div>
+
+    <center>
+      <h1>Flood-It</h1>
+
+      <!-- new menu bar -->
+      <div class="topbar">
+        <div class="ui secondary pointing menu">
+          <a href="/" class=" item">Home</a>
+          <a href="/class-notes/plan-of-study.html" class=" item">Notes</a>
+          <a href="/UnseriousEssays/essays.html" class=" item">Articles</a>
+          <a href="/Games/Spielen.html" class="active item">Games</a>
+          <a href="/Travel_ideas/nav-travel.html" class=" item">Travel</a>
+        </div>
+      </div>
+
+      <form method="GET" action="">
+        Size:<select name="sz">
+          <option value="2">2x2</option>
+          <option value="6">6x6</option>
+          <option value="10">10x10</option>
+          <option value="14">14x14</option>
+          <option value="18">18x18</option>
+          <option value="22">22x22</option>
+          <option value="26">26x26</option>
+        </select>
+        Colors:<select name="nc">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+        Theme:<select id="theme" onchange="updateTheme()">
+          <option value="classic">Classic</option>
+          <option value="rainbow">Rainbow</option>
+          <option value="pink">Pink</option>
+          <option value="maroon">Maroon</option>
+          <option value="dreamy">Dreamy</option>
+        </select>
+        <input type="submit" value="New Game">
+      </form>
+      <div id="game" style="width: 280px; height: 280px; position:relative; border:solid black 8px;">
+      </div>
+      <p>
+      <div id="info" style="font-size:200%"></div>
+    </center>
+    <script>
+      drawgrid();
+    </script>
+  </body>
+
+</html>

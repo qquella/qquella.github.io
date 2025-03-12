@@ -1,0 +1,258 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 30% 3%;
+  padding-top: 1%;
+  margin: 10% 3%;
+  margin-top: 1%;
+  text-align: center;
+  background-color: black;
+  max-height: 100%;
+  overflow-y: hidden;
+  color: #ffffff;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+a h2 {
+  display: inline-block;
+  margin-left: 70%;
+  text-align: right;
+}
+a.webLink{
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 2px lightcoral;
+  padding-top: 0;
+  line-height: .4em;
+  font-size: .8em;
+  text-align: right;
+}
+.webLink:hover{
+  font-size: inherit;
+}
+
+.rainbow-header {
+  background-image: linear-gradient(to left, #F94144, #F3722C, #F9C74F, #90BE6D, #57BED6, #9C71D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 8vw;
+}
+
+span.rainbow-header a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff9ac4;
+}
+
+code {
+  font-size: 1.5em;
+}
+
+.slide{
+  position: relative;
+}
+
+.slide h1 {
+  text-align: left;
+}
+
+.slide h2 {
+  font-size: 8.5em;
+  letter-spacing: .1em;
+  margin-bottom: 1%;
+  margin-top: .6em;
+}
+
+/* slide 1 here */
+#slide1 p {
+  text-align: right;
+  margin-right: 3%;
+  margin-bottom: 0;
+}
+
+.v1 {
+  width: 80%;
+  text-align: left;
+}
+
+/* slide 2 here */
+#slide2 h2 {
+  font-size: 6.5em;
+  margin-top: .1em;
+}
+#slide2 h2 span{
+  text-align: left;
+  display: block;
+  margin-top: 4%;
+  font-size: 1.9em;
+}
+
+/* slide 3 here */
+#slide3 h1 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#slide3 h1 span {
+  font-size: 2em;
+}
+
+pre {
+  text-align: left;
+  margin-top: 0;
+  padding-top: 0;
+  max-height: 600px;
+  overflow: auto;
+  margin-bottom: 12%;
+}
+
+/* slide 4 here */
+#slide4 p {
+  text-align: right;
+  margin-right: 6%;
+}
+
+#slide4 h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+/* slide 5 here */
+.calculation {
+  margin-top: 20px;
+}
+
+.calculate {
+  text-align: center;
+  display: block;
+  margin: 2% auto;
+  margin-bottom: 10px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+label, textarea {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 1.5em;
+}
+
+#slide6 p{
+  font-size: 2em;
+}
+
+#slide6 p:not(:last-child) {
+  margin-right: 20px;
+}
+
+textarea{
+  width: 6%;
+  height: 1%;
+  font-size: 1.5em;
+  margin: 2% 2%;
+  padding: 1% 1%;
+  margin-bottom: 0;
+
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* slide 6 start here */
+#slide7, #slide8 {
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+#slide7 span, #slide8 span{
+  color: #90BE6D;
+}
+
+#slide7 h2, #slide8 h2 {
+  font-size: 6.5em;
+  margin-top: 2%;
+  color:#ff9ac4;
+}
+
+mjx-container[jax="CHTML"][display="true"]{
+  margin: .6em;
+}
+
+/* start slide 9 */
+#slide9 h2{
+  font-size: 8.45em;
+  letter-spacing: .01em;
+  margin: auto;
+}
+
+#slide9 p {
+  font-size: 2em;
+}
+
+
+/* logisitic about slides */
+.slide {
+  display: none;
+}
+
+.active-slide {
+  display: block;
+}
+
+
+#arrow-left, #arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  cursor: pointer;
+  color: #ffffff;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#arrow-left {
+  left: 20px;
+}
+
+#arrow-right {
+  right: 20px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* responsive */
+/* Responsive design using media queries */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5%;
+    margin: 5%;
+  }
+
+  #slide2 h2 {
+    font-size: 5em;
+  }
+
+  #slide5 textarea {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #slide2 h2 {
+    font-size: 4em;
+  }
+
+  #slide5 textarea {
+    font-size: 1.2em;
+  }

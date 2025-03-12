@@ -1,0 +1,140 @@
+
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+pre {
+  white-space: pre-wrap;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  text-align: left;
+  margin-left: 15%;
+  background-color: black;
+  margin-top: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(209, 208, 210);
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+}
+header{
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(196, 174, 243, 0.814); /* Add a subtle text shadow */
+  line-height: .8em;
+}
+h2 {
+  margin: 0;
+}
+p {
+  font-size: 1.1em;
+}
+a {
+  color: rgb(208, 208, 210);
+  text-decoration: none;
+  border-radius: 5px;
+  text-shadow: 1px 2px rgb(148, 128, 240);
+}
+nav{
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 8px;
+  text-align: center;
+ 
+}
+nav li {
+  display: inline-block;
+  margin: 50px 10px;
+  font-size: 18px;
+
+}
+li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  background-color: #8269f49b;
+  border-radius: 15px;
+}
+a:hover {
+  background-color: rgb(191, 128, 240);
+}
+
+p.statement {
+  font-size: 1em;
+  color: #a377f1;
+}
+
+div.btn-div {
+  margin: auto 3%;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4c2394;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.6em;
+  font-family: 'Source Code Pro', monospace;
+  margin: 2% auto;
+}
+
+button:hover {
+  background-color: #4c2394;
+}
+
+#javaCodeInput {
+  font-family: 'Source Code Pro', monospace;
+  font-size: .9em;
+  margin-bottom: 0;
+}
+
+/* Media query for screens between 400px and 768px */
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  h1 {
+    font-size: 40px; /* Decrease font size for medium screens */
+  }
+
+  nav li {
+    margin:48px 10px; /* Adjust margin for medium screens */
+  }
+
+  li a {
+    padding: 14px; /* Adjust padding for medium screens */
+  }
+}
+
+/* Media query for screens larger than 768px */
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 60px; /* Increase font size for large screens */
+  }
+
+  nav li {
+    margin: 45px 10px; /* Adjust margin for large screens */
+  }
+
+  li a {
+    padding: 24px; /* Adjust padding for large screens */
+  }
+}
+
+
+
+
+
+

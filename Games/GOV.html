@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles/WD-CSS.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon-q.png">
+
+  </head>
+  <body>
+    <body style="zoom:80%"></body>
+    <a href="https://qquella.github.io/"><h2>qquella.github.io</h2></a>
+    
+    <h1>Wordle-US Government</h1>
+    <div class="wrapper">
+      <div class="container"></div>
+      <div class="rules">
+        <img id="img" src="./img/WD4.png" alt="Euro image" >
+      </div>
+      <div class="win-screen hide"></div>
+    </div>
+    <button class="submit hide">Submit</button>
+
+    <!-- Pop-up overlay -->
+    <div class="overlay">
+      <div class="overlay-content">
+        <img src="./img/WD4.png" alt="Euro image" style="width: 500px; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <button id="start-btn" style="font-size: 40px; padding: 5px 20px;position: absolute; top: 87%; left: 50%; transform: translate(-50%, -50%); ">OK</button>
+      </div>
+    </div>
+
+    <button id="toggle-btn">Show/Hide Rules</button>
+
+    <!-- Script -->
+    <script src="Gov.js"></script>
+    <script>
+      // Show the pop-up when the page loads
+      window.onload = function() {
+       // document.body.style.zoom = "100%";
+      //  document.body.style.zoom = 1;
+        document.querySelector('.overlay').style.display = 'block';
+      }
+
+      // Hide the pop-up when the "OK" button is clicked
+      document.querySelector('#start-btn').addEventListener('click', function() {
+        document.querySelector('.overlay').style.display = 'none';
+      });
+
+      // Toggle the visibility of the image when the button is clicked
+      document.querySelector('#toggle-btn').addEventListener('click', function() {
+        var img = document.querySelector('#img');
+        if (img.style.display === 'none') {
+          img.style.display = 'block';
+        } else {
+          img.style.display = 'none';
+        }
+      });
+      
+      // Prevent the pop-up overlay from displaying when the Show/Hide button is clicked
+      document.querySelector('#toggle-btn').addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+    </script>
+  </body>
+</html>
