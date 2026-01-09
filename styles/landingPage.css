@@ -87,6 +87,12 @@ li a,
   text-shadow: 1px 2px lightcoral;
 }
 
+.other-programs a {
+  color: lightcoral;
+  text-decoration: none;
+  text-shadow: 1px 2px white;
+}
+
 /* Left links style */
 .left-links,
 .right-links {
